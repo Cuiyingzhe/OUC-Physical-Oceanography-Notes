@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {1.5.4}热膨胀方程-状态方程}{5}{subsubsection.1.5.4}%
 \contentsline {subsection}{\numberline {1.6}基本方程的矢量形式和标量形式}{5}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}边界条件}{6}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8} \color {red} $\divideontimes $��间平均的基本方程和边界条件(直角坐标系)}{6}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.8} \color {red} $\divideontimes $间平均的基本方程和边界条件(直角坐标系)}{6}{subsection.1.8}%
 \contentsline {subsection}{\numberline {1.9}铅直向平均的基本方程}{6}{subsection.1.9}%
 \contentsline {subsection}{\numberline {1.10}尺度分析}{6}{subsection.1.10}%
 \contentsline {section}{\numberline {2}海流}{7}{section.2}%
@@ -25,4 +25,32 @@
 \contentsline {paragraph}{温盐特性}{8}{equation.2.3}%
 \contentsline {subsubsection}{\numberline {2.1.2}倾斜流}{8}{subsubsection.2.1.2}%
 \contentsline {paragraph}{假定和方程}{8}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Ekman漂流}{9}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}无限深海漂流}{9}{subsubsection.2.2.1}%
+\contentsline {paragraph}{物理背景}{9}{subsubsection.2.2.1}%
+\contentsline {paragraph}{假定}{9}{subsubsection.2.2.1}%
+\contentsline {paragraph}{方程推导}{9}{subsubsection.2.2.1}%
+\contentsline {paragraph}{控制方程和边界条件}{9}{subsubsection.2.2.1}%
+\contentsline {paragraph}{方程求解}{10}{equation.2.9a}%
+\contentsline {paragraph}{物理性质}{10}{equation.2.10}%
+\contentsline {paragraph}{运动速度}{10}{equation.2.10}%
+\contentsline {paragraph}{Ekman螺旋和Ekman螺线}{10}{equation.2.10}%
+\contentsline {paragraph}{水平体积输运}{11}{figure.caption.4}%
+\contentsline {subsubsection}{\numberline {2.2.2}有限深海漂流}{11}{subsubsection.2.2.2}%
+\contentsline {paragraph}{假定}{11}{subsubsection.2.2.2}%
+\contentsline {paragraph}{方程求解}{11}{subsubsection.2.2.2}%
+\contentsline {paragraph}{物理性质}{11}{equation.2.11}%
+\contentsline {paragraph}{与水深的关系}{12}{equation.2.11}%
+\contentsline {paragraph}{体积输运}{12}{equation.2.11}%
+\contentsline {subsubsection}{\numberline {2.2.3}漂流分离}{12}{subsubsection.2.2.3}%
+\contentsline {paragraph}{利用风速大小相等、方向相反的两次观测余流分离漂流}{12}{subsubsection.2.2.3}%
+\contentsline {paragraph}{利用一组风速大小相等、方向不同的实测余流分离漂流}{12}{figure.caption.5}%
+\contentsline {subsubsection}{\numberline {2.2.4}升降流}{12}{subsubsection.2.2.4}%
+\contentsline {paragraph}{物理背景}{12}{subsubsection.2.2.4}%
+\contentsline {paragraph}{赤道附近的升降流}{13}{figure.caption.7}%
+\contentsline {paragraph}{顺(沿)岸风产生的升降流}{13}{figure.caption.8}%
+\contentsline {paragraph}{气旋和反气旋产生的海洋升降流}{13}{figure.caption.9}%
+\contentsline {paragraph}{假定}{13}{figure.caption.10}%
+\contentsline {paragraph}{控制方程及边界条件}{14}{figure.caption.10}%
+\contentsline {paragraph}{结果讨论}{14}{figure.caption.10}%
 \contentsfinish 

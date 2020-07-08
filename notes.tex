@@ -27,6 +27,7 @@
 \usepackage{bm}
 \usepackage{framed}
 \usepackage{setspace}
+\usepackage{gensymb}
 %\usepackage[T1]{fontenc}
 %\usepackage{mathptmx}
 \hypersetup{
@@ -170,7 +171,7 @@
     \[
         \Rightarrow-2 \vec{\Omega} \times \vec{V}=(f v-\tilde{f} w) \vec{i}-(f u) \vec{j}+(\tilde{f} u) \vec{k}
     \]
-    其中，$\displaystyle\left\{\begin{aligned}&f=2\Omega sin\varphi\\ &\tilde{f}=2\Omega cos\varphi\end{aligned}\right.$
+    其中，$\displaystyle\left\{\begin{aligned}&f=2\Omega \sin\varphi\\ &\tilde{f}=2\Omega \cos\varphi\end{aligned}\right.$
     \[
         \Rightarrow
         \boxed{
@@ -428,4 +429,255 @@
     (1) 倾斜流平行于等水位线；\\
     (2) 在北半球，流向右侧水位高；\\
     (3) 倾斜流从表至底流速流向相同，压强梯度相同.
+    \subsection{Ekman漂流}
+    由恒速定常的风长时间驱动大尺度、均匀密度的海洋，所产生的处于稳定状态的海流.
+    \subsubsection{无限深海漂流}
+    \paragraph{物理背景}~{} \\
+	Ekman的老师Nansen在海洋调查时发现，冰山不是顺风漂移，而是沿着风向右方$20\degree\sim{40}\degree$的方向移动.Ekman在1905年研究了这种现象并提出风海流理论\cite{Ekman}.
+	\paragraph{假定}~{} \\
+	无限深海Ekman漂流中用到了以下假定：\\
+	\indent
+	1) 海洋无限广阔，海洋无限深.\\
+	\indent
+	即无侧边界效应，仅有垂直湍流所生水平湍流摩擦力，并假定垂直湍流粘滞系数$A_z$为常量.由于海洋无限深，$z\rightarrow\infty,\vec{V}=0$\\
+	\indent
+	2) 定常均匀风场长时间作用.\\
+	\indent
+	即运动的基本参量与时间和水平坐标无关且海面无升降、无水平压强梯度.\\
+	\indent
+	3) 密度分布均匀，$\rho$为常数，不考虑热盐性质.\\
+	\indent
+	4) 采用$f$平面近似.
+	\paragraph{方程推导}~{}
+	\paragraph{控制方程和边界条件}~{}\\
+	首先给出一般的控制方程：
+	\begin{equation}\label{eq1}
+	\left\{
+	\begin{aligned}
+	&\frac{\partial u}{\partial t}+u \frac{\partial u}{\partial x}+v \frac{\partial u}{\partial y}+w \frac{\partial u}{\partial z}=-\frac{1}{\rho} \frac{\partial p}{\partial x}+f v+A_{l}\left(\frac{\partial^{2} u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^{2}}\right)+A_{z} \frac{\partial^{2} u}{\partial z^{2}} \\
+	&\frac{\partial v}{\partial t}+u \frac{\partial v}{\partial x}+v \frac{\partial v}{\partial y}+w \frac{\partial v}{\partial z}=-\frac{1}{\rho} \frac{\partial p}{\partial y}-f u+A_{l}\left(\frac{\partial^{2} v}{\partial x^{2}}+\frac{\partial^{2} v}{\partial y^{2}}\right)+A_{z} \frac{\partial^{2} v}{\partial z^{2}}\\
+	&\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
+	\end{aligned}
+	\right.
+    \end{equation}
+    \begin{spacing}{2}
+    \indent
+	由假定1)， $\displaystyle A_{l}\left(\frac{\partial^{2} u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^{2}}\right)=0$, $\displaystyle A_{l}\left(\frac{\partial^{2} v}{\partial x^{2}}+\frac{\partial^{2} v}{\partial y^{2}}\right)=0$；
+	\par
+	由假定2)，$\displaystyle\frac{\partial u}{\partial t}+u \frac{\partial u}{\partial x}+v \frac{\partial u}{\partial y}+w \frac{\partial u}{\partial z}=0$,$\displaystyle \frac{\partial v}{\partial t}+u \frac{\partial v}{\partial x}+v \frac{\partial v}{\partial y}+w \frac{\partial v}{\partial z}=0$；
+	\par
+    由假定3)，$\displaystyle-\frac{1}{\rho} \frac{\partial p}{\partial x}=0$,$-\frac{1}{\rho} \frac{\partial p}{\partial y}=0$\par
+    \end{spacing}
+	则(6)化为：
+	\begin{subnumcases}{}
+	0=f v+A_{z} \frac{\partial^{2} u}{\partial z^{2}} \\
+	0=-f u+A_{z} \frac{\partial^{2} v}{\partial z^{2}}\\
+	\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
+	\end{subnumcases}
+	\indent
+	不失一般性地，假定风力仅沿$y$方向作用，即$\tau_x=0,\tau_y=const$.再结合假定1)，控制方程的边界条件为：
+	\begin{subnumcases}{}
+	z=0,\rho{A_z}\frac{\partial{u}}{\partial{z}}=0\\
+	z=0,\rho{A_z}\frac{\partial{v}}{\partial{z}}=-\tau_y \\
+	z=\infty,u=v=0
+	\end{subnumcases}
+	\paragraph{方程求解}~{}\\
+	$$(7a)+(7b)\times{i}\Leftrightarrow{A_{z} \frac{\partial^{2}(u+i v)}{\partial z^{2}}=i f(u+i v)}$$
+	\indent
+	令$W=u+iv$，得：
+	$$A_{z} \frac{\partial^{2} W}{\partial z^{2}}=i f W \Rightarrow
+	\frac{\partial^{2} W}{\partial z^{2}}=\frac{(1+i)^{2} \Omega \sin \varphi}{A_{z}} W$$
+	\indent
+	令$\displaystyle a=\sqrt{\Omega{\sin\varphi}/A_z}\mbox{，}j^2=(1+i)^2a^2$，得：
+	\begin{equation}\label{eq4}
+		\frac{d^{2} W}{d z^{2}}-j^{2} W=0
+	\end{equation}
+	\indent
+	(9)式通解为：$\displaystyle W = A{e^{jz}} + B{e^{ - jz}}$
+	\par
+	结合边界条件：
+	$\displaystyle (7a)+(7b)\times{i}\Rightarrow{z=0,\rho {A_z}{{\partial W} \over {\partial z}} =  - \tau_y},z\rightarrow\infty,{W=0}$
+	\[
+	z \rightarrow \infty \Rightarrow{A=0} , W=B e^{-j z}; \\ z=\left.0, \rho A_{z} \frac{\partial W}{\partial z}\right|_{z=0}=\left.\rho A_{z} \frac{\partial\left(B e^{-j z}\right)}{\partial z}\right|_{z=0}=-\tau_y \\, \Rightarrow{B=\tau_y /\left(j \rho A_{z}\right)}
+	\]
+	\par
+	因此，方程的解为：
+	\begin{equation*}
+	    	W={\tau_y  \over {j\rho {A_z}}}{e^{ - jz}}
+	    	 ={{i{\tau _y}} \over {(1 + i)a\rho {A_z}}}{e^{ - (1 + i)az}}
+	    	 ={{{e^{i{\pi  \over 2}}}{\tau _y}} \over {\sqrt 2 {e^{i{\pi  \over 4}}}a\rho {A_z}}}{e^{ - (1 + i)az}}
+	\end{equation*}
+	\par
+	令${D_0} = \pi /a$,得到最终解的形式为：
+	\begin{equation}
+	    W = {{{\tau _y}} \over {\sqrt 2 a\rho {A_z}}}{e^{ - {\pi  \over {{D_0}}}z + i({\pi  \over 4} - {\pi  \over {{D_0}}}z)}}
+	\end{equation}
+	\paragraph{物理性质}~{}
+	\paragraph{运动速度}~{}\\
+	在海面$(z=0)$处，$\displaystyle {W_0} = {{{\tau _y}} \over {\sqrt 2 a\rho {A_z}}}{e^{i{\pi  \over 4}}}$
+	.大小为$\displaystyle \left|W_0\right| = {{{\tau _y}} \over {\sqrt 2 a\rho {A_z}}}$，方向与$x$轴成45$\degree$，即与风向向右偏45$\degree$.
+	\par
+	在任意深度处，$\displaystyle |{W_z}| = {{{\tau _y}} \over {\sqrt 2 a\rho {A_z}}}{e^{ - {\pi  \over {{D_0}}}z}}$，方向为${\pi  \over 4} - {\pi  \over {{D_0}}}z$，即流速随深度增加呈指数形式减小，流向随深度的增加而逐渐向右偏.
+	\par
+	在摩擦深度$z=D_0$处，$\displaystyle |{W_{{D_0}}}| = {{{\tau _y}{e^{ - \pi }}} \over {\sqrt 2 a\rho {A_z}}} = {e^{ - \pi }}|{W_0}| = 0.043|{W_0}|$，方向${ - {3 \over 4}\pi }$，即与$x$轴成$-135\degree$，与表面流向正好相反.
+	\paragraph{Ekman螺旋和Ekman螺线}~{}\\
+	根据速度的垂向分布，表层流速最大，流向偏向风向的右方45$\degree$；随深度增加，流速逐渐减小，流向逐渐右偏；到摩擦深度，流速是表面流速的4.3\%，流向与表面流向相反，运动可以忽略.连连接各层流速的矢量端点，构成艾克曼螺旋；	艾艾克曼螺旋在平面上的投影，称为艾克曼螺线.
+	\begin{figure}[H]
+		\centering\includegraphics[width=5cm]{Ekman.eps}
+		\caption{Ekman螺线\cite{Ekman}}\label{fig:1} 
+	\end{figure}
+	\paragraph{水平体积输运}~{}\\
+	体积输运：
+	\[
+	\begin{aligned}
+	S &= \int_0^\infty  W dz \\
+	&= {{{\tau _y}} \over {\sqrt 2 a\rho {A_z}}}{e^{i{\pi  \over 4}}}\int_0^\infty  {{e^{ - {\pi  \over {{D_0}}}(1 + i)z}}} dz\\
+	&= {{{\tau _y}} \over {\sqrt 2 a\rho {A_z}}}{e^{i{\pi  \over 4}}}\left[ { - {{{D_0}} \over \pi }{1 \over {(1 + i)}}} \right]\left. {{e^{ - {\pi  \over {{D_0}}}(1 + i)z}}} \right|_0^\infty\\
+	&= {{{\tau _y}} \over {2\Omega \sin \varphi \rho }} = {{{\tau _y}} \over {f\rho }}
+	\end{aligned}
+	\]
+	\indent
+    可以发现，得到的输运结果只有实部，没有虚部，说明体积输运方向为$x$轴正向，即在北半球水体向风向右侧90$\degree$输运.
+    \subsubsection{有限深海漂流}
+    \paragraph{假定}~{} \\
+	有限深海Ekman漂流中用到了以下假定：\\
+	\indent
+	1) 海区无限广阔、有限深，远离海岸.\\
+	\indent
+	即无侧边界效应，仅有垂直湍流所生水平湍流摩擦力，并假定垂直湍流粘滞系数$A_z$为常量.由于海洋有限深，$z\rightarrow h,\vec{V}=0$\\
+	\indent
+	2) 定常均匀风场长时间作用.\\
+	\indent
+	即运动的基本参量与时间和水平坐标无关且海面无升降、无水平压强梯度.\\
+	\indent
+	3) 密度分布均匀，$\rho$为常数，不考虑热盐性质.\\
+	\indent
+    4) 采用$f$平面近似.\\
+    控制方程和边界条件：
+    \[
+        \left\{
+        \begin{aligned}
+            &0=f v+A_{z} \frac{\partial^{2} u}{\partial z^{2}} \\
+            &0=-f u+A_{z} \frac{\partial^{2} v}{\partial z^{2}}\\
+            &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0\\
+            &z=0: \rho A_z\frac{\partial u}{\partial z}=0,\rho A_z\frac{\partial v}{\partial z}=-\tau_y\\
+            &z\rightarrow h:u=v=0
+        \end{aligned}
+        \right.
+    \]
+    \paragraph{方程求解}~{}
+    令$\zeta=h-z$，定解问题化为：
+    \begin{numcases}{}
+        -fv=A_z\frac{\partial^2 u}{\partial \zeta^2}\\
+        fu=A_z\frac{\partial^2 v}{\partial \zeta^2}\\
+        \zeta=h:\rho A_z\frac{\partial u}{\partial \zeta}=0,\rho A_z\frac{\partial v}{\partial \zeta}=\tau_y \nonumber\\
+        \zeta\rightarrow 0:u=v=0\nonumber
+    \end{numcases}
+    令$W=u+iv,\tau=\tau_x+i\tau_y$,控制方程：
+    \[
+        (11)+(12)\times i\Leftrightarrow \frac{d^{2} W}{d \xi^{2}}-j^{2} W=0
+    \]
+    边界条件：
+    \[
+        \begin{aligned}
+            &\zeta=h:\rho A_z\frac{\partial W}{\partial \zeta}=\tau\\
+            &\zeta=0:W=0
+        \end{aligned}
+    \]
+    与无限深海漂流解法类似，解得：
+    \[
+        W=\frac{(1+i) \tau_{y}}{2 a \rho A_{z}} \frac{s h(1+i) a \xi}{c h(1+i) a h}
+    \]
+    \paragraph{物理性质}~{}
+    \paragraph{与水深的关系}~{}\\
+    (1) $h≥2D_0$时，有限深海漂流流速流向与无限深海相同；
+    (2) 水深越浅，流向随深度增加右偏(北半球)越缓慢；
+    (3) 从上层到下层的流速矢量越是趋近风矢量的方向.
+    \paragraph{体积输运}~{}\\
+    (1) 在$x,y$方向(平行和垂直风向)都有输送；\\
+    (2) 运输方向为风向右端，±90°之间：\\
+        $$\displaystyle S_x>0;\\0<h<D_0,ah<\pi,S_y>0;D_0<h<2D_0,\pi<ah<2\pi,S_y<0;h>2D_0,S_y=0$$
+    \subsubsection{漂流分离}
+    \paragraph{利用风速大小相等、方向相反的两次观测余流分离漂流}~{}\\
+    $\divideontimes$余流＝漂流＋恒量常流
+    \begin{figure}[H]
+        \centering\includegraphics[width=5cm]{4.eps}
+        \caption*{}
+    \end{figure}
+    \paragraph{利用一组风速大小相等、方向不同的实测余流分离漂流}~{}\\
+    $\divideontimes$漂流速度矢量端点落在同一圆周上
+    \begin{figure}[H]
+        \centering\includegraphics[width=5cm]{5.eps}
+        \caption*{}
+    \end{figure}
+    \subsubsection{升降流}
+    由不均匀风场或风场和地形配合产生的“较强烈”的铅直向流动。
+    \paragraph{物理背景}~{}\\
+    $\boxed{\mbox{非均匀风场}}\Rightarrow\boxed{\mbox{非均匀Ekman漂流}}\Rightarrow\boxed{\mbox{非均匀体积输运}}\Rightarrow\boxed{\mbox{辐聚辐散}}\mathop{\Rightarrow}\limits^{连续性}\boxed{\mbox{升降流}}$
+    \begin{figure}[H]
+        \centering\includegraphics[width=8cm]{6.eps}
+        \caption*{}
+    \end{figure}
+    \paragraph{赤道附近的升降流}~{} \\
+    \begin{figure}[H]
+        \centering\includegraphics[width=8cm]{7.eps}
+        \caption*{}
+    \end{figure}
+    \paragraph{顺(沿)岸风产生的升降流}~{} \\
+    \begin{figure}[H]
+        \centering\includegraphics[width=10cm]{8.eps}
+        \caption*{}
+    \end{figure}
+    \paragraph{气旋和反气旋产生的海洋升降流}~{} \\
+    \begin{figure}[H]
+        \centering\includegraphics[width=8cm]{9.eps}
+        \caption*{}
+    \end{figure}
+    \paragraph{假定}~{}\\
+    (1) $\rho$为常数；\\
+    (2) 直线风系，风仅沿$x$方向有变化；风区内为恒定的均匀风场；风区外无风；$\displaystyle \frac{\partial }{\partial y}=0$\\
+    (3) 定常风场；$\displaystyle \frac{\partial }{\partial t}=0$\\
+    (4) 大尺度；$Ro\ll 1$\\
+    (5) 有限深度.$h \geq 2D_0$
+    \paragraph{控制方程及边界条件}~{}
+    \[
+        \left\{
+        \begin{aligned}
+            &A_{l} \frac{\partial^{2} u}{\partial x^{2}}+A_{z} \frac{\partial^{2} u}{\partial z^{2}}+f v+g \frac{\partial \zeta}{\partial x}=0\\
+            &A_{l} \frac{\partial^{2} v}{\partial x^{2}}+A_{z} \frac{\partial^{2} v}{\partial z^{2}}-f u=0\\
+            &\frac{\partial u}{\partial x}+\frac{\partial w}{\partial z}=0
+        \end{aligned}
+        \right.
+    \]
+    \[
+        \left\{
+        \begin{aligned}
+            &z=\zeta:\rho A_{z} \frac{\partial u}{\partial z}=0, \quad \rho A_{z} \frac{\partial v}{\partial z}=-\tau_{y} \quad(0 \leq x \leq L)\\
+            &z=h:u=v=0\\
+            &x=0:u=v=0\\
+            &x\rightarrow\infty:u=v=0,\frac{\partial \zeta}{\partial x}=0
+        \end{aligned}
+        \right.
+    \]
+    \paragraph{结果讨论}~{}
+    \begin{figure}[H]
+        \centering\includegraphics[width=8cm]{10.eps}
+        \caption*{}
+    \end{figure}
+    (1) 近岸产生上升流$x\leq 0.5D_l$；\\
+    (2) 风区外延附近下降流$x=2D_l$；\\
+    (3) 上升流来自 $z=1.5D_0$或更深；\\
+    (4) 最大$w$出现在$z=D_0$；\\
+    (5) 上层离岸流，下层向岸流，构成一个循环.\\
+    若风向与海岸成$\theta$角：\\
+    \begin{figure}[H]
+        \centering\includegraphics[width=8cm]{11.eps}
+        \caption*{}
+    \end{figure}
+    (1) 三个升降流系统：两个顺时针，一个逆时针；\\
+    (2) 大顺时针循环；\\
+    (3) $\theta=21.5°$时，升降流达最大强度；\\
+    (4) 纬度越低，升降流越强.
+    \bibliographystyle{ieeetr}
+	\bibliography{ref}
 \end{document}
