@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {1.5.4}热膨胀方程-状态方程}{5}{subsubsection.1.5.4}%
 \contentsline {subsection}{\numberline {1.6}基本方程的矢量形式和标量形式}{5}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}边界条件}{6}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8} \color {red} $\divideontimes $间平均的基本方程和边界条件(直角坐标系)}{6}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.8} \color {red} $\divideontimes $时间平均的基本方程和边界条件(直角坐标系)}{6}{subsection.1.8}%
 \contentsline {subsection}{\numberline {1.9}铅直向平均的基本方程}{6}{subsection.1.9}%
 \contentsline {subsection}{\numberline {1.10}尺度分析}{6}{subsection.1.10}%
 \contentsline {section}{\numberline {2}海流}{7}{section.2}%
