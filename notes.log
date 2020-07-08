@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.30)  8 JUL 2020 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.30)  8 JUL 2020 14:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -565,12 +565,7 @@ File: UTF8.bdg 2015/04/18 4.8.4
 File: UTF8.enc 2015/04/18 4.8.4
 ) (c:/Program Files/texlive/texlive/2020/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
-)
-
-LaTeX Warning: Unused global option(s):
-    [a3paper].
-
-(./notes.aux)
+) (./notes.aux)
 \openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -679,7 +674,7 @@ LaTeX Info: Redefining \selectfont on input line 41.
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -769,51 +764,51 @@ File: zhwindowsfonts.tex 2019/05/29 v2.4.16 Windows font map loader for pdfTeX a
 
 ]
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 50.
-Package epstopdf Info: Source file: <C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/1.eps>
+Package epstopdf Info: Source file: <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1.eps>
 (epstopdf)                    date: 2020-07-06 12:20:25
 (epstopdf)                    size: 72265 bytes
-(epstopdf)             Output file: <C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf>
+(epstopdf)             Output file: <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-07-06 12:30:50
 (epstopdf)                    size: 27673 bytes
-(epstopdf)             Command: <repstopdf --outfile=C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/1.eps>
+(epstopdf)             Command: <repstopdf --outfile=C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1.eps>
 (epstopdf)             \includegraphics on input line 55.
 Package epstopdf Info: Output file is already uptodate.
-<C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf, id=210, 380.42125pt x 326.21875pt>
-File: C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf Graphic file (type pdf)
-<use C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf>
-Package pdftex.def Info: C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf  used on input line 55.
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf, id=217, 380.42125pt x 326.21875pt>
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf Graphic file (type pdf)
+<use C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf>
+Package pdftex.def Info: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf  used on input line 55.
 (pdftex.def)             Requested size: 199.16928pt x 170.79453pt.
- [2 <c:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/2.eps>
+ [2 <c:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2.eps>
 (epstopdf)                    date: 2020-07-06 18:10:05
 (epstopdf)                    size: 37051 bytes
-(epstopdf)             Output file: <C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf>
+(epstopdf)             Output file: <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-07-06 18:11:16
 (epstopdf)                    size: 18550 bytes
-(epstopdf)             Command: <repstopdf --outfile=C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/2.eps>
+(epstopdf)             Command: <repstopdf --outfile=C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
-<C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf, id=258, 213.79875pt x 222.8325pt>
-File: C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf Graphic file (type pdf)
-<use C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf>
-Package pdftex.def Info: C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf  used on input line 104.
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf, id=265, 213.79875pt x 222.8325pt>
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf Graphic file (type pdf)
+<use C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf>
+Package pdftex.def Info: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf  used on input line 104.
 (pdftex.def)             Requested size: 142.26378pt x 148.27354pt.
- [3 <c:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/3.eps>
+ [3 <c:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3.eps>
 (epstopdf)                    date: 2020-07-06 19:11:56
 (epstopdf)                    size: 33931 bytes
-(epstopdf)             Output file: <C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf>
+(epstopdf)             Output file: <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf>
 (epstopdf)                    date: 2020-07-06 19:12:35
 (epstopdf)                    size: 15223 bytes
-(epstopdf)             Command: <repstopdf --outfile=C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/3.eps>
+(epstopdf)             Command: <repstopdf --outfile=C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3.eps>
 (epstopdf)             \includegraphics on input line 157.
 Package epstopdf Info: Output file is already uptodate.
-<C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf, id=272, 216.81pt x 231.86626pt>
-File: C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf Graphic file (type pdf)
-<use C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf>
-Package pdftex.def Info: C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf  used on input line 157.
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf, id=279, 216.81pt x 231.86626pt>
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf Graphic file (type pdf)
+<use C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf>
+Package pdftex.def Info: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf  used on input line 157.
 (pdftex.def)             Requested size: 113.81102pt x 121.71391pt.
- [4 <c:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf>] [5]
+ [4 <c:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3-eps-converted-to.pdf>] [5]
 Missing character: There is no — in font cmbx12!
 Missing character: There is no ¶ in font cmbx12!
 
@@ -821,34 +816,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
-[6]
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 387--389
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--402
+
+ []
+
+[8]
 
 Package caption Warning: Unused \captionsetup[table] on input line 37.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
  (./notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 431.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 310F1514C33DC47D23E34EAAD546B987;2719.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
+(rerunfilecheck)             Checksum: 8D413ABD066DDB88CBE90BF9CB367CD6;2811.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 431.
  ) 
 Here is how much of TeX's memory you used:
- 17470 strings out of 480608
- 277059 string characters out of 5896704
- 530826 words of memory out of 5000000
- 32730 multiletter control sequences out of 15000+600000
- 585546 words of font info for 229 fonts, out of 8000000 for 9000
+ 17602 strings out of 480608
+ 278854 string characters out of 5896704
+ 530825 words of memory out of 5000000
+ 32844 multiletter control sequences out of 15000+600000
+ 587436 words of font info for 236 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,14n,52p,586b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc>{c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (7 pages, 616006 bytes).
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc>{c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Program Files/texlive/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on notes.pdf (9 pages, 650251 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 489 compressed objects within 5 object streams
- 31 named destinations out of 1000 (max. 500000)
- 420 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 726 PDF objects out of 1000 (max. 8388607)
+ 521 compressed objects within 6 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 436 words of extra memory for PDF output out of 10000 (max. 10000000)
 

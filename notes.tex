@@ -1,4 +1,4 @@
-\documentclass[a3paper,12pt]{article}
+\documentclass[a4paper,12pt]{article}
 \title{\heiti 物理海洋学笔记}
 \author{\small 2017级海洋科学专业 崔英哲 \\ \small \url{https://github.com/Cuiyingzhe/Physical-Oceanography-Notes/}}
 \date{\small 2020.07.06}
@@ -37,7 +37,7 @@
 \captionsetup[table]{labelsep=space,font={small}}
 \captionsetup[figure]{labelsep=space,font={small}}
 \geometry{a3paper,left=4cm,right=4cm,top=4cm,bottom=4cm}
-\graphicspath{{C:/Users/Gary/Desktop/Physical-Oceanography-Notes/figures/}}
+\graphicspath{{C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/}}
 \begin{document}
     \maketitle
     \renewcommand*\contentsname{}
@@ -319,14 +319,14 @@
     \subsection{尺度分析}
     Rossby数 Ro=$\displaystyle \frac{U}{FL}\left\{\begin{aligned}&\gg 1:\mbox{平流非线性项比Coriolis力重要,大尺度运动}\\ &=1:\mbox{平流非线性项与Coriolis力同等重要}\\ &\ll 1:\mbox{平流非线性项可以忽略,小尺度运动}\end{aligned}\right.$\\
     \begin{spacing}{2}
-        水平Ekman数 E$\displaystyle _l=\frac{A_l}{FL^2}$ 水平湍流摩擦项与Coriolis力比值\\
-        垂直Ekman数 E$\displaystyle _z=\frac{A_z}{FD^2}$ 垂直湍流摩擦项与Coriolis力比值
+        水平Ekman数 E$\displaystyle _\mathrm{l}=\frac{A_l}{FL^2}$ 水平湍流摩擦项与Coriolis力比值\\
+        垂直Ekman数 E$\displaystyle _\mathrm{z}=\frac{A_z}{FD^2}$ 垂直湍流摩擦项与Coriolis力比值
     \end{spacing}
     准静力近似 $f$平面近似 $\beta$平面近似 Boussinesq近似
     \section{海流}
     \subsection{地转流}
-    地转流：不考虑海面风的作用，远离沿岸的大洋中部大尺度、准水平、定常的海水流动。\\
-    产生原因：海水受热力和动力因素导致压力(和密度)在水平方向分布不均匀。
+    地转流：不考虑海面风的作用，远离沿岸的大洋中部大尺度、准水平、定常的海水流动.\\
+    产生原因：海水受热力和动力因素导致压力(和密度)在水平方向分布不均匀.
     \[
         p=p_a+{\color{red} \rho}gh \quad \rho
         \left\{
@@ -337,5 +337,95 @@
         \right.
     \]
     \subsubsection{梯度流}
-    
+    \paragraph{假定和方程}~{} \\
+    (1) 在相当长一段时间里海面温度变化和降水蒸发变化都不大，于是可以认为已形成的海水密度场、温度场和盐度场近似于定常，从而相应的海水运动也近似于定常：$\displaystyle \frac{\partial }{\partial t}=0$.\\
+    (2) 海洋深而宽广，在远离海岸及海底的大洋中部海区，大尺度运动：$\displaystyle \mathrm{Ro}\ll 1$.\\
+    (3) 不考虑海底摩擦及边界摩擦的影响，且海面无风力作用，则流动属一种无摩擦流动：$\displaystyle \mathrm{E_l,E_z \ll 1}$.\\
+    (4) $\beta$平面近似 准静力近似\\
+    $x$方向基本方程：
+    \[
+        \frac{\partial {u}}{\partial t}+{u} \frac{\partial {u}}{\partial {x}}+{v} \frac{\partial {u}}{\partial {y}}+{w} \frac{\partial {u}}{\partial z}=-\frac{1}{\rho} \frac{\partial {p}}{\partial {x}}+{f} {v}+\frac{\partial}{\partial {x}}\left({A}_{x x} \frac{\partial {u}}{\partial {x}}\right)+\frac{\partial}{\partial {y}}\left({A}_{x y} \frac{\partial {u}}{\partial {y}}\right)+\frac{\partial}{\partial z}\left({A}_{x z} \frac{\partial {u}}{\partial z}\right)
+    \]
+    \begin{spacing}{2.5}
+        假定(1)$\Rightarrow\displaystyle\frac{\partial {u}}{\partial t}=0$\\
+        假定(2)$\Rightarrow\displaystyle{u}\frac{\partial {u}}{\partial {x}}+{v} \frac{\partial {u}}{\partial{y}}+{w}\frac{\partial{u}}{\partial z}=0$\\
+        假定(3)$\Rightarrow\displaystyle\frac{\partial}{\partial {x}}\left({A}_{x x} \frac{\partial {u}}{\partial {x}}\right)+\frac{\partial}{\partial {y}}\left({A}_{x y} \frac{\partial {u}}{\partial {y}}\right)+\frac{\partial}{\partial z}\left({A}_{x z} \frac{\partial {u}}{\partial z}\right)=0$
+    \end{spacing}
+    可得梯度流的控制方程：
+    \[
+        \left\{\begin{aligned}&0=-\frac{1}{\rho} \frac{\partial p}{\partial x}+f v \\ &0=-\frac{1}{\rho} \frac{\partial p}{\partial y}-f u \\ &0=-\frac{1}{\rho} \frac{\partial p}{\partial z}-g \\ &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0 \\ &u \frac{\partial \theta}{\partial x}+v \frac{\partial \theta}{\partial y}+w \frac{\partial \theta}{\partial z}=0 \\ &u \frac{\partial s}{\partial x}+v \frac{\partial s}{\partial y}+w \frac{\partial s}{\partial z}=0 \\& \rho=\rho(s, \theta)\end{aligned}\right.
+    \]
+    \paragraph{特征}~{} \\
+    水平速度：
+    \begin{numcases}{}
+        0=-\frac{1}{\rho} \frac{\partial p}{\partial x}+f v \\ 
+        0=-\frac{1}{\rho} \frac{\partial p}{\partial y}-f u
+    \end{numcases}
+    \[            
+            \Longrightarrow
+            \left\{
+            \begin{aligned}
+                &{v}=\frac{1}{\rho f} \frac{\partial {p}}{\partial {x}} \\ 
+                &{u}=-\frac{1}{\rho {f}} \frac{\partial {p}}{\partial {y}}
+            \end{aligned}
+            \right.
+    \]
+    (1) 水平速度和压强梯度成正比；\\
+    (2) 与密度和科氏参数成反比；\\
+    (3) 地转关系在赤道不成立($f=0$).\\
+    垂向速度：
+    \begin{align}
+        \frac{\partial (1)\times\rho}{\partial y}-\frac{\partial (2)\times\rho}{\partial x} &\Leftrightarrow \frac{\partial(\rho f v)}{\partial v}+\frac{\partial(\rho f u)}{\partial x}=0 \notag\\
+        &\Leftrightarrow f \rho\left(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}\right)+f\left(u \frac{\partial \rho}{\partial x}+v \frac{\partial \rho}{\partial y}+w \frac{\partial \rho}{\partial z}\right)-f \rho \frac{\partial w}{\partial z}-f w \frac{\partial \rho}{\partial z}+\beta \rho v=0 \notag \\
+        &\Leftrightarrow f\rho\mathop{\boxed{\nabla\vec{V}}}\limits^{=0}+f{\color{blue}\vec{V}\cdot\nabla\rho}-f \rho \frac{\partial w}{\partial z}-f w \frac{\partial \rho}{\partial z}+\beta \rho v=0
+    \end{align}
+    \[
+        {\color{blue}\vec{V}\cdot\nabla\rho}=\vec{V}\cdot\nabla\rho(s,\theta)=\vec{V}\cdot\left(\nabla s\frac{\partial\rho}{\partial s}+\nabla \theta\frac{\partial\rho}{\partial \theta}\right)=0
+    \]
+    \[
+        (3)\Leftrightarrow f\left(\rho \frac{\partial w}{\partial z}+w \frac{\partial \rho}{\partial z}\right)=\beta \rho v \mathop{\Rightarrow}\limits^{\mbox{尺度分析}} f \frac{\partial w}{\partial z}=\beta v \mathop{\Rightarrow}\limits^{\mbox{尺度分析}} W=\frac{\beta D}{F}U\sim 2\times 10^{-4}U
+    \]
+    垂向流速比水平流速小得多，地转流为准水平运动.\\
+    \paragraph{运动特性}~{}
+    \[
+        (1)\times u+(2)\times v\Leftrightarrow u \frac{\partial p}{\partial x}+v \frac{\partial p}{\partial y}=0 \Leftrightarrow\vec{V}_{H} \cdot \nabla_{H} p=0
+    \]
+    (1) 梯度流平行于等压线；\\
+    (2) 北半球，流向右侧为高压，南半球相反；\\
+    \paragraph{密度特性}~{}
+    \[
+        \frac{\partial(1) \times \rho}{\partial y}-\frac{\partial(2) \times \rho}{\partial x} \Leftrightarrow f \rho\left(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}\right)+f\left(u \frac{\partial \rho}{\partial x}+v \frac{\partial \rho}{\partial y}\right)+\rho u \frac{\partial f}{\partial x}+\rho v \frac{\partial f}{\partial y}=0 \Leftrightarrow \vec{V}_{H} \cdot \nabla_{H} \rho=0
+    \]
+    (1) 梯度流近似平行于等密线；\\
+    (2) 在北半球，流向右侧密度小；\\
+    (3) 等压面倾斜与等密面倾斜方向相反.\\
+    \paragraph{温盐特性}~{} \\
+    忽略垂向运动：
+    \[
+        \begin{aligned}
+            &\vec{V}_{H} \cdot \nabla_{H} \theta=0\\
+            &\vec{V}_{H} \cdot \nabla_{H} s=0
+        \end{aligned}
+    \]
+    (1) 梯度流平行于等温线和等盐线；\\
+    (2) 在北半球，流向右侧温度高，盐度低.
+    \subsubsection{倾斜流}
+    \paragraph{假定和方程}
+    (1) 海水密度为常数；\\
+    (2) 水平方向的压强梯度是由海面倾斜引起的.
+    \[
+        \Rightarrow p=p_{a}+\int_{z}^{\zeta} \rho g d z=p_{a}+\rho g(\zeta-z)
+    \]
+    倾斜流的控制方程：
+    \begin{numcases}{}
+        fv=g\frac{\partial \zeta}{\partial x}\\
+        fu=-g\frac{\partial \zeta}{\partial y}
+    \end{numcases}
+    性质：
+    \[
+        (4)\times u-(5)\times v \Leftrightarrow u \frac{\partial \zeta}{\partial x}+v \frac{\partial \zeta}{\partial y}=0\Leftrightarrow\vec{V}_{H} \cdot \nabla \zeta=0
+    \]
+    (1) 倾斜流平行于等水位线；\\
+    (2) 在北半球，流向右侧水位高；\\
+    (3) 倾斜流从表至底流速流向相同，压强梯度相同.
 \end{document}
