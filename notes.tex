@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 \title{\heiti 物理海洋学笔记}
-\author{\small 2017级海洋科学专业 崔英哲 \\ \small \url{https://github.com/Cuiyingzhe/Physical-Oceanography-Notes/}}
+\author{\small 2017级海洋科学专业 崔英哲 \\ \small \url{https://github.com/Cuiyingzhe/OUC-Physical-Oceanography-Notes}}
 \date{\small 2020.07.06}
 \usepackage[UTF8]{ctex}
 %\usepackage{indentfirst}
@@ -28,6 +28,10 @@
 \usepackage{framed}
 \usepackage{setspace}
 \usepackage{gensymb}
+\usepackage{tikz}
+\usepackage{cancel}
+\newcommand*{\circled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)%
+    circle (.5em) node {\makebox[1em][c]{\small #1}};}}
 %\usepackage[T1]{fontenc}
 %\usepackage{mathptmx}
 \hypersetup{
@@ -747,7 +751,7 @@
             \left\{\begin{aligned}&y-y^{\prime}=\frac{1}{f}\left(u-u^{\prime}\right)\\ &x-x^{\prime}=-\frac{1}{f}\left(v-v^{\prime}\right)\end{aligned}\right.\\
             &\Rightarrow
             \left\{\begin{aligned}&y-\left(y^{\prime}-\frac{u^{\prime}}{f}\right)=\frac{u}{f}\\ &x-\left(x^{\prime}+\frac{v^{\prime}}{f}\right)=-\frac{v}{f}\end{aligned}\right.\\
-            &\Rightarrow\boxed{\left(y-y_{0}\right)^{2}+\left(x-x_{0}\right)^{2}=\frac{1}{f^{2}}\left(u^{2}+v^{2}\right)=\frac{v^{2}}{f^{2}}=r^{2}}
+            &\Rightarrow\boxed{\left(y-y_{0}\right)^{2}+\left(x-x_{0}\right)^{2}=\frac{1}{f^{2}}\left(u^{2}+v^{2}\right)=\frac{V^{2}}{f^{2}}=r^{2}}
         \end{aligned}
     \]
     流体质点沿半径为$r$的圆周作匀速运动，这个圆称之为惯性圆，对应的流动为惯性流.
@@ -763,7 +767,88 @@
     \paragraph{背景流}~{}\\
     (1) 当无其他外加流动时，所有惯性圆的圆心位于同一条铅直线上，因而海水就像以角速度$2\omega \sin \varphi$旋转的刚体一样；\\
     (2) 当有其他外加流动时，除了在同一水平面上所有海水质点皆在同一时刻由同一流速速率外，还依外加流动速度方向移动.
-
+    \newpage
+    \subsection{风生大洋环流}
+    \subsubsection{Sverdrup理论}
+    \paragraph{假定}~{}\\
+    (1) 远离海岸的大洋中部海区，Ro$\ll 1$大尺度、等深大洋$h$为常数；\\
+    (2) 远离边界、无侧边界影响，无水平湍摩擦应力E$_l\ll 1$；\\
+    (3) 定常风 定常流动；\\
+    (4) $\rho$为常数；\\
+    (5) $\beta$平面近似.\\
+    \paragraph{控制方程}~{}
+    \[
+        \left\{
+            \begin{aligned}
+                &-f v=-\frac{1}{\rho} \frac{\partial p}{\partial x}+A_{z} \frac{\partial^{2} u}{\partial^{2} z} \\
+                &fu=-\frac{1}{\rho} \frac{\partial p}{\partial y}+A_{z} \frac{\partial^{2} v}{\partial^{2} z} \\
+                &0=-\frac{1}{\rho} \frac{\partial p}{\partial z}-g\\
+                &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{边界条件}~{}
+    \[
+        \left\{
+            \begin{aligned}
+                &z=\zeta(\mbox{海面}):\rho A_z\frac{\partial u}{\partial z}=\tau_{x\zeta},\rho A_z\frac{\partial v}{\partial z}=\tau_{y\zeta}\\
+                &z=-h(\mbox{足够深}):u=v=0,\frac{\partial u}{\partial z}=\frac{\partial v}{\partial z}=0,\frac{\partial p}{\partial x} =\frac{\partial p}{\partial y}=0
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{求解}~{}\\
+    对上式进行垂直积分：
+    \begin{numcases}{}
+        -fM_y=-\frac{\partial P}{\partial x}+\tau_{x\zeta}\\
+        fM_x=-\frac{\partial P}{\partial y}+\tau_{y\zeta}\\
+        \frac{\partial M_x}{\partial x}+\frac{\partial M_y}{\partial y}=0\nonumber
+    \end{numcases}
+    其中，$\displaystyle M_x=\int_{-h}^0\rho udz,M_y=\int_{-h}^0\rho vdz,P=\int_{-h}^0 pdz,\tau_{x\zeta}=\int_{-h}^0\rho A_z\frac{\partial^2 u}{\partial z^2}=\rho A_{z}\left(\left.\frac{\partial u}{\partial z}\right|_{z=0}-\left.\frac{\partial u}{\partial z}\right|_{z=-h}\right)\quad (\zeta\ll h)$
+    \[
+        \begin{aligned}
+            \frac{\partial (1)}{\partial y}-\frac{\partial (2)}{\partial x}&\Leftrightarrow -M_y\frac{\partial f}{\partial y}\mathop{\boxed{-f\frac{\partial M_y}{\partial y}-f\frac{\partial M_x}{\partial x}}}\limits^{0}=\frac{\partial \tau_{x\zeta}}{\partial y}-\frac{\partial \tau_{y\zeta}}{\partial x}\\
+            &\Leftrightarrow M_{y} \frac{\partial f}{\partial y}=\frac{\partial \tau_{y \zeta}}{\partial x}-\frac{\partial \tau_{x \zeta}}{\partial y}\\
+            &\Leftrightarrow\mathop{\boxed{\color{red}\beta M_y=\operatorname{rot}_z\tau_\zeta}}\limits_{\mbox{Sverdrup方程}}
+        \end{aligned}
+    \]
+    $\color{red} \mbox{Sverdrup方程的物理意义1}$：海水南北向的输运由风应力旋度所驱动.
+    \paragraph{讨论}~{}\\
+    将质量输运分为Ekman漂流输运与地转流输运两部分：
+    \[
+        \begin{aligned}
+            &M_x=M_{xE}(\mbox{Ekman漂流})+M_{xg}(\mbox{地转流})\\
+            &M_y=M_{yE}(\mbox{Ekman漂流})+M_{yg}(\mbox{地转流})
+        \end{aligned}
+    \]
+    \begin{numcases}{}
+        -fM_{yE}=\tau_{x\zeta}\\
+        fM_{xE}=\tau_{y\zeta}\\
+        -fM_{yg}=-\frac{\partial P}{\partial x}\\
+        fM_{yg}=-\frac{\partial P}{\partial y}
+    \end{numcases}
+    \begin{align}
+        &\frac{\partial(17)}{\partial y}-\frac{\partial(18)}{\partial x}\Leftrightarrow\frac{\partial {M}_{xE}}{\partial x}+\frac{\partial {M}_{yE}}{\partial y}=\boxed{\nabla \cdot \vec{{M}}_{E}=\left(\operatorname{rot}_{z} \vec{\tau}_{\zeta}-{\beta} {M}_{y E}\right) / {f}}\\
+        &\frac{\partial(19)}{\partial y}-\frac{\partial(20)}{\partial x}\Leftrightarrow\frac{\partial {M}_{xg}}{\partial x}+\frac{\partial {M}_{yg}}{\partial y}=\boxed{\nabla \cdot \vec{{M}}_{g}=-\beta M_{yg}/f}
+    \end{align}
+    (1) Ekman漂流质量输运的水平散度与$\circled{1}$风应力旋度$\circled{2} f\circled{3} \beta$有关.\\
+    (2) 地转流质量输运的水平辐散引起南北向的地转运动.
+    \[
+        (21)+(22)\Leftrightarrow \operatorname{rot}_z\vec{tau}_\zeta-\beta M_y=0\Leftrightarrow\boxed{\color{red} \beta M_y=\operatorname{rot}_z\vec{\tau}_\zeta}
+    \]
+    $\color{red} \mbox{Sverdrup方程的物理意义2}$:地转流流量的散度和Ekman漂流流量的散度相平衡，所以Sverdrup方程又称Sverdrup平衡.\\
+    (1) 所有南北向的地转运动，必须显示水平散度；\\
+    (2) 虽然Ekman漂流流量的散度与地转流流量的散度本身不为0，但是它们的和，即总流量的水平散度必须为0，说明Ekman漂流流量的散度和地转流流量的散度刚好取得平衡；\\
+    (3) $\operatorname{rot}_z\vec{\tau}_\zeta=0$：只存在东西方向的输运，$\operatorname{rot}_z\vec{\tau}_\zeta>0$：质量输运向北(北半球)，$\operatorname{rot}_z\vec{\tau}_\zeta<0$：质量输运向南(南半球)；\\
+    (4) 地转流引起的南北质量运输量比Ekman漂流引起的大.
+    \paragraph{缺陷}~{}\\
+    设仅有纬向风，且$\tau_{x\zeta}$仅为$y$的函数：
+    \[
+        M_y=\frac{1}{\beta}\operatorname{rot}_z\vec{\tau}_\zeta=\frac{1}{\beta}\left(\cancel{\frac{\partial \tau_{y\zeta}}{\partial x}}-\frac{\partial \tau_{x\zeta}}{\partial y}\right)=-\frac{a}{2\omega\cos\varphi}\frac{\partial\tau_{x\zeta}}{\partial y}
+    \]
+    \[
+        \frac{\partial M_{x}}{\partial x}=-\frac{\partial M_{y}}{\partial y}\Rightarrow M_{x}=\frac{x}{2 \omega \cos \varphi}\left(a \frac{\partial^{2} \tau_{x f}}{\partial y^{2}}+\frac{\partial \tau_{x f}}{\partial y} t g \varphi\right)+{\color{red}c(y)}
+    \]
+    在东、西边界，$M_x=0$而Sverdrup理论不能同时满足.
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}
