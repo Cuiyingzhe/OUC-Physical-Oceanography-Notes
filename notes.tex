@@ -521,10 +521,10 @@
 	\par
 	在摩擦深度$z=D_0$处，$\displaystyle |{W_{{D_0}}}| = {{{\tau _y}{e^{ - \pi }}} \over {\sqrt 2 a\rho {A_z}}} = {e^{ - \pi }}|{W_0}| = 0.043|{W_0}|$，方向${ - {3 \over 4}\pi }$，即与$x$轴成$-135\degree$，与表面流向正好相反.
 	\paragraph{Ekman螺旋和Ekman螺线}~{}\\
-	根据速度的垂向分布，表层流速最大，流向偏向风向的右方45$\degree$；随深度增加，流速逐渐减小，流向逐渐右偏；到摩擦深度，流速是表面流速的4.3\%，流向与表面流向相反，运动可以忽略.连连接各层流速的矢量端点，构成艾克曼螺旋；	艾艾克曼螺旋在平面上的投影，称为艾克曼螺线.
+	根据速度的垂向分布，表层流速最大，流向偏向风向的右方45$\degree$；随深度增加，流速逐渐减小，流向逐渐右偏；到摩擦深度，流速是表面流速的4.3\%，流向与表面流向相反，运动可以忽略.连连接各层流速的矢量端点，构成Ekman螺旋；Ekman螺旋在平面上的投影，称为Ekman螺线\cite{Ekman}.
 	\begin{figure}[H]
 		\centering\includegraphics[width=5cm]{Ekman.eps}
-		\caption{Ekman螺线\cite{Ekman}}\label{fig:1} 
+		\caption*{} 
 	\end{figure}
 	\paragraph{水平体积输运}~{}\\
 	体积输运：
@@ -566,12 +566,12 @@
         \right.
     \]
     \paragraph{方程求解}~{}
-    令$\zeta=h-z$，定解问题化为：
+    令$\xi=h-z$，定解问题化为：
     \begin{numcases}{}
-        -fv=A_z\frac{\partial^2 u}{\partial \zeta^2}\\
-        fu=A_z\frac{\partial^2 v}{\partial \zeta^2}\\
-        \zeta=h:\rho A_z\frac{\partial u}{\partial \zeta}=0,\rho A_z\frac{\partial v}{\partial \zeta}=\tau_y \nonumber\\
-        \zeta\rightarrow 0:u=v=0\nonumber
+        -fv=A_z\frac{\partial^2 u}{\partial \xi^2}\\
+        fu=A_z\frac{\partial^2 v}{\partial \xi^2}\\
+        \xi=h:\rho A_z\frac{\partial u}{\partial \xi}=0,\rho A_z\frac{\partial v}{\partial \xi}=\tau_y \nonumber\\
+        \xi\rightarrow 0:u=v=0\nonumber
     \end{numcases}
     令$W=u+iv,\tau=\tau_x+i\tau_y$,控制方程：
     \[
@@ -580,8 +580,8 @@
     边界条件：
     \[
         \begin{aligned}
-            &\zeta=h:\rho A_z\frac{\partial W}{\partial \zeta}=\tau\\
-            &\zeta=0:W=0
+            &\xi=h:\rho A_z\frac{\partial W}{\partial \xi}=\tau\\
+            &\xi=0:W=0
         \end{aligned}
     \]
     与无限深海漂流解法类似，解得：
@@ -678,6 +678,92 @@
     (2) 大顺时针循环；\\
     (3) $\theta=21.5°$时，升降流达最大强度；\\
     (4) 纬度越低，升降流越强.
-    \bibliographystyle{ieeetr}
+    \subsection{非定常运动}
+    \subsubsection{漂流的发展}
+    \paragraph{假定}~{} \\
+    (1) 远离海岸和海底的开阔大洋；\\
+    (2) 风场均匀恒定；\\
+    (3) $\rho$为常数；\\
+    (4) 海面无倾斜；\\
+    (5) 运动非定常.\\
+    \paragraph{控制方程}~{}
+    \[
+        \left\{
+        \begin{aligned}
+            &\frac{\partial u}{\partial t}-f v=A_{z} \frac{\partial^{2} u}{\partial z^{2}}\\
+            &\frac{\partial v}{\partial t}+f u=A_{z} \frac{\partial^{2} v}{\partial z^{2}}
+        \end{aligned}
+        \right.
+    \]
+    \paragraph{初边值条件}~{}
+    \[
+        \left\{
+        \begin{aligned}
+            &z=0:A_z\frac{\partial u}{\partial z}=0,\rho A_z\frac{\partial v}{\partial z}=-\tau_y(t>0)\\
+            &z\rightarrow\infty:u=v=0\\
+            &t=0:u=v=0/u=C_1,v=C_2
+        \end{aligned}
+        \right.
+    \]
+    \paragraph{解的讨论}~{}
+    \[
+        \left\{
+        \begin{aligned}
+            &u=\frac{2 \pi \tau_{y}}{\rho f D_{0}} \int_{0}^{t^{\prime}} \frac{\sin (2 \pi \eta)}{\sqrt{\eta}} e^{\frac{\pi z^2}{4 D_{0}^{2}}} d \eta \\
+            &v=\frac{2 \pi \tau_{y}}{\rho f D_{0}} \int_{0}^{t^{\prime}} \frac{\cos (2 \pi \eta)}{\sqrt{\eta}} e^{\frac{\pi z^2}{4 D_{0}^{2}}} d \eta
+        \end{aligned}
+        \right.
+    \]
+    根据下图\cite{Ekman}：
+    \begin{figure}[H]
+        \centering \includegraphics[width=7cm]{12.eps}
+        \caption*{}
+    \end{figure}
+    随时间增加，空间某点流苏端点顺时针旋转(北半球)，逐渐趋向一个极限值(即漂流).
+    \subsubsection{惯性流}
+    \paragraph{假定和方程}~{} \\
+    (1) 风场消失或者流动离开风区；\\
+    (2) 外部驱动小时，湍摩擦失去作用；\\
+    (3) 流动转为由惯性项维持平衡；\\
+    (4) 强制流动转变为自由流动.\\
+    \begin{numcases}{}
+        \frac{du}{dt}-fv=0 \label{ic1}\\
+        \frac{dv}{dt}+fu=0 \label{ic2}
+    \end{numcases}
+    \paragraph{求解}~{}
+    \[
+        \begin{aligned}
+            (\ref{ic1})\times u+(\ref{ic2}\times v)&\Leftrightarrow u \frac{d u}{d t}+v \frac{d v}{d t}=\frac{1}{2} \frac{d u^{2}}{d t}+\frac{1}{2} \frac{d v^{2}}{d t}=0 \\
+            &\Leftrightarrow \frac{d}{d t}\left(u^{2}+v^{2}\right)=0\\
+            &\Leftrightarrow u^{2}+v^{2}=c=V_{0}^{2}
+        \end{aligned}
+    \]
+    \[
+        \begin{aligned}
+            (\ref{ic1}),(\ref{ic2})
+            &\Rightarrow
+            \left\{\begin{aligned}&v=\frac{d y}{d t}=\frac{1}{f} \frac{d u}{d t}\\ &u=\frac{d x}{d t}=\frac{1}{f} \frac{d v}{d t}\end{aligned}\right.\\
+            &\Rightarrow
+            \left\{\begin{aligned}&y-y^{\prime}=\frac{1}{f}\left(u-u^{\prime}\right)\\ &x-x^{\prime}=-\frac{1}{f}\left(v-v^{\prime}\right)\end{aligned}\right.\\
+            &\Rightarrow
+            \left\{\begin{aligned}&y-\left(y^{\prime}-\frac{u^{\prime}}{f}\right)=\frac{u}{f}\\ &x-\left(x^{\prime}+\frac{v^{\prime}}{f}\right)=-\frac{v}{f}\end{aligned}\right.\\
+            &\Rightarrow\boxed{\left(y-y_{0}\right)^{2}+\left(x-x_{0}\right)^{2}=\frac{1}{f^{2}}\left(u^{2}+v^{2}\right)=\frac{v^{2}}{f^{2}}=r^{2}}
+        \end{aligned}
+    \]
+    流体质点沿半径为$r$的圆周作匀速运动，这个圆称之为惯性圆，对应的流动为惯性流.
+    \paragraph{惯性圆半径}~{}\\
+    科氏力充当向心力：$\displaystyle \frac{V_0^2}{r}=fV_0\Rightarrow V_0=fr\Rightarrow r=\frac{V_0}{f}=\frac{V_0}{2\omega \sin \varphi}$\\
+    随纬度增加而减小；赤道$r\rightarrow\infty$，水质点作直线运动.
+    \paragraph{周期}~{}
+     \[
+        T_{i}=\frac{2 \pi r}{V_{0}}=\frac{2 \pi r}{f r}=\frac{2 \pi}{f}=\frac{\pi}{\omega \sin \varphi}
+     \]
+     \paragraph{运动方向}~{}\\
+     北半球，顺时针；南半球，逆时针.
+    \paragraph{背景流}~{}\\
+    (1) 当无其他外加流动时，所有惯性圆的圆心位于同一条铅直线上，因而海水就像以角速度$2\omega \sin \varphi$旋转的刚体一样；\\
+    (2) 当有其他外加流动时，除了在同一水平面上所有海水质点皆在同一时刻由同一流速速率外，还依外加流动速度方向移动.
+
+    \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}

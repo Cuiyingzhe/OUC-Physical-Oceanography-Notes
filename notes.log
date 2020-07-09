@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  8 JUL 2020 21:43
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  9 JUL 2020 09:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -880,28 +880,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 667--676
 
  []
 
-(./notes.bbl [14])
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--689
+
+ []
+
+[14]
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps Graphic file (type eps)
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps>
+
+Underfull \hbox (badness 10000) in paragraph at lines 724--729
+
+ []
+
+[15] (./notes.bbl)
 
 Package caption Warning: Unused \captionsetup[table] on input line 38.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 683.
-[15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 683.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 769.
+[16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 769.
  (./notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 683.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 683.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 769.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 769.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: F307CEF1A08B32F97683486F071FD107;3342.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 683.
+(rerunfilecheck)             Checksum: 3E57A0D8A6C1888C69AD212177551242;3640.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 769.
  ) 
 Here is how much of TeX's memory you used:
- 18682 strings out of 479418
- 375233 string characters out of 5878425
- 680571 words of memory out of 5000000
- 35831 multiletter control sequences out of 15000+600000
+ 18686 strings out of 479418
+ 375376 string characters out of 5878425
+ 680602 words of memory out of 5000000
+ 35834 multiletter control sequences out of 15000+600000
  549986 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,14n,68p,586b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,68p,586b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on notes.pdf (15 pages).
+Output written on notes.pdf (16 pages).

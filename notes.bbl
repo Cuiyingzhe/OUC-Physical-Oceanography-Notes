@@ -1,8 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{}
 
-\bibitem{Ekman}
-V.~W. Ekman, {\em On the Influence of the Earth's Rotation on Ocean-Currents},
-  vol.~2.
-\newblock University Microfilms INC, 01 1905.
+\bibitem[Ekman, 1905]{Ekman}
+Ekman, V.~W. (1905).
+\newblock {\em On the Influence of the Earth's Rotation on Ocean-Currents},
+  volume~2.
+\newblock University Microfilms INC.
 
 \end{thebibliography}
