@@ -30,6 +30,7 @@
 \usepackage{gensymb}
 \usepackage{tikz}
 \usepackage{cancel}
+\usepackage{multicol}
 \newcommand*{\circled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)%
     circle (.5em) node {\makebox[1em][c]{\small #1}};}}
 %\usepackage[T1]{fontenc}
@@ -849,6 +850,85 @@
         \frac{\partial M_{x}}{\partial x}=-\frac{\partial M_{y}}{\partial y}\Rightarrow M_{x}=\frac{x}{2 \omega \cos \varphi}\left(a \frac{\partial^{2} \tau_{x f}}{\partial y^{2}}+\frac{\partial \tau_{x f}}{\partial y} t g \varphi\right)+{\color{red}c(y)}
     \]
     在东、西边界，$M_x=0$而Sverdrup理论不能同时满足.
+    \subsubsection{Stommel理论}
+    \paragraph{假定}~{}\\
+    (1) 远离海岸的大洋中部海区，Ro$\ll 1$大尺度、等深大洋$h$为常数；\\
+    (2) 远离边界、无侧边界影响，无水平湍摩擦应力E$_l\ll 1$；\\
+    (3) 定常风 定常流动；\\
+    (4) $\rho$为常数；\\
+    (5) $\beta$平面近似；\\
+    $\mbox{(6) 考虑底摩擦}$
+    \paragraph{控制方程}~{}
+    \[
+        \left\{
+            \begin{aligned}
+                &-f v=-g \frac{\partial \zeta}{\partial x}+A_{z} \frac{\partial^{2} u}{\partial^{2} z} \\
+                &fu=-g \frac{\partial \zeta}{\partial y}+A_{z} \frac{\partial^{2} v}{\partial^{2} z} \\
+                &0=-\frac{1}{\rho} \frac{\partial p}{\partial z}-g\\
+                &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{边界条件}~{}
+    \[
+        \left\{
+            \begin{aligned}
+                &z=\zeta(\mbox{海面}):\tau_{x , \zeta}=\left.\rho A_{z} \frac{\partial u}{\partial z}\right|_{t=\zeta}=-F \cos (\pi y / b),\tau_{x , \zeta}=0\\
+                &z=-h(\mbox{海底}):\tau_{x,-h}=\rho+\left.\frac{\partial u}{\partial z}\right|_{t=-h}={\color{red}\rho k u},\tau_{y,-h}=\rho+\left.\frac{\partial v}{\partial z}\right|_{t=-h}={\color{red}\rho k v}
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{求解}~{}\\
+    对上式进行垂直平均：
+    \[
+        \left\{
+        \begin{aligned}
+            &-f\left\langle v\right\rangle=-g \frac{\partial \zeta}{\partial x}+\left.\frac{A_{z}}{h+\zeta} \frac{\partial u}{\partial z}\right|_{\zeta}-\left.\frac{A_z}{h+\zeta} \frac{\partial u}{\partial z}\right|_{-h}\\
+            &f\left\langle u\right\rangle=-g \frac{\partial \zeta}{\partial y}+\left.\frac{A_{z}}{h+\zeta} \frac{\partial v}{\partial z}\right|_{\zeta}-\left.\frac{A_z}{h+\zeta} \frac{\partial v}{\partial z}\right|_{-h}\\
+            &\frac{\partial}{\partial x}\left[\left(n+\zeta\right)\left\langle u\right\rangle\right]+\frac{\partial}{\partial y}[(n+\zeta)\left\langle v\right\rangle]=0
+        \end{aligned}
+        \right.
+    \]
+    
+    将边界条件带入方程：
+    \begin{numcases}{}
+        0=f \rho h v-F \cos \left(\left. \pi y \middle/ b \right.\right)-\rho k u-\rho g h \frac{\partial \zeta}{\partial x} \quad(\zeta \ll k) \label{stm1}\\
+        0=-f \rho h u-\rho k v-\rho g h \frac{\partial \zeta}{\partial y}\label{stm2}\\
+        \frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}=0 \nonumber
+    \end{numcases}
+    \[
+        \frac{\partial (\ref{stm1})}{\partial y}-\frac{\partial (\ref{stm2})}{\partial x}\Rightarrow \frac{h}{k}[\beta v+r \sin (\pi y / b)]+{\color{red}\overbrace{\left(\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}\right)}^{\color{red}\mbox{来源于底摩擦}}}=0
+    \]
+    引入流函数$\displaystyle \psi:u=\frac{\partial \psi}{\partial y},v=-\frac{\partial \psi}{\partial x}$：
+    \[
+        {\color{red}\overbrace{\frac{\partial^{2} \psi}{\partial x^{2}}+\frac{\partial^{2} \psi}{\partial y^{2}}}^{\color{red}\mbox{来源于底摩擦}}}+\frac{h}{k} \beta \frac{\partial \psi}{\partial x}=\frac{h}{k} r \sin \frac{\pi y}{b}
+    \]
+    边界条件：
+    \[
+        \psi(0, y)=\psi(a, y)=\psi(x, 0)=\psi(x, b)=0
+    \]
+    \[
+        \Rightarrow \psi(x, y)=\frac{F b}{k \pi} \sin \frac{\pi y}{b}\left[\frac{e^{\frac{h \beta}{2 k}(a-x)} \operatorname{sh} \alpha x+e^{\frac{h \beta}{2 k} x} \operatorname{sh} \alpha(a-x)}{\operatorname{sh} \alpha a}-1\right]
+    \]
+    特别地，若$\beta=0$：$\displaystyle\psi(x, y)=\frac{F b}{k \pi} \sin \frac{\pi y}{b}\left[\frac{\operatorname{sh} \frac{\pi}{b} x+\operatorname{sh} \frac{\pi}{b}(a-x)}{\operatorname{sh} \frac{\pi}{b} a}-1\right]$
+    \paragraph{讨论}~{} {\centering 图片来自$Introduction \;to \; Physical \;Oceanography$(Robert H. Stewart,2008 pp190)}
+    \begin{figure}[H]
+        \centering \includegraphics[width=18cm]{13.eps}
+        \caption*{$ \large \color{red}\divideontimes\beta\mbox{效应导致了西向强化现象.}$}
+    \end{figure}
+    \begin{framed}
+    \begin{multicols}{2}
+        \begin{spacing}{0.8}
+        \centering 
+        $\mathbf\beta=0$(非旋转坐标系或f平面近似):\\
+        (1) 流线南北对称；\\
+        (2) 流线东西对称.\\
+        $\mathbf\beta\neq 0$($\beta$平面近似):\\
+        (1) 流线南北对称；\\
+        (2) 流线东西不对称，西部密集，东部稀疏.
+        \end{spacing}
+    \end{multicols}
+    \end{framed}
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}

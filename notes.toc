@@ -74,4 +74,10 @@
 \contentsline {paragraph}{求解}{17}{subsubsection.2.4.1}%
 \contentsline {paragraph}{讨论}{17}{equation.2.15}%
 \contentsline {paragraph}{缺陷}{18}{equation.2.22}%
+\contentsline {subsubsection}{\numberline {2.4.2}Stommel理论}{18}{subsubsection.2.4.2}%
+\contentsline {paragraph}{假定}{18}{subsubsection.2.4.2}%
+\contentsline {paragraph}{控制方程}{18}{subsubsection.2.4.2}%
+\contentsline {paragraph}{边界条件}{19}{subsubsection.2.4.2}%
+\contentsline {paragraph}{求解}{19}{subsubsection.2.4.2}%
+\contentsline {paragraph}{讨论}{19}{equation.2.23}%
 \contentsfinish 
