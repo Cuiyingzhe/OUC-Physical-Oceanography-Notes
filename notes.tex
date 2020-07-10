@@ -890,7 +890,7 @@
         \right.
     \]
     
-    将边界条件带入方程：
+    将边界条件代入方程：
     \begin{numcases}{}
         0=f \rho h v-F \cos \left(\left. \pi y \middle/ b \right.\right)-\rho k u-\rho g h \frac{\partial \zeta}{\partial x} \quad(\zeta \ll k) \label{stm1}\\
         0=-f \rho h u-\rho k v-\rho g h \frac{\partial \zeta}{\partial y}\label{stm2}\\
@@ -914,7 +914,7 @@
     \paragraph{讨论}~{} {\centering 图片来自$Introduction \;to \; Physical \;Oceanography$(Robert H. Stewart,2008 pp190)}
     \begin{figure}[H]
         \centering \includegraphics[width=18cm]{13.eps}
-        \caption*{$ \large \color{red}\divideontimes\beta\mbox{效应导致了西向强化现象.}$}
+        \caption*{\large$  \color{red}\divideontimes\beta\mbox{效应导致了西向强化现象.}$}
     \end{figure}
     \begin{framed}
     \begin{multicols}{2}
@@ -929,6 +929,97 @@
         \end{spacing}
     \end{multicols}
     \end{framed}
+    \subsubsection{惯性理论}
+    \paragraph{方程}~{}\\
+    在Sverdrup理论的控制方程中引入惯性项：
+    \[
+        \left\{
+            \begin{aligned}
+                &\frac{du}{dt}-f v=-\frac{1}{\rho} \frac{\partial p}{\partial x}+A_{z} \frac{\partial^{2} u}{\partial^{2} z} \\
+                &\frac{dv}{dt}+fu=-\frac{1}{\rho} \frac{\partial p}{\partial y}+A_{z} \frac{\partial^{2} v}{\partial^{2} z} \\
+                &0=-\frac{1}{\rho} \frac{\partial p}{\partial z}-g\\
+                &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{求解}~{}
+    \paragraph{内区(中部区)}~{}\\
+    满足Sverdrup理论：$\displaystyle \beta M_y=\operatorname{rot}_z\tau_\zeta,M_y=\frac{\partial \varphi}{\partial x}=\frac{1}{\beta} \operatorname{rot}_{z} \tau_{\zeta}=\frac{1}{\beta}\left(\frac{\partial \tau_{y\zeta}}{\partial x}-\frac{\partial \tau_{x\zeta}}{\partial y}\right)$\\
+    又设风应力：$\displaystyle \tau_{x\zeta}=-W\left(1-\frac{y^2}{s^2}\right),\tau_{y\zeta}=0\quad (0\leq y \leq s)$\\
+    \[
+        \begin{aligned}
+            \Rightarrow &\frac{\partial \varphi}{\partial x}=-\frac{2W}{\beta s^2}y\\
+            \Rightarrow &\varphi=-\frac{2W}{\beta s^2}yx+C(y)\\
+            (x=r:\varphi=0)\quad &0=-\frac{2W}{\beta s^2}yr+C(y)\\
+            \Rightarrow &\varphi=\frac{2W}{\beta s^2}y(r-x)
+        \end{aligned}
+    \]
+    \paragraph{大洋西部海域}~{}\\
+    不考虑湍摩擦效应：
+    \begin{numcases}{}
+        \frac{du}{dt}-f v=-\frac{1}{\rho} \frac{\partial p}{\partial x} \label{int1}\\
+        \frac{dv}{dt}+fu=-\frac{1}{\rho} \frac{\partial p}{\partial y} \label{int2}\\
+        0=-\frac{1}{\rho} \frac{\partial p}{\partial z}-g\nonumber\\
+        \frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0\nonumber
+    \end{numcases}
+    \begin{align}
+            \frac{\partial (\ref{int2})}{\partial x}-\frac{\partial (\ref{int1})}{\partial y}           &\Leftrightarrow \frac{d}{d t}(\xi_r+f)+(\xi_r+f)\left(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}\right)=0 \nonumber\\
+            &\Leftrightarrow \frac{d}{d t}\left(\xi_{r}+f\right)=-\left(\xi_{r}+f\right)\left(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}\right) \label{int3}
+    \end{align}
+    $\displaystyle \xi_r=\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}$相对涡度，$f$行星涡度，$\xi_a=\xi_r+f$绝对涡度.\\
+    对连续方程进行垂向平均：
+    \begin{align}
+        &\frac{\partial \zeta}{\partial t}+\frac{\partial[(h+\zeta)\langle u\rangle]}{\partial x}+\frac{\partial[(h+\zeta)(v)]}{\partial y}=0\nonumber\\
+        \Leftrightarrow & \frac{d(\zeta+h)}{d t}+(\zeta+h)\left(\frac{\partial(u)}{\partial x}+\frac{\partial(v)}{\partial y}\right)=0 \nonumber\\
+        (\mbox{令}H=h+\zeta)\Leftrightarrow & \frac{d H}{d t}+H\left(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}\right)=0 \label{int4}
+    \end{align}
+    将$(\ref{int4})$代入$(\ref{int3})$中：
+    \begin{align}
+         &\Rightarrow \frac{d}{d t}\left(\xi_{r}+f\right)=\frac{1}{H}\left(\xi_{r}+f\right) \frac{d H}{d t}\nonumber\\
+         &\Rightarrow \frac{1}{H} \frac{d}{d t}(\xi_r+f)=\frac{1}{H^{2}}\left(\xi_{r}+f\right) \frac{d H}{d t}\nonumber\\
+         &\Rightarrow {\color{red} \boxed{\frac{d}{d t}\left(\frac{\xi_{r}+f}{H}\right)=0}} \label{veq}
+    \end{align}
+    $(\ref{veq})$为$\color{red}\mbox{位势涡度守恒方程}$.\\
+    假设在西边界区$\displaystyle\frac{\partial u}{\partial y}=0$，则:
+    \[
+        \xi_{r}=\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}=\frac{\partial v}{\partial x}=\frac{\partial}{\partial x}\left(\frac{1}{H} \frac{\partial \varphi}{\partial x}\right)
+    \]
+    代入$(\ref{veq})$：
+    \[
+        \begin{aligned}
+            &\frac{d}{d t}\left[\frac{\frac{\partial}{\partial x}\left(\frac{1}{M} \frac{\partial \varphi}{\partial x}\right)+f}{H}\right]=0\\
+            \Rightarrow & \frac{\frac{\partial}{\partial x}\left(\frac{1}{H} \frac{\partial \varphi}{\partial x}\right)+f}{H}=F(\varphi)\\
+            \Rightarrow & \frac{1}{H} \frac{\partial^{2} \varphi}{\partial x^{2}}+f_{0}+\beta y=H F(\varphi)=G(\varphi)
+        \end{aligned}
+    \]
+    \paragraph{在西边界层的边缘}~{}\\
+    内部的解即为西边界的解，惯性项可以忽略：
+    \[
+        x=L:f_0+\beta y=G(\phi_i)
+    \]
+    \paragraph{在内区的边缘($L\ll r$)}~{}
+    $$ \varphi_{i}=\frac{2 W}{\beta s^{2}} y(r-x)=\frac{2 W}{\beta s^{2}} y(r-L)=\frac{2 W}{\beta s^{2}} y r=u^* y\quad \left( u^*=\frac{2W}{\beta s^2}r\right)$$
+    上面两解应该等价，因此：
+    \[
+        \begin{aligned}
+            &f_0+\beta y=G(u^*y) \\
+            \Rightarrow & G(\varphi)=f_0+\beta\frac{\varphi}{u^*}\\
+            \Rightarrow & \frac{\partial^{2} \varphi}{\partial x^{2}}+H\left(f_{0}+\beta y\right)=H\left(f_{0}+\beta \frac{\varphi}{u^*}\right)\\
+            \Rightarrow & \frac{\partial^{2} \varphi}{\partial x^{2}}-\frac{H \beta}{u^{*}} \varphi=-H \beta y
+        \end{aligned}
+    \]
+    再结合两个边界条件：$\displaystyle x=0:\left\{\begin{aligned}&\varphi(0,y)=0\nonumber\\&\frac{\partial \varphi}{\partial x}=0\nonumber\end{aligned}\right.$，上面的二阶常系数线性微分方程的解为：
+    \[
+        \varphi=u^{*} y\left[1-e^{-\left(H \beta / u^*\right)^{1 / 2} x}\right]
+    \]
+    海水南北输运：
+    \[
+        \color{red}
+        \boxed{
+        M_y=\frac{\partial \varphi}{\partial x}=\left(u^* H\beta\right)^{1 / 2} {y} e^{-\left({H} \beta {u}^*\right)^{1/2}{x}}
+        }
+    \]
+    在西边界区域有一强烈的北向流动，近岸处质量运输很大，随着离岸距离的增加，质量输运迅速减少.
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}

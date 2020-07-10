@@ -80,4 +80,11 @@
 \contentsline {paragraph}{边界条件}{19}{subsubsection.2.4.2}%
 \contentsline {paragraph}{求解}{19}{subsubsection.2.4.2}%
 \contentsline {paragraph}{讨论}{19}{equation.2.23}%
+\contentsline {subsubsection}{\numberline {2.4.3}惯性理论}{20}{subsubsection.2.4.3}%
+\contentsline {paragraph}{方程}{20}{subsubsection.2.4.3}%
+\contentsline {paragraph}{求解}{20}{subsubsection.2.4.3}%
+\contentsline {paragraph}{内区(中部区)}{20}{subsubsection.2.4.3}%
+\contentsline {paragraph}{大洋西部海域}{20}{subsubsection.2.4.3}%
+\contentsline {paragraph}{在西边界层的边缘}{21}{equation.2.29}%
+\contentsline {paragraph}{在内区的边缘($L\ll r$)}{21}{equation.2.29}%
 \contentsfinish 
