@@ -911,7 +911,7 @@
         \Rightarrow \psi(x, y)=\frac{F b}{k \pi} \sin \frac{\pi y}{b}\left[\frac{e^{\frac{h \beta}{2 k}(a-x)} \operatorname{sh} \alpha x+e^{\frac{h \beta}{2 k} x} \operatorname{sh} \alpha(a-x)}{\operatorname{sh} \alpha a}-1\right]
     \]
     特别地，若$\beta=0$：$\displaystyle\psi(x, y)=\frac{F b}{k \pi} \sin \frac{\pi y}{b}\left[\frac{\operatorname{sh} \frac{\pi}{b} x+\operatorname{sh} \frac{\pi}{b}(a-x)}{\operatorname{sh} \frac{\pi}{b} a}-1\right]$
-    \paragraph{讨论}~{} {\centering 图片来自$Introduction \;to \; Physical \;Oceanography$(Robert H. Stewart,2008 pp190)}
+    \paragraph{讨论}~{图片来自$Introduction \;to \; Physical \;Oceanography$(Robert H. Stewart,2008 pp190)}
     \begin{figure}[H]
         \centering \includegraphics[width=18cm]{13.eps}
         \caption*{\large$  \color{red}\divideontimes\beta\mbox{效应导致了西向强化现象.}$}
@@ -1020,6 +1020,188 @@
         }
     \]
     在西边界区域有一强烈的北向流动，近岸处质量运输很大，随着离岸距离的增加，质量输运迅速减少.
+    \subsubsection{Munk理论}
+    \paragraph{假定}~{}\\
+    (1) 矩形大洋$r\times 2s$；\\
+    (2) 远离海岸的等深封闭矩形大洋，静止时水深为常量$h$；\\
+    (3) $\color{red} \mbox{增加了侧向摩擦}$.
+    \paragraph{控制方程}~{}
+    \[
+        \left\{
+            \begin{aligned}
+            &-fv=-\frac{1}{\rho} \frac{\partial p}{\partial x}+{\color{red}A_{l}\left(\frac{\partial^{2} u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^{2}}\right)}+A_{z} \frac{\partial^{2} u}{\partial z^{2}}\\
+            &fu=-\frac{1}{\rho} \frac{\partial p}{\partial y}+{\color{red}A_{l}\left(\frac{\partial^{2} v}{\partial x^{2}}+\frac{\partial^{2} v}{\partial y^{2}}\right)}+A_{z} \frac{\partial^{2} v}{\partial z^{2}}\\
+            &0=-\frac{1}{\rho} \frac{\partial p}{\partial z}-g\\
+            &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
+        \end{aligned}
+        \right.
+    \]
+    \paragraph{边界条件}~{}
+    \[
+        \left\{
+        \begin{aligned}
+            &z=\zeta, \quad \rho A_{z} \frac{\partial u}{\partial z}=\tau_{x \zeta}, \rho A_{z} \frac{\partial v}{\partial z}=\tau_{y \zeta}\\
+            &z=-h, \quad u=v=0, \frac{\partial u}{\partial z}=\frac{\partial v}{\partial z}=0
+        \end{aligned}
+        \right.
+    \]
+    \paragraph{求解}~{}\\
+    全流方程(垂直积分)：
+    \begin{numcases}{}
+        -fM_y=-\frac{\partial P}{\partial x}+A_l\left(\frac{\partial^2 M_x}{\partial x^2}+\frac{\partial^2 M_x}{\partial y^2}\right)+\tau_{x\zeta}\label{mnk1}\\
+        fM_x=-\frac{\partial P}{\partial y}+A_l\left(\frac{\partial^2 M_y}{\partial x^2}+\frac{\partial^2 M_y}{\partial y^2}\right)+\tau_{y\zeta}\label{mnk2}\\
+        \frac{\partial M_x}{\partial x}+\frac{\partial M_y}{\partial y}=0\nonumber
+    \end{numcases}
+    其中，$\displaystyle M_x=\int_{-h}^0\rho udz,M_y=\int_{-h}^0\rho vdz,P=\int_{-h}^0 pdz,\tau_{x\zeta}=\int_{-h}^0\rho A_z\frac{\partial^2 u}{\partial z^2}=\rho A_{z}\left(\left.\frac{\partial u}{\partial z}\right|_{z=0}-\left.\frac{\partial u}{\partial z}\right|_{z=-h}\right)\quad (\zeta\ll h)$
+    引入流函数：$\displaystyle M_x=-\frac{\partial \psi}{\partial y},M_y=\frac{\partial \psi}{\partial x}$
+    \[
+            \begin{aligned}
+            \frac{\partial (\ref{mnk1})}{\partial y}-\frac{\partial (\ref{mnk2})}{\partial x}&\Leftrightarrow A_{l}\left(\frac{\partial^{4} \psi}{\partial x^{4}}+2 \frac{\partial^{4} \psi}{\partial x^{2} \partial y^{2}}+\frac{\partial^{4} \psi}{\partial y^{4}}\right)-\beta \frac{\partial \psi}{\partial x}=-\left(\frac{\partial \tau_{y \zeta}}{\partial x}-\frac{\partial \tau_{x \zeta}}{\partial y}\right)\\
+            &\Leftrightarrow A_{l} \nabla^{4} \psi-\beta \frac{\partial \psi}{\partial x}=-\operatorname{rot}_{z} \vec{\tau}_{\zeta}
+        \end{aligned}
+    \]
+    边界条件：
+    \[
+        \left\{
+            \begin{aligned}
+                &x=0, r:\psi=0, \frac{\partial \psi}{\partial x}=0\\
+                &y=-s, s:\psi=0, \frac{\partial \psi}{\partial y}=0
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{内区(中部区)}~{}
+    满足Sverdrup理论：$\displaystyle \beta \frac{\partial \psi}{\partial x}=\operatorname{rot}_{z} \tau_{\zeta}=-\frac{\partial \tau_{x \zeta}}{\partial y}$\\
+    假定纬向风系：$\displaystyle \left\{\begin{aligned}&\tau_{y\zeta}=0\quad(-s<y<s)\\&\tau_{x\zeta}=a\cos ny+b\sin ny+c\\&n=\frac{j\pi}{s},j=1,2,3\cdots \end{aligned}\right.$\\
+    对$x$积分：$\displaystyle \psi=-\frac{1}{\beta}\frac{\partial \tau_{x\zeta}}{\partial y}x+f_1(y)$\\
+    结合$\displaystyle \left.\psi\right|_r=0\Rightarrow \psi=-\frac{1}{\beta}\frac{\partial \tau_{x\zeta}}{\partial y}(x-r)$
+    因此，$x=0$处：
+    \[
+        \left\{
+            \begin{aligned}
+                &\psi(0,y)=\frac{r}{\beta}\frac{\partial \tau_{x\zeta}}{\partial y}\\
+                &\left.\frac{\partial \psi}{\partial x}\right|_{x=0}=M_{y}(0, y)=-\frac{1}{\beta} \frac{\partial \tau_{x \zeta}}{\partial y}
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{西边界区}~{}\\
+    保留侧向湍流应力，结合$L_x\ll L_y$：
+    \[
+        A_{l} \nabla^{4} \psi-\beta \frac{\partial \psi}{\partial x}=-\operatorname{rot}_{z} \vec{\tau}_{\zeta}\Rightarrow A_{l} \frac{\partial \psi}{\partial x^{4}}-\beta \frac{\partial \psi}{\partial x}=\frac{\partial \tau_{x \zeta}}{\partial y}
+    \]
+    设试解：$\displaystyle \psi=X(x) \frac{\partial \tau_{x \zeta}}{\partial y}\Rightarrow A_{l} X^{(4)}-\beta X^{\prime}=1\Rightarrow X(x)=A+B e^{k x}+D e^{-\frac{k}{2} x} \cos \left(\frac{\sqrt{3}}{2} k x+E\right)-\frac{x}{\beta}$
+    自然边界条件：$\displaystyle x=0:\left\{\begin{aligned}&\psi=0\\&\frac{\partial \psi}{\partial x}=0\end{aligned}\right.\Rightarrow\left\{\begin{aligned}&X(0)=0\\&X^{\prime}(0)=0\end{aligned}\right.$\\
+    衔接边界条件：$\displaystyle x=\delta_w:\left\{\begin{aligned}&\psi=\frac{r}{\beta} \frac{\partial \tau_{x \zeta}}{\partial y}\\&\frac{\partial \psi}{\partial x}=-\frac{1}{\beta} \frac{\partial \tau_{x \zeta}}{\partial y}\end{aligned}\right.\Rightarrow\left\{\begin{aligned}&X(0)=\frac{r}{\beta}\\&X^{\prime}(0)=-\frac{1}{\beta}\end{aligned}\right.$\\
+    \begin{figure}[H]
+        \centering\includegraphics[width=8cm]{14.eps}
+        \caption*{}
+    \end{figure}
+    解得：$\displaystyle\psi(x, y)=\frac{r}{\beta}\left[1-\frac{2}{\sqrt{3}} e^{-\frac{1}{2} k x} \cos \left(\frac{\sqrt{3}}{2} k x-\frac{\pi}{6}\right)\right] \frac{\partial \tau_{x \zeta}}{\partial y} $\\
+    \paragraph{东边界区}~{}
+    $$\psi(x, y)=\frac{r}{\beta}\left[1-\frac{x}{r}+\frac{1}{k r}\left(e^{-k(r-x)}-1\right)\right] \frac{\partial \tau_{x \zeta}}{\partial y} $$\\
+    综合内区、西边界区和东边界区的解可得统一的解的形式：
+    \[
+        \color{red}
+        \boxed{
+            \psi=\frac{r}{\beta} f(x) \frac{\partial x_{x \zeta}}{\partial y}
+        }
+    \]
+    \paragraph{讨论}~{}
+    \paragraph{环流空间分布特征}~{\centering 图片来自$Introduction \;to \; Physical \;Oceanography$(Robert H. Stewart,2008 pp191)}
+    \begin{figure}[H]
+        \centering\includegraphics[width=13cm]{15.eps}
+        \caption*{}
+    \end{figure}
+    (1) Gyres之间的分界处位于：$\displaystyle M_y=\frac{\partial \psi}{\partial x}=0$，只有东西向的流动：$\displaystyle f^{\prime}(x)=0/\frac{\partial \tau_{x\zeta}}{\partial y}=0$；\\
+    (2) Gyres主轴位于：$\displaystyle M_x=\frac{\partial \psi}{\partial x}=0$只有南北向的流动：$\displaystyle f(x)=0/\frac{\partial^2 \tau_{x\zeta}}{\partial y^2}=0$；\\
+    (3) 流动西强东弱.
+    \paragraph{大洋西边界区的物质输运特点}~{}
+    \[
+        \psi_{W}=\frac{r}{\beta} f_{m}(x) \frac{\partial \tau_{x \zeta}}{\partial y}
+    \]
+    质量输运：
+    \[
+        \left\{
+            \begin{aligned}
+                &M_{xW}=-\frac{\partial \psi}{\partial y}=-\frac{r}{\beta} f_{W}(x) \frac{\partial^{2} \tau_{x \zeta}}{\partial y^{2}}\\
+                &M_{yW}=\frac{\partial \psi}{\partial x}=\frac{r}{\beta} f_{W}^{\prime}(x) \frac{\partial \tau_{x \zeta}}{\partial y}
+            \end{aligned}
+        \right.
+    \]
+    其中，$\displaystyle\left\{\begin{aligned}&f_{W}(x)=1-\frac{2}{\sqrt{3}} e^{-\frac{1}{2} k x} \cos \left(\frac{\sqrt{3}}{2} k x-\frac{\pi}{6}\right)\\&f_{W}^{\prime}(x)=\frac{2}{\sqrt{3}} k e^{-\frac{1}{2} k x} \sin \frac{\sqrt{3}}{2} k x\end{aligned}\right.$
+    \begin{figure}[H]
+        \centering\includegraphics[width=13cm]{16.eps}
+        \caption*{\large 随$x$增大而衰减的阻尼振动}
+    \end{figure}
+    对于任意纬度：
+    \[
+        M_{y W}=\frac{\partial \psi}{\partial x}=\frac{r}{\beta} f_{w}^{\prime}(x) \frac{\partial \tau_{x \zeta}}{\partial y}
+    \]
+    因此，$\displaystyle f_W^{\prime}(x)$的极值决定了$\displaystyle M_{yW}$的极值：
+    \[
+        \begin{aligned}
+            &f_W^{\prime\prime}(x)=0 \\
+            (\mbox{令}\lambda_W=\frac{2\pi}{\mbox{波数}}=\frac{4\pi}{\sqrt{3}k})
+            \Rightarrow &x_{a, b}=\frac{2 \pi}{3 \sqrt{3} k}\left(\frac{1}{6} \lambda_{W}\right), \quad \frac{8 \pi}{3 \sqrt{3} k}\left(\frac{4}{6} \lambda_{W}\right)\\
+            \Rightarrow &
+            \left\{\begin{aligned}
+                &f_{W}^{\prime}\left(x_{a}\right)=k e^{-\pi / 3 \sqrt{3}}\\
+                &f_{W}^{\prime}\left(x_{b}\right)=-k e^{-4\pi / 3 \sqrt{3}}
+            \end{aligned}\right.
+        \end{aligned}
+    \]
+    \[
+        \frac{f_{W}^{\prime}\left(x_{b}\right)} { f_{W}^{\prime}\left(x_{a}\right)}=-e^{-\pi / 3}=-0.17
+    \]
+    在西边界内，以$x=x_a$(1/6)波长为主轴处有一主流为北向的流动；以$x=x_b$(4/6)波长为主轴处存在一逆流，逆流的量值为主流的0.17倍.\\
+    对于任意给定纬度，$\displaystyle f_W(x)$的极值决定$\displaystyle M_{xW}$的极值：
+    \[
+        f_W^{\prime}(x)=0\Rightarrow x_{1,2}=\frac{2\pi}{\sqrt{3}k},\frac{4\pi}{\sqrt{3}k}\Rightarrow \left\{\begin{aligned}
+            &f_{W}\left(x_{1}\right)=1-e^{-\pi/\sqrt{3}}\\
+            &f_{W}\left(x_{2}\right)=1+e^{-2\pi/\sqrt{3}}
+        \end{aligned}\right.
+    \]
+    极值在1附近变动.
+    \paragraph{缺陷}~{}\\
+    (1) 若取$\displaystyle A_l=5\times 10^3 m^2s^{-1}$，西部阻尼振荡的波长比实际大约3倍：$\displaystyle \lambda=\frac{4\pi}{\sqrt{3}k}=\frac{4\pi}{\sqrt{3}}\frac{1}{\sqrt[3]{\beta/A_l}}\approx 200km$；符合实际主流和逆流宽度时，$A_l=10^2m^2s^{-1}$\\
+    (2) 西部总流量比实测值小一半.
+    \section{海浪}
+    \subsection{线性波动理论}
+    理论框架：
+    \begin{figure}[H]
+        \centering \includegraphics[width=15cm]{17.eps}
+        \caption*{}
+    \end{figure}
+    \subsubsection{无旋运动的基本方程}
+    \paragraph{假定及方程}~{}
+    (1) 海水均匀不可压缩；\\
+    (2) 理想流体；\\
+    (3) 短周期小尺度波动；\\
+    (4) 重力为唯一的外力；\\
+    (5) 忽略分子粘性项、科氏力、引潮力和湍摩擦力.\\
+    控制方程：
+    \[
+        \left\{
+            \begin{aligned}
+                &\frac{d\vec{V}}{dt}=\frac{\partial \vec{V}}{\partial t}+(\vec{V}\cdot\nabla)\vec{V}=-\frac{1}{\rho}\nabla p-\vec{g}\\
+                &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}
+            \end{aligned}
+        \right.
+    \]
+    边界条件：
+    \[
+        \left\{
+            \begin{aligned}
+                &z=\zeta(\mbox{海面}):{{\partial \zeta } \over {\partial t}} + u{{\partial \zeta } \over {\partial x}} + v{{\partial \zeta } \over {\partial y}} = w,p_I=p_a(x,y,t)\\
+                &\mbox{固体边界处}:V_n=0
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{环流定理}~{}
+    \begin{figure}[H]
+        \centering \includegraphics[width=10cm]{18.eps}
+        \caption*{}
+    \end{figure}
+    $C_t$上的环流：
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}
