@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  11 JUL 2020 17:43
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  11 JUL 2020 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1200,20 +1200,20 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/17.eps Graph
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/17.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/18.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/18.eps>
- (./notes.bbl [25])
+ [25] (./notes.bbl)
 
 Package caption Warning: Unused \captionsetup[table] on input line 43.
 See the caption package documentation for explanation.
 
 [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1207.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1207.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1219.
  (./notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1207.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1207.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1219.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1219.
 Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: 401A20C4A471604C87D287D5A6C9C84D;4499.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1207.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1219.
  ) 
 Here is how much of TeX's memory you used:
  29118 strings out of 479418

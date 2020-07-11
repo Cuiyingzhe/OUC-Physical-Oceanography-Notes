@@ -1168,11 +1168,11 @@
     \subsection{线性波动理论}
     理论框架：
     \begin{figure}[H]
-        \centering \includegraphics[width=15cm]{17.eps}
+        \centering \includegraphics[width=11cm]{17.eps}
         \caption*{}
     \end{figure}
     \subsubsection{无旋运动的基本方程}
-    \paragraph{假定及方程}~{}
+    \paragraph{假定及方程}~{}\\
     (1) 海水均匀不可压缩；\\
     (2) 理想流体；\\
     (3) 短周期小尺度波动；\\
@@ -1198,10 +1198,22 @@
     \]
     \paragraph{环流定理}~{}
     \begin{figure}[H]
-        \centering \includegraphics[width=10cm]{18.eps}
+        \centering \includegraphics[width=7cm]{18.eps}
         \caption*{}
     \end{figure}
-    $C_t$上的环流：
+    $C_t$上的环流：$\displaystyle \Gamma(t)=\oint\limits_{ct}udx+vdy+wdz$
+    \[
+    \begin{aligned}
+        &\Rightarrow \frac{d \Gamma(t)}{d t}=\oint\limits_{c t} \left(\frac{d u}{d t} d x+\frac{d v}{d t} d y+\frac{d w}{d t} d z\right)+\underbrace{\oint\limits_{c t} \left(u d u+v d v+w d w\right)}_{=\frac{1}{2} \oint\limits_{c t} d u^{2}+d v^{2}+d w^{2}=0}\\
+        &\Rightarrow \frac{d \Gamma(t)}{d t}=\oint\limits_{c t} \frac{d \vec{V}}{d t} \cdot d \vec{l}
+    \end{aligned}
+    \]
+    环流的实质微商等于加速度的环流.
+    \[
+        \frac{d \Gamma(t)}{d t}=\oint\limits_{c t}\left(-\frac{1}{\rho} \frac{\partial p}{\partial x}\right) d x+\left(-\frac{1}{\rho} \frac{\partial p}{\partial y}\right) d y+\left(-\frac{1}{\rho} \frac{\partial p}{\partial z}-g\right)d z=\oint\limits_{c t} d\underbrace{\left(-\frac{p}{\rho}-g z\right)}_{\mbox{单值函数}}=0 
+    \]
+    $\color{red}\mbox{环流定理}$：对不可压缩的理想流体，由相同质点构成的封闭曲线上的环流不随时间而变。
+
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}
