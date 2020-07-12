@@ -1213,6 +1213,141 @@
         \frac{d \Gamma(t)}{d t}=\oint\limits_{c t}\left(-\frac{1}{\rho} \frac{\partial p}{\partial x}\right) d x+\left(-\frac{1}{\rho} \frac{\partial p}{\partial y}\right) d y+\left(-\frac{1}{\rho} \frac{\partial p}{\partial z}-g\right)d z=\oint\limits_{c t} d\underbrace{\left(-\frac{p}{\rho}-g z\right)}_{\mbox{单值函数}}=0 
     \]
     $\color{red}\mbox{环流定理}$：对不可压缩的理想流体，由相同质点构成的封闭曲线上的环流不随时间而变。
+    \paragraph{无旋运动的基本方程和边界条件}~{}\\
+    若在重力场中，理想流体于起始时刻为静止或匀速运动，则任何时刻，对任何封闭曲线有：$\Gamma(t)=0$，根据Stokes定理：
+    \[
+        \Gamma(t)=\oint\limits_{c t} \vec{V} \cdot d \vec{l}=\iint\limits_{s} \nabla \times \vec{V} d \sigma=0\Rightarrow\nabla\times\vec{V}=\Rightarrow\vec{V}=\nabla \varphi
+    \]
+    运动方程：
+    \[
+            \frac{d\vec{V}}{dt}=\frac{\partial \vec{V}}{\partial t}+(\vec{V}\cdot\nabla)\vec{V}=-\frac{1}{\rho}\nabla p-\vec{g}
+    \]
+    \[
+        \begin{aligned}
+            &\Rightarrow \frac{d\vec{V}}{dt}=\frac{\partial \vec{V}}{\partial t}+\frac{1}{2}\nabla(\vec{V}\cdot\vec{V})=-\nabla\frac{p-p_0}{\rho}-\nabla(gz)\\
+            &\Rightarrow \nabla\frac{\partial \varphi}{\partial t}+\frac{1}{2}\nabla(\nabla\varphi\cdot\nabla\varphi)=-\nabla\frac{p-p_0}{\rho}-\nabla(gz)\\
+            &\Rightarrow \frac{\partial \varphi}{\partial t}+\frac{1}{2}(\nabla \varphi)(\nabla \varphi)+\frac{p-p_{0}}{\rho}+g z=0
+        \end{aligned}
+    \]
+    连续方程：
+    \[
+        \Delta \varphi=\frac{\partial^{2} \varphi}{\partial x^{2}}+\frac{\partial^{2} \varphi}{\partial y^{2}}+\frac{\partial^{2} \varphi}{\partial z^{2}}=0
+    \]
+    运动学边界条件： 
+    \[
+        \begin{aligned}
+            \mbox{海面}:&\left.\left(\frac{\partial \zeta}{\partial t}+\frac{\partial \varphi}{\partial x} \frac{\partial \zeta}{\partial x}+\frac{\partial \varphi}{\partial y} \frac{\partial \zeta}{\partial y}\right)\right|_{z=\zeta}=\left.\frac{\partial \varphi}{\partial z}\right|_{z=\zeta} \\
+            \mbox{固定边界}:&\frac{\partial \varphi}{\partial n}=0
+        \end{aligned}
+    \]
+    动力学边界条件： 
+    \[
+        \begin{aligned}
+            &p_{I}=p_{a}(x, y, t) \\
+            &{\left.\left[\frac{\partial \varphi}{\partial t}+\frac{1}{2}(\nabla \varphi)(\nabla \varphi)\right]\right|_{z=\zeta}+g \zeta=0}
+        \end{aligned}
+    \]
+    \subsubsection{线性波动}
+    \paragraph{假定}~{}\\
+    (1) 均质不可压理想流体；\\
+    (2) 波动的振幅相对波长很小；\\
+    (3) 设水域广阔等深；\\
+    (4) 波动只沿x方向传播.\\
+    小振幅假定$\displaystyle:\Rightarrow\left\{\begin{aligned}&\varphi\mbox{的微商乘积项可忽略}\\&\left.\left.\frac{\partial \varphi}{\partial z}\right|_{z=\zeta} \approx \frac{\partial \varphi}{\partial z}\right|_{z=0},\left.\left.\frac{\partial \varphi}{\partial t}\right|_{z=\zeta} \approx \frac{\partial \varphi}{\partial t}\right|_{z=0}\end{aligned}\right.$
+    \paragraph{方程简化}~{}\\
+    \begin{spacing}{2}
+        运动方程：$\displaystyle \frac{\partial \varphi}{\partial t}+\cancel{\frac{1}{2}(\nabla \varphi)(\nabla \varphi)}+\frac{p-p_{0}}{\rho}+g z=0$\\
+    连续方程：$\displaystyle\Delta \varphi=\frac{\partial^{2} \varphi}{\partial x^{2}}+\cancel{\frac{\partial^{2} \varphi}{\partial y^{2}}}+\frac{\partial^{2} \varphi}{\partial z^{2}}=0$\\
+    边界条件：$\displaystyle \left\{\begin{aligned}
+        &\left.\left(\frac{\partial \zeta}{\partial t}+\cancel{\frac{\partial \varphi}{\partial x} \frac{\partial \zeta}{\partial x}+\frac{\partial \varphi}{\partial y} \frac{\partial \zeta}{\partial y}}\right)\right|_{z=\zeta}=\left.\frac{\partial \varphi}{\partial z}\right|_{z=\zeta} \\
+        &\frac{\partial \varphi}{\partial n}=\left.0 \Rightarrow \frac{\partial \varphi}{\partial z}\right|_{z=-d}=0 \\
+        &{\left.\left[\frac{\partial \varphi}{\partial t}+\cancel{\frac{1}{2}(\nabla \varphi)(\nabla{\varphi})}\right]\right|_{z=\zeta}+g \zeta=0}
+        \end{aligned}\right.$
+    \end{spacing}
+    因此，$\color{red}\mbox{线性波动的基本方程}$：
+    \begin{numcases}{}
+        \frac{\partial \varphi}{\partial t}+\frac{p-p_{0}}{\rho}+g z=0 \label{lw1}\\
+        \frac{\partial^{2} \varphi}{\partial x^{2}}+\frac{\partial^{2} \varphi}{\partial z^{2}}=0 \label{lw2}\\
+        \left.\frac{\partial \varphi}{\partial z}\right|_{==0}=\frac{\partial \zeta}{\partial t}\label{lw4} \\
+        \left.\frac{\partial \varphi}{\partial z}\right|_{z=-d}=0 \label{lw4}\\
+        \left.\frac{\partial \varphi}{\partial t}\right|_{z=0}+g \zeta=0\label{lw5}
+    \end{numcases}
+    $(\ref{lw5})$代入$(\ref{lw3})$中：
+    \[
+        \left.\left(\frac{\partial \varphi}{\partial z}+\frac{1}{g} \frac{\partial^{2} \varphi}{\partial t^{2}}\right)\right|_{z=0}=0\label{lw6}
+    \]
+    \paragraph{求解}~{}\\
+    对前进波：
+    \begin{equation}
+        \varphi=\varphi_0(z)\cos(kx-\omega t) \label{*}
+    \end{equation}
+    $(\ref{*})$代入$(\ref{lw2})$中：
+    \begin{equation}
+        \varphi_0(z)=Ae^{kz}+Be^{-kz} \label{lw7}
+    \end{equation}
+    $(\ref{*})$代入$(\ref{lw6})$中(海面)：
+    \begin{equation}
+        \left.\left[\frac{\partial \varphi_{0}(z)}{\partial z}-\frac{\omega^{2}}{g} \varphi_{0}(z)\right]\right|_{z=0}=0 \label{lw8}
+    \end{equation}
+    $(\ref{*})$代入$(\ref{lw4})$中(海底)：
+    \begin{equation}
+        \left.\frac{d \varphi_{0}(z)}{d z}\right|_{z=-d}=0\label{lw9}
+    \end{equation}
+    $(\ref{lw7})$代入$(\ref{lw8})$中：
+    \begin{equation}
+            \left(\omega^{2}-g k\right) A+\left(\omega^{2}+g k\right) B =0 \label{lw10}
+    \end{equation}
+    $(\ref{lw7})$代入$(\ref{lw9})$中：
+    \begin{equation}
+        e^{-k d} A-e^{k d} B =0 \label{lw11}
+    \end{equation}
+    联立$(\ref{lw10})，(\ref{lw11})$，有非零解的条件为：
+    \[
+        \left|\begin{array}{cc}
+            e^{-k d} & -e^{k d} \\
+            \left(\omega^{2}-g k\right) & \left(\omega^{2}+g k\right)
+            \end{array}\right|=0\Rightarrow \color{red}\mathop{\omega^2=gk\operatorname{th} kd}\limits_{\color{red}\mbox{频散关系}}
+    \]
+    频散关系表示波动频率和波数之间的关系，代表某种波动的性质.\\
+    波速：$\displaystyle c=\frac{\lambda}{T}=\frac{2 \pi / k}{2 \pi / \omega}=\frac{\omega}{k} \Rightarrow c^{2}=\frac{\omega^{2}}{k^{2}}=\frac{g}{k} \text { th } k d $\\
+    波速与水深和波动性质有关系.\\
+    由$(\ref{lw11}):A e^{-k d}=B e^{k d}=\frac{1}{2} D\Rightarrow A=\frac{D}{2} / e^{-k d} ; \quad B=\frac{D}{2} / e^{k d}$\\
+    代入$(\ref{*})$:
+    \begin{equation}
+        \varphi=D\operatorname{ch}[k(z+d)]\cos (kx-\omega t) \label{lw12}
+    \end{equation}
+    $(\ref{lw12})$代入$(\ref{lw5})$中：
+    \[
+        \zeta=-\frac{\omega}{g} D \operatorname{ch} k d  \sin (k x-\omega t)=a\sin (kx-\omega t)
+    \]
+    速度势的解：
+    \begin{equation}
+        \varphi=-\frac{a g}{\omega} \frac{\operatorname{ch}[k(z+d)]}{\operatorname{ch} k d} \cos (k x-\omega t) \label{lw13}
+    \end{equation}
+    $(\ref{lw13})$代入$(\ref{lw1})$中，可得压强分布：
+    \[
+        p=p_{0}+\rho g a \frac{\operatorname{ch}[k(z+d)]}{\operatorname{ch} k d} \sin (k x-\omega t)-\rho g z
+    \]
+    水质点速度：
+    \[
+        \begin{aligned}
+            &u=\frac{\partial \varphi}{\partial x}=\frac{a g k}{\omega} \frac{\operatorname{ch}[k(z+d)]}{\operatorname{ch} k d} \sin (k x-\omega t) \\
+            &w=\frac{\partial \varphi}{\partial z}=-\frac{{agk}}{\omega} \frac{\operatorname{sh}[k(z+d)]}{\operatorname{ch} k d} \cos (k x-\omega t)
+            \end{aligned}
+    \]
+    水质点运动轨迹($x_0,z_0$)为平衡位置:
+    \[
+        \frac{\left(x-x_{0}\right)^{2}}{\left[a \frac{\operatorname{ch}\left[k\left(d+z_{0}\right)\right]}{\operatorname{sh} k d}\right]^{2}}+\frac{\left(z-z_{0}\right)^{2}}{\left[a \frac{\operatorname{sh}\left[k\left(d+z_{0}\right)\right]}{\operatorname{sh} k d}\right]^{2}}=1
+    \]
+    \paragraph{解的讨论}~{}
+    \begin{figure}[H]
+        \centering \includegraphics[width=8cm]{19.eps}
+        \caption*{}
+    \end{figure}
+    (1) 线性波动水质点轨迹为椭圆，长轴为x方向；\\
+    (2) 椭圆长轴和短轴均与z0 有关，与 x0 无关；\\  
+    (3) 长轴和短轴均随平衡位置的加深而减小；\\
+    (4) 在海底水质点做水平运动.
 
     \bibliographystyle{apalike}
 	\bibliography{ref}

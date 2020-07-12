@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  11 JUL 2020 23:45
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  12 JUL 2020 09:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -844,7 +844,11 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \mc@col@check@num=\count344
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 42.
- (./notes.aux)
+ (./notes.aux
+
+LaTeX Warning: Label `lw4' multiply defined.
+
+)
 \openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -1062,21 +1066,21 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 
  [1
 
-]
+] [2]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/1.eps>
- [2]
+ [3]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2.eps>
- [3]
+ [4]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3.eps>
- [4] [5]
+ [5] [6]
 Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
-[6] [7]
+[7] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 393--395
 
  []
@@ -1091,7 +1095,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--408
 
  []
 
-[8] [9]
+[9]
+
+LaTeX Warning: Citation `Ekman' on page 10 undefined on input line 441.
+
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
@@ -1101,11 +1109,14 @@ Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 504.
 
+
+LaTeX Warning: Citation `Ekman' on page 11 undefined on input line 529.
+
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps>
-[10]
+[11]
 Missing character: There is no ≥ in font [lmroman12-regular]:mapping=tex-text;!
- [11]
+ [12]
 Underfull \hbox (badness 10000) in paragraph at lines 601--604
 
  []
@@ -1126,7 +1137,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 626--630
 
  []
 
-[12]
+[13]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/8.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/8.eps>
 
@@ -1141,7 +1152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 636--640
 
  []
 
-[13]
+[14]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/10.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/10.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/11.eps Graphic file (type eps)
@@ -1156,7 +1167,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 688--694
 
  []
 
-[14]
+[15]
+
+LaTeX Warning: Citation `Ekman' on page 16 undefined on input line 722.
+
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps>
 
@@ -1164,20 +1178,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 729--734
 
  []
 
-[15] [16]
+[16] [17]
 Underfull \hbox (badness 10000) in paragraph at lines 774--780
 
  []
 
-[17] [18]
+[18] [19]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/13.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/13.eps>
- [19]
+ [20]
 Underfull \hbox (badness 10000) in paragraph at lines 946--949
 
  []
 
-[20] [21]
+[21] [22]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/14.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/14.eps>
 
@@ -1185,43 +1199,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 1090--1097
 
  []
 
-[22]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 1098--1099
 
  []
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/15.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/15.eps>
-[23]
+[24]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/16.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/16.eps>
- [24]
+ [25]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/17.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/17.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/18.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/18.eps>
- [25] (./notes.bbl)
+ [26]
+Underfull \hbox (badness 10000) in paragraph at lines 1257--1258
+
+ []
+
+[27]
+
+LaTeX Warning: Reference `lw3' on page 28 undefined on input line 1275.
+
+Missing character: There is no ， in font [lmroman12-regular]:mapping=tex-text;!
+[28]
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/19.eps Graphic file (type eps)
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/19.eps>
+ (./notes.bbl)
 
 Package caption Warning: Unused \captionsetup[table] on input line 43.
 See the caption package documentation for explanation.
 
-[26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1219.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1219.
+[29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1354.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1354.
  (./notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1219.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1354.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1354.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 401A20C4A471604C87D287D5A6C9C84D;4499.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1219.
+(rerunfilecheck)             Checksum: 6BF889AA17E7004467517D3B616044A0;4599.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1354.
  ) 
 Here is how much of TeX's memory you used:
- 29118 strings out of 479418
- 601173 string characters out of 5878425
- 883323 words of memory out of 5000000
- 46029 multiletter control sequences out of 15000+600000
- 550018 words of font info for 140 fonts, out of 8000000 for 9000
+ 29142 strings out of 479418
+ 601564 string characters out of 5878425
+ 883742 words of memory out of 5000000
+ 46048 multiletter control sequences out of 15000+600000
+ 550034 words of font info for 142 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,16n,68p,586b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,22n,68p,586b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on notes.pdf (26 pages).
+Output written on notes.pdf (29 pages).
