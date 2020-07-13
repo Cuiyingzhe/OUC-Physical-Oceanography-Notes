@@ -1563,7 +1563,43 @@
     (3) 振动幅度(斜率)随平衡位置的深度迅速减小.
     \end{spacing}
     \paragraph{波群}~{}\\
-    沿同一方向成群向外传播的波列所产生的波动叠加后，在某一固定点观测点，波动振幅由小到大，又由大到小的现象.
+    沿同一方向成群向外传播的波列所产生的波动叠加后，在某一固定点观测点，波动振幅由小到大，又由大到小的现象.\\
+    例：两个振幅相同，波长、周期差别很小的波动沿同一方向传播.
+    \[
+        \zeta=a \sin (k x-\omega t)+a \sin \left(k^{\prime} x-\omega^{\prime} t\right)=2 a \cos \left(\frac{k-k^{\prime}}{2} x-\frac{\omega-\omega^{\prime}}{2} t\right) \sin \left(\frac{k+k^{\prime}}{2} x-\frac{\omega+\omega^{\prime}}{2} t\right)
+    \]
+    合成波：
+    \[
+        \zeta=\overbrace{2 a \cos (\Delta k x-\Delta \omega t)}^{\mbox{包络线}} \sin (k x-\omega t)
+    \]
+    群速度：
+    \[
+        c_g=\frac{\Delta \omega}{\Delta k}\approx\frac{d\omega}{dk}
+    \]
+    波长:
+    \[
+        \lambda_{g}=\frac{2 \pi}{\Delta k}=\frac{2 \pi}{\frac{k-k^{\prime}}{2}}=\frac{4 \pi}{\frac{2 \pi}{\lambda}-\frac{2 \pi}{\lambda^{\prime}}}=\frac{2 \lambda \lambda^{\prime}}{\lambda^{\prime}-\lambda}\quad \lambda_g\gg \lambda,\lambda^{\prime}
+    \]
+    (1) 包络线两节点间包含的许多波数为$k$，频率为的波动，其振幅随时间和空间变化，称为个别波；\\
+    (2) 两节点间的所有个别波构成一个波群；\\
+    (3) 两个简单波动的波长越接近，一个波群中包含的个别波越多.\\
+    有限深水的群速度：
+    \[
+        \omega=\left(gk\mathrm{th} kd\right)^{\frac{1}{2}}
+    \]
+    \[
+        \begin{aligned}
+            c_{g} &=\frac{d \omega}{d k}=\frac{1}{2}(g k t h k d)^{-\frac{1}{2}} \cdot\left(g t h k d+g k \cdot \frac{d}{c h^{2} k d}\right) \\
+            &=\frac{1}{2} \cdot \frac{1}{k}(g k t h k d)^{\frac{1}{2}}\left(1+\frac{k d}{t h k d \cdot c h^{2} k d}\right) \\
+            &=\frac{1}{2} \cdot\left(\frac{\omega}{k}\right)\left(1+\frac{2 k d}{\operatorname{sh} 2 k d}\right) \\
+            \Rightarrow c_{g}&=\frac{c}{2}\left(1+\frac{2 k d}{\operatorname{sh} 2 k d}\right)
+        \end{aligned}
+    \]
+    \begin{spacing}{2}
+        深水波($kd>\pi$)：$\displaystyle \frac{2 k d}{\operatorname{sh} 2 k d} \rightarrow 0 \quad c_{g}=\frac{c}{2}$\\
+    浅水波($\displaystyle kd<\frac{\pi}{10}$)：$ \displaystyle   \frac{2 k d}{\operatorname{sh} 2 k d} \rightarrow 1 \quad c_{g}=c$
+    \end{spacing}
+    \subsubsection{波浪的折射和绕射}
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}

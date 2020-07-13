@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  13 JUL 2020 16:49
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  13 JUL 2020 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,7 +1115,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 406--410
 
  []
 
-[9] [10]
+[9]
+
+LaTeX Warning: Citation `Ekman' on page 10 undefined on input line 443.
+
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
@@ -1124,6 +1128,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 491--492
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 506.
+
+
+LaTeX Warning: Citation `Ekman' on page 11 undefined on input line 531.
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps>
@@ -1181,6 +1188,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 690--696
  []
 
 [15]
+
+LaTeX Warning: Citation `Ekman' on page 16 undefined on input line 724.
+
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps>
 
@@ -1258,7 +1268,9 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/21.eps Graph
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/21.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/22.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/22.eps>
-[30] [31] [32] (./notes.bbl)
+[30] [31] [32] [33]
+Missing character: There is no  in font [lmroman12-regular]:mapping=tex-text;!
+ (./notes.bbl)
 
 Package caption Warning: Unused \captionsetup[table] on input line 44.
 See the caption package documentation for explanation.
@@ -1267,14 +1279,14 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[subfigure] on input line 46.
 See the caption package documentation for explanation.
 
-[33]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1569.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1569.
+[34]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1605.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1605.
  (./notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1569.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1569.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1605.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1605.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: C35EF9F1B2CA519846CF9E2BED163A8F;4985.
+(rerunfilecheck)             Checksum: BCFED8DADAC60F5481B4DAAFA633BC8F;5117.
 
 
 LaTeX Warning: There were undefined references.
@@ -1282,15 +1294,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1569.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1605.
  ) 
 Here is how much of TeX's memory you used:
- 29339 strings out of 479418
- 606815 string characters out of 5878425
- 886269 words of memory out of 5000000
- 46236 multiletter control sequences out of 15000+600000
+ 29340 strings out of 479418
+ 606831 string characters out of 5878425
+ 886377 words of memory out of 5000000
+ 46237 multiletter control sequences out of 15000+600000
  550034 words of font info for 142 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,22n,68p,586b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on notes.pdf (33 pages).
+Output written on notes.pdf (34 pages).
