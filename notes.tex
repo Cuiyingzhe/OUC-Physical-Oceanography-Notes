@@ -31,6 +31,7 @@
 \usepackage{tikz}
 \usepackage{cancel}
 \usepackage{multicol}
+\usepackage{subfigure}
 \newcommand*{\circled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)%
     circle (.5em) node {\makebox[1em][c]{\small #1}};}}
 %\usepackage[T1]{fontenc}
@@ -42,6 +43,7 @@
 }
 \captionsetup[table]{labelsep=space,font={small}}
 \captionsetup[figure]{labelsep=space,font={small}}
+\captionsetup[subfigure]{labelsep=space,font={small}}
 \geometry{a3paper,left=4cm,right=4cm,top=4cm,bottom=4cm}
 \graphicspath{{C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/}}
 \begin{document}
@@ -1344,11 +1346,224 @@
         \centering \includegraphics[width=8cm]{19.eps}
         \caption*{}
     \end{figure}
-    (1) 线性波动水质点轨迹为椭圆，长轴为x方向；\\
-    (2) 椭圆长轴和短轴均与z0 有关，与 x0 无关；\\  
+    (1) 线性波动水质点轨迹为椭圆，长轴为$x$方向；\\
+    (2) 椭圆长轴和短轴均与$z_0$ 有关，与 $x_0$ 无关；\\  
     (3) 长轴和短轴均随平衡位置的加深而减小；\\
     (4) 在海底水质点做水平运动.
-
+    \subsubsection{水深对线性波动的影响}
+    \paragraph{深水波($d>\frac{1}{2}\lambda$)}~{}\\
+    \begin{spacing}{2}
+        $\displaystyle kd=\frac{2\pi}{\lambda}d\rightarrow \infty$
+    $\displaystyle \operatorname{sh}kd=\operatorname{ch}\approx \frac{1}{2} e^{kd},\operatorname{th}kd\approx 1$\\
+    频散关系：$\displaystyle \omega^{2}=g k \text { th } k d \Rightarrow \omega^{2}=g k$\\
+    波速：$\displaystyle c^{2}=\frac{g}{k} \operatorname{th} k d \Rightarrow c^{2}=\frac{g}{k}$\\
+    深水波的角频率和波速与水深无关，只与波动性质(波数或波长)有关.\\
+    \end{spacing}
+    速度势：
+    \[
+    \begin{aligned}
+        \varphi&=-\frac{a g}{\omega} \frac{\operatorname{ch}[k(z+d)]}{\operatorname{ch} k d} \cos (k x-\omega t)\\
+        \left(\operatorname{ch}[k(z+d)]\approx\frac{1}{2}e^{kd}(\operatorname{ch}kz+\operatorname{sh}kz)\right)\quad&=-\frac{a g}{\omega} e^{kz} \cos (k x-\omega t)
+    \end{aligned}
+    \]
+    压强分布：$\displaystyle p=p_{0}+\rho g a \frac{\operatorname{ch}[k(z+d)]}{\operatorname{ch} k d} \sin (k x-\omega t)-\rho g z$\\
+    水质点速度：$\displaystyle u=a\omega e^{kz}\sin(kx-\omega t),w=-a\omega e^{kz}\cos (kx-\omega t)$\\
+    水质点轨迹：$\displaystyle \left(x-x_{0}\right)^{2}+\left(z-z_{0}\right)^{2}=\left(a e^{k_{0}}\right)^{2}$\\
+    深水波水质点运动轨迹为圆，半径随水质点平衡位置的深度增加而减小，当达到很大深度时，半径无限小，运动消失——表面波性质.
+    \paragraph{浅水波($d<\frac{1}{20}\lambda$)}~{}
+    $\displaystyle kd=\frac{2\pi}{\lambda}d\rightarrow 0$\\
+    幂级数展开：$\displaystyle \begin{aligned} &\operatorname{sh} x=x+\frac{x^{3}}{3 !}+\cdots+\frac{x^{2 n+1}}{(2 n+1) !}+\cdots(-\infty<x<\infty) \\
+    &\operatorname{ch} x=1+\frac{x^{2}}{2 !}+\cdots+\frac{x^{2 n}}{(2 n) !}+\cdots\end{aligned}$\\
+    $\displaystyle \operatorname{sh}kd\approx kd,\operatorname{ch}kd\approx 1+\frac{k^2 d^2}{2}\approx 1,\operatorname{th}\approx kd$\\
+    \begin{spacing}{2}
+        频散关系：$\displaystyle \omega^{2}=g k \text { th } k d \Rightarrow \omega^{2}=gd k^2$\\
+    波速：$\displaystyle c^{2}=\frac{g}{k} \operatorname{th} k d \Rightarrow c^{2}=gd$\\
+    波速只与水深有关，而与波动性质无关.\\
+    速度势：$\displaystyle \varphi=-\frac{a g}{\omega}\left[1+\frac{k^{2}(d+z)^{2}}{2}\right] \cos (k x-\omega t)$\\
+    压强分布：$p=p_0+\rho g(\zeta-z)$\\
+    压强分布近似为静压分布.\\
+    水质点速度：$\displaystyle u=\frac{a \omega}{k d} \sin (k x-\omega t) ,   w=-a \omega\left(1+\frac{z}{d}\right) \cos (k x-\omega t)$\\
+    质点水平速度显著大于铅直速度.\\
+    水质点轨迹：$\displaystyle \frac{\left(x-x_{0}\right)^{2}}{\left(\frac{a}{k d}\right)^{2}}+\frac{\left(z-z_{0}\right)^{2}}{\left[a\left(1+\frac{z_{0}}{d}\right)\right]^{2}}=1$\\
+    浅水波水质点运动轨迹为椭圆，水平轴（长轴）不随深度改变，短轴随深度增加逐渐减小.
+    \end{spacing}
+    \begin{figure}[H]
+        \centering 
+        \subfigure{
+        \includegraphics[width=8cm]{20.eps}
+        }
+        \subfigure{
+        \includegraphics[width=10cm]{21.eps}
+        }
+        \caption*{}
+    \end{figure}
+    \subsubsection{线性波动的能量}
+    以下都是讨论一个波长范围内的线性波动能量，示意图如下：
+	\begin{figure}[H]
+		\centering\includegraphics[width=9cm]{22.eps}
+		\caption{波动示意图}\label{fig:2} 
+	\end{figure}
+	\paragraph{动能}~{}\\
+	根据动能定义，
+	\[
+	\begin{aligned}
+	    {E_k} &= {1 \over 2}m{V^2}\\
+	    &=\int_{0}^{\lambda}\left[\int_{-d}^{\zeta} \frac{1}{2} \rho\left(u^{2}+w^{2}\right) d z\right] d x\\
+	    &=\frac{\rho}{2} \int_{0}^{\lambda} \int_{-d}^{\zeta}\left[\left(\frac{\partial \varphi}{\partial x}\right)^{2}+\left(\frac{\partial \varphi}{\partial z}\right)^{2}\right] d z d x\\
+	\end{aligned}
+	\]
+	\indent
+	根据格林第一定理：
+	$$\iiint_{\tau} \varphi \Delta \varphi d \tau+\iiint_{\tau} \nabla \varphi \cdot \nabla \varphi d \tau=\varoiint_{s} \varphi \frac{\partial \varphi}{\partial{n}	} d s$$
+	又因为对于不可压流体$\Delta{\varphi}=0$，因此：
+	\[
+	\begin{aligned}
+		{E_k} &= {1 \over 2}m{V^2}\\
+	    &=\frac{\rho}{2} \iiint_{\tau} \nabla \varphi \cdot \nabla \varphi d \tau\\
+	    &=\frac{\rho}{2} \varoiint_{s} \varphi \frac{\partial \varphi}{\partial n} d s\\
+	    &=\frac{\rho}{2} \oint_{c} \varphi \frac{\partial \varphi}{\partial n} d l
+	\end{aligned}
+	\]
+    其中，$c$为图2中的闭合有向曲线。
+    \par
+    根据对称性，$\overrightarrow{BC}$与$\overrightarrow{DA}$上的积分值等大反向，根据边界条件，在海底
+    ${{\partial \phi } \over {\partial n}} = {{\partial \phi } \over {\partial z}}{|_{z =  - d}} = 0$。因此：
+    \[
+    {E_k} = {\rho  \over 2}\int_0^\lambda  {\left.(\varphi {{\partial \varphi } \over {\partial z}}) \right|_{z = \zeta}dx}
+    \]
+    \indent
+    再根据小振幅假定，振幅相对波长很小，$\zeta\approx 0$，因此：
+    \[
+    {E_k} = {\rho  \over 2}\int_0^\lambda  {\left.(\varphi {{\partial \varphi } \over {\partial z}}) \right|_{z = 0}dx} 
+    \]
+	\indent
+	带入线性波动的解：
+	\[
+	\begin{aligned}
+		\varphi  &=  - {{ag} \over \omega }{{{\rm{ch}} [k(d + z)]} \over {{\rm{ch}} kd}}\cos (kx - \omega t)\\
+		\Rightarrow\frac{\partial \varphi}{\partial z} & =-\frac{agk\mathrm{sh}\left[k\left(d+z\right) \right]}{\omega \mathrm{ch}\left(kd\right)}\cos\left(kx-\omega t\right)
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+	{E_k} &= {\rho  \over 2}\int_0^\lambda  {\left. {{ag} \over \omega }{{{\rm{ch}} [k(d + z)]} \over {{\rm{ch}} kd}}\cos (kx - \omega t)\frac{agk\mathrm{sh}\left[k\left(d+z\right) \right]}{\omega \mathrm{ch}\left(kd\right)}\cos\left(kx-\omega t\right) \right|_{z = 0}dx} \\
+	&= \frac{\rho}{2\omega^2} a^2g^2k \mathrm{th}kd \int_0^\lambda {\mathrm{cos}^2(kx-\omega t)dx}\\
+	&= \frac{\rho}{2\omega^2} a^2g^2 \mathrm{th}kd \int_0^{2\pi} {\mathrm{cos}^2(\theta-\omega t)d\theta}\\
+	&= \frac{\rho}{2\omega^2} a^2g^2 \pi\mathrm{th}kd
+	\end{aligned}
+	\]
+	\indent
+	再带入频散关系：${\omega ^2} = gk {\rm th} kd$以及$k=\frac{2\pi}{\lambda}$：
+	\[
+	E_k=\frac{1}{4}\rho ga^2\lambda
+	\]
+	\paragraph{势能}~{}\\
+	根据势能的定义：
+	\[
+	\begin{aligned}
+		E_p &= mgh\\
+		    &= \int_0^\lambda  {\int_0^\zeta  {\rho gzdzdx} }\\
+		    &= \rho g\int_0^\lambda  {\int_0^\zeta  {{1 \over 2}d{z^2}dx} } \\
+		    &= {1 \over 2}\rho g\int_0^\lambda  {\zeta^2 dx } \\
+		    &= {1 \over 2}\rho g\int_0^\lambda  {{a^2}{{\sin }^2}(kx - \omega t)dx}\\
+		    &= {1 \over 4}\rho g{a^2}\lambda
+	\end{aligned}
+	\]
+	\paragraph{总能量}~{}\\
+	一个波长内的总能量为动能和势能之和：
+	\[
+	E = {E_K} + {E_P} = {1 \over 2}\rho g{a^2}\lambda
+	\]
+	\indent
+	进而可以计算单位表面面积水柱的平均总能量 ：
+	\[
+	\bar E = \frac{E}{\lambda} = {1 \over 2}\rho g{a^2}
+	\]
+	\paragraph{平均能量通量及水深影响}~{
+    }
+	能量通量是单位时间内通过垂直于波动传播方向断面的能量，等于单位时间内通过某断面的波动能量等于该断面外侧有效压力所做的功。根据线性波动的势函数方程：
+	\[
+	{{\partial \varphi } \over {\partial t}} + {{p - {p_0}} \over \rho } + gz = 0
+	\]
+	\indent
+	则有效压强为：
+	\[
+	{p_e} =  - \rho {{\partial \varphi } \over {\partial t}}
+	\]
+	\indent
+	根据能量通量定义：
+	\[
+	P = \int_{ - d}^\zeta  {{p_e}udz} = \int_{ - d}^\zeta  { - \rho {{\partial \varphi } \over {\partial t}}{{\partial \varphi } \over {\partial x}}dz} 
+	\]
+	带入线性波动的解：
+	\[
+	\begin{aligned}
+	\varphi  =  - {{ag} \over \omega }{{{\rm{ch}} [k(d + z)]} \over {{\rm{ch}} kd}}\ & cos (kx - \omega t)\\
+	\Rightarrow\frac{\partial\varphi}{\partial t}=-ag\frac{{\rm ch}[k(d+z)]}{{\rm ch}kd}\sin (kx-\omega t) &, \frac{\partial\varphi}{\partial x}={{agk} \over \omega }{{{\rm{ch}} [k(d + z)]} \over {{\rm{ch}} kd}}\sin (kx - \omega t)
+	\end{aligned}
+	\]
+	\[
+	\begin{aligned}
+	P &= \int_{ - d}^\zeta  { \rho ag\frac{{\rm ch}[k(d+z)]}{{\rm ch}kd}\sin (kx-\omega t) {{agk} \over \omega }{{{\rm{ch}} [k(d + z)]} \over {{\rm{ch}} kd}}\sin (kx - \omega t)dz} \\
+	&=\frac{\rho a^2g^2}{\omega {\rm ch}^2kd}\sin^2(kx-\omega t)\int_{-d}^\zeta {{\rm ch}^2[k(d+\zeta)]}dz\\
+	&=\frac{\rho a^2g^2}{\omega {\rm ch}^2kd}\sin^2(kx-\omega t)\left( \frac{1}{2}k(d+\zeta)+\frac{1}{4}{\rm sh}[2k(d+\zeta)]\right)	\\
+	&=\frac{\rho a^2g^2}{\sqrt{gk{\rm th}kd} {\rm ch}^2kd}\sin^2(kx-\omega t)\left( \frac{1}{2}k(d+\zeta)+\frac{1}{4}{\rm sh}[2k(d+\zeta)]\right)	\\
+	&=\sqrt{\frac{g}{k}{\rm th}kd}\frac{\rho a^2g}{{\rm th} kd {\rm ch}^2kd}\sin^2(kx-\omega t)\left( \frac{1}{2}k(d+\zeta)+\frac{1}{4}{\rm sh}[2k(d+\zeta)]\right)	\\
+	&=\frac{\rho g a^2 c}{{\rm sh} kd {\rm ch}kd}\sin^2(kx-\omega t)\left( \frac{1}{2}k(d+\zeta)+\frac{1}{4}{\rm sh}[2k(d+\zeta)]\right)	\\
+	&=\frac{2\rho g a^2 c}{{\rm sh} 2kd}\sin^2(kx-\omega t)\left( \frac{1}{2}k(d+\zeta)+\frac{1}{4}{\rm sh}[2k(d+\zeta)]\right)	\\
+	&={\rho g a^2 c}\left( \frac{1}{{\rm sh}2kd}k(d+\zeta)+\frac{1}{2{\rm sh}2kd}{\rm sh}[2k(d+\zeta)]\right)\sin^2(kx-\omega t)	\\
+	\end{aligned}
+	\]
+	\indent
+	令$\zeta=0$：
+	\[
+	\boxed{
+	P=\frac{\rho g a^2 c}{2}\left(1+ \frac{2kd}{{\rm sh}2kd}\right)\sin^2(kx-\omega t)}
+	\]
+	\indent
+	进而可以计算一个周期内的平均能量通量 ：
+	\[
+	\begin{aligned}
+	\bar P &= {1 \over T}\int_0^T {Pdt} \\
+	&= \frac{1}{T}\int_0^T\frac{\rho g a^2 c}{2}\left(1+ \frac{2kd}{{\rm sh}2kd}\right)\sin^2(kx-\omega t)dt\\
+	&={1 \over 2}\rho g{a^2} \cdot {c \over 2}(1 + {{2kd} \over {\rm sh}2kd})
+	\end{aligned}
+	\]
+	\indent
+	令$\bar{E}={1 \over 2}\rho g{a^2}$，则：
+	\[
+	\bar{P}=\bar{E}{c \over 2}(1 + {{2kd} \over {\rm sh}2kd})
+	\]
+	\indent
+	对于深水波：
+	\[
+	kd\rightarrow\infty,\frac{2kd}{{\rm sh}2kd}\rightarrow 0,\bar{P}=\bar{E}\frac{c}{2}
+	\]
+	\indent
+	对于浅水波：
+	\[
+	kd\rightarrow 0,\frac{2kd}{{\rm sh}2kd}\rightarrow 1,\bar{P}=\bar{E}c
+	\]
+	\indent
+    综上，深水波的平均能量通量等于单位表面积水柱内的总能量乘上波速的一半；浅水波的平均能量通量等于单位表面积水柱内的总能量乘上波速。
+    \subsection{线性波动的合成}
+    \paragraph{驻波}~{}\\
+    两列振幅、周期、波长相等，传播方向相反的前进波叠加形成的波动.
+    \paragraph{波面}~{}
+    \[
+        \zeta=\overbrace{\frac{1}{2}a\sin (kx-\omega t)}^{+x}+\overbrace{\frac{1}{2}a\sin (kx+\omega t)}^{-x}=a\sin kx\cos \omega t
+    \]
+    \begin{spacing}{2}
+        节点：$\displaystyle \sin kx=0,kx=n\pi(n=0,\pm 1,\pm 2,\cdots)$\\
+    腹点：$\displaystyle \sin kx=\pm 1,kx=(n+\frac{1}{2}\pi)$\\
+    速度势：$\displaystyle \varphi=-\frac{a g}{\omega} \frac{c h[k(d+z)]}{c h k d} \sin k x \sin \omega t$\\
+    水质点轨迹：$\displaystyle \frac{z-z_{0}}{x-x_{0}}=\tan k x_{0} t h\left[k\left(d+z_{0}\right)\right]$\\
+    (1) 驻波中流体质点的轨迹为直线；\\
+    (2) 具有不同平衡位置的质点，振动方向不同：在节点，质点水平振动($w$=0)；在腹点，质点铅直振动($u$＝0)；$kx_0$在一、三(二、四)象限时，斜率为正(负)；
+    (3) 振动幅度(斜率)随平衡位置的深度迅速减小.
+    \end{spacing}
+    \paragraph{波群}~{}\\
+    沿同一方向成群向外传播的波列所产生的波动叠加后，在某一固定点观测点，波动振幅由小到大，又由大到小的现象.
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}
