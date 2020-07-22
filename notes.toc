@@ -122,5 +122,17 @@
 \contentsline {paragraph}{驻波}{33}{subsection.3.2}%
 \contentsline {paragraph}{波面}{33}{subsection.3.2}%
 \contentsline {paragraph}{波群}{33}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}波浪的折射和绕射}{34}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}波动的折射和绕射}{34}{subsection.3.3}%
+\contentsline {paragraph}{定义}{34}{subsection.3.3}%
+\contentsline {paragraph}{假定}{34}{subsection.3.3}%
+\contentsline {paragraph}{波数守恒方程}{34}{subsection.3.3}%
+\contentsline {paragraph}{波动要素的变化和分布}{34}{equation.3.45}%
+\contentsline {paragraph}{波向}{35}{figure.caption.23}%
+\contentsline {paragraph}{波高}{36}{equation.3.46}%
+\contentsline {paragraph}{当波浪从深水传入浅水时}{36}{figure.caption.25}%
+\contentsline {paragraph}{总结}{37}{figure.caption.25}%
+\contentsline {subsection}{\numberline {3.4}有限振幅波动(不要求掌握)}{37}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Stokes波}{37}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}波浪破碎}{37}{subsubsection.3.4.2}%
+\contentsline {paragraph}{以深水波为例，分析Stokes波和线性波动的区别和联系}{37}{subsubsection.3.4.2}%
 \contentsfinish 

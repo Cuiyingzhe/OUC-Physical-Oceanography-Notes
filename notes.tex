@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 \title{\heiti 物理海洋学笔记}
-\author{\small 2017级海洋科学专业 崔英哲 \\ \small \url{https://github.com/Cuiyingzhe/OUC-Physical-Oceanography-Notes}}
+\author{\small 2017级海洋科学专业 崔英哲 \quad cuiyingzhe@stu.ouc.edu.cn\\
+ \small \url{https://github.com/Cuiyingzhe/OUC-Physical-Oceanography-Notes}}
 \date{\small 2020.07.06}
 \usepackage[UTF8]{ctex}
 %\usepackage{indentfirst}
@@ -1599,7 +1600,113 @@
         深水波($kd>\pi$)：$\displaystyle \frac{2 k d}{\operatorname{sh} 2 k d} \rightarrow 0 \quad c_{g}=\frac{c}{2}$\\
     浅水波($\displaystyle kd<\frac{\pi}{10}$)：$ \displaystyle   \frac{2 k d}{\operatorname{sh} 2 k d} \rightarrow 1 \quad c_{g}=c$
     \end{spacing}
-    \subsubsection{波浪的折射和绕射}
+    \subsection{波动的折射和绕射}
+    \paragraph{定义}~{}\\
+    波浪从深水传入近岸后，在浅海区域波速受水深影响：同一波峰上，水深较深处波浪传播较快，使波向发生弯曲，波向(锋)线有逐渐和岸线垂直的趋势。在不同的地形引起波向的辐合和辐散，导致波动能量的集中和分散。
+    \paragraph{假定}~{}\\
+    1) 线性波动 2) 水深$d=d(x,y)$，且变化缓慢 3) 稳态波动\\
+    \paragraph{波数守恒方程}~{}\\
+    波的个数在传播过程中守恒:
+    \begin{equation}
+        \frac{\partial \vec{k}}{\partial t}+\nabla \omega=0\label{keq}
+    \end{equation}
+    波数向量的时间变化与圆频率空间变化平衡.
+    \paragraph{波动要素的变化和分布}
+    1. 频率和周期
+    \[
+        (\ref{keq})\mathop{\Rightarrow}\limits^{\mbox{定常}} \nabla \omega=0\Rightarrow\omega(x,y)=const,T(x,y)=const
+    \]
+    对水深缓变的定常波动，在传播过程中，波动的频率和周期保持不变.\\
+    2. 波速和波长\\
+    有限深水域频散关系：$\omega^2=gk\mathrm{th}kd$\\
+    波动频率、波速和波数的关系：$\displaystyle c=\frac{\lambda}{T}=\frac{\omega}{k}$
+    \[
+        \Rightarrow c^2=\frac{g}{k}\mathrm{th}kd=\frac{g\lambda}{2\pi}\mathrm{th}\frac{2\pi d}{\lambda}
+    \]
+    波速：$\displaystyle c=\frac{g \lambda}{2 \pi c} \text { th } \frac{2 \pi d}{\lambda}=\frac{g T}{2 \pi} \text { th } \frac{2 \pi d}{\lambda}$\\
+    波长：$\displaystyle \lambda=c T=\frac{g T^{2}}{2 \pi} \text { th } \frac{2 \pi d}{\lambda}$
+    对于深水波：$\omega^2=gk$\\
+    波速：$\displaystyle c_0^2=\frac{g}{k}=\frac{g \lambda}{2\pi}\Rightarrow c_{0}=\frac{g \lambda}{2 \pi c_{0}}=\frac{g T}{2 \pi}$\\
+    波长：$\displaystyle \lambda_{0}=c_{0} T=\frac{g T^{2}}{2 \pi}$\\
+    \[
+        \frac{c}{c_{0}}=\frac{\lambda}{\lambda_{0}}=\mathrm{th} \frac{2 \pi d}{\lambda}
+    \]
+    当已知深水波长和波速时，便可求出某一水深处的波长与波速.波动从深水传入有限深海后，波速和波长都减小.
+    \begin{figure}[H]
+    \centering \includegraphics[width=10cm]{23.eps}
+    \caption*{}
+    \end{figure}
+    \paragraph{波向}~{}\\
+    波动传播是沿着所需时间最少的路径
+    \begin{figure}[H]
+    \centering \includegraphics[width=10cm]{24.eps}
+    \caption*{}
+    \end{figure}
+    波峰线从A移动到B所需时间为：
+    \[
+        t=\int_A^B\frac{ds}{c(x,y)},ds=\sqrt{(d x)^{2}+(d y)^{2}} \Rightarrow d s=\sqrt{1+\left(\frac{d y}{d x}\right)^{2}} d x=\sqrt{1+\left(y^{\prime}\right)^{2}} d x
+    \]
+    \[
+        \Rightarrow t=\int_A^B\frac{\sqrt{1+(y')^2}}{c(x,y)}dx=\int_A^B F(x,y,y')dx
+    \]
+    使泛函t取极小值的F满足：
+    \[
+        F_y-\frac{d}{dx}F_{y'}
+    \]
+    \begin{equation}
+        \Rightarrow \frac{y^{\prime \prime}}{1+y^{\prime 2}}=-\frac{1}{c}\left(\frac{\partial c}{\partial y}-y^{\prime} \frac{\partial c}{\partial x}\right)\label{eleq}
+    \end{equation}
+    由于$y$只与$x$有关：$\displaystyle \frac{\partial y}{\partial x}=\frac{d y}{d x}=\operatorname{tan} \theta$，代入$(\ref{eleq})$：
+    \[
+        \begin{aligned}
+        &\frac{\frac{d\tan \theta}{dx}}{1+\tan^2\theta}=-\frac{1}{c}\left(\frac{\partial}{\partial y}-\tan \theta \frac{\partial}{\partial x}\right)c\\
+        \mathop{\Longrightarrow}\limits^{*\cos\theta}& \cos\theta\frac{d\theta}{dx}=-\frac{1}{c}\left(-\cos\theta\frac{\partial}{\partial x}+\sin\theta\frac{\partial}{\partial y}\right)c
+        \end{aligned}
+    \]
+    等式左边由$\displaystyle dx=ds\cos\theta$化为：$\displaystyle \frac{d\theta}{ds}$\\
+    等式右边由$\displaystyle \left\langle-\cos\theta,\sin\theta\right\rangle\cdot\nabla c=\hat{n}\cdot\nabla c=\frac{\partial c}{\partial n}\mathop{=}\limits^{\mbox{定常}}\frac{dc}{dn}$化为：$\displaystyle -\frac{1}{c}\frac{dc}{dn}$
+    \[
+        \Rightarrow \frac{d \theta}{d s}=-\frac{1}{c} \frac{d c}{d n}
+    \]
+    即波向$\theta$的微分方程.\\
+    \[
+        \displaystyle c_A>c_B\Rightarrow\frac{dc}{dn}<0\Rightarrow\frac{d\theta}{ds}>0
+    \] 
+    即$\theta$随$s$越来越大，波向线在浅水趋于与岸线垂直.\\
+    \paragraph{波高}~{}\\
+    前提：两条波向线间任意断面上的能通量相等.\\
+    有限水深的平均能量通量为：$\displaystyle \frac{1}{2}\rho g a^2\cdot \frac{c}{2}\left(1+\frac{2kd}{\mathrm{sh} 2kd}\right)$,其中$H=2a$\\
+    因此两条波向线间任意断面上的能通量为：$\displaystyle \frac{1}{8}\rho g H^2\cdot \frac{c}{2}\left(1+\frac{2kd}{\mathrm{sh} 2kd}\right)\cdot l$
+    \begin{figure}[H]
+        \centering \includegraphics[width=6cm]{25.eps}
+        \caption*{}
+    \end{figure}
+    对于深水：$\displaystyle \bar{P_0}=\frac{1}{8}\rho g H_0^2\frac{c_0}{2}l_0=\bar{P}$
+    \[
+        \Rightarrow \frac{H}{H_0}=\left(\overbrace{\frac{c_0}{c}\frac{1}{1+\frac{2kd}{\mathrm{sh}2kd}}}^{\mbox{变浅因子D}}\underbrace{\frac{l_0}{l}}_{\mbox{折射因子}}\right)^{\frac{1}{2}}
+    \]
+    波向线散开因子：$\displaystyle \beta=\frac{l}{l_0}$
+    \paragraph{当波浪从深水传入浅水时}~{}\\
+    平直海岸，且波向线垂直于岸线，不发生折射，即l=l0，变浅因子起决定作用，波高先略有降低，之后随相对深度的变浅而迅速增大;\\
+    海岬处：波向线辐聚$l<l_0$，折射因子大于1，能量集中，波高增大，出现大浪；\\
+    海湾处：波向线辐散$l>l_0$，折射因子小于1，能量分散，波高减小，海面较平静.
+    \newpage
+    \paragraph{总结}~{}
+    \begin{figure}[H]
+        \centering \includegraphics[width=13cm]{27.eps}
+        \caption*{}
+    \end{figure}
+    \subsection{有限振幅波动(不要求掌握)}
+    \subsubsection{Stokes波}
+    \subsubsection{波浪破碎}
+    \paragraph{以深水波为例，分析Stokes波和线性波动的区别和联系}~{}\\
+    关联：1阶Stokes波简化为线性波动；\\
+    假定：理想波动，没有小振幅的假定；\\
+    波面：波面关于x轴不对称，波峰变陡，波谷变平，表面水质点振动中心高于平均静止海面；\\
+    波速和频率：与波动振幅 有关，较线性波动略大，且波陡愈大，波速和频率也愈大；\\
+    水质点运动轨迹：接近为圆，但在一个周期内不封闭，有净位移，产生波流，存在体积输运；\\
+    波浪破碎：波陡达一定限度(1/7)时，波浪就会破碎.
+
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}
