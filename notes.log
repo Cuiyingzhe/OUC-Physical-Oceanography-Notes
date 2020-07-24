@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  22 JUL 2020 22:33
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  24 JUL 2020 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,7 +1115,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 407--411
 
  []
 
-[9] [10]
+[9]
+
+LaTeX Warning: Citation `Ekman' on page 10 undefined on input line 444.
+
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
@@ -1124,6 +1128,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--493
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 507.
+
+
+LaTeX Warning: Citation `Ekman' on page 11 undefined on input line 532.
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps>
@@ -1181,6 +1188,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 691--697
  []
 
 [15]
+
+LaTeX Warning: Citation `Ekman' on page 16 undefined on input line 725.
+
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps>
 
@@ -1295,7 +1305,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 1711--1722
 
  []
 
-(./notes.bbl)
+
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1728
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 1728--1732
+
+ []
+
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/28.eps Graphic file (type eps)
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/28.eps>
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/29.eps Graphic file (type eps)
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/29.eps>
+[38] (./notes.bbl)
 
 Package caption Warning: Unused \captionsetup[table] on input line 45.
 See the caption package documentation for explanation.
@@ -1304,14 +1328,14 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[subfigure] on input line 47.
 See the caption package documentation for explanation.
 
-[37]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1727.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1727.
+[39]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1772.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1772.
  (./notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1727.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1727.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1772.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1772.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 3F656BBCC4AF104A4E96AAEEC10B6770;5761.
+(rerunfilecheck)             Checksum: C484343ADADC53A3EC3819ACA9D90E12;5941.
 
 
 LaTeX Warning: There were undefined references.
@@ -1319,15 +1343,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1727.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1772.
  ) 
 Here is how much of TeX's memory you used:
- 29370 strings out of 479418
- 608182 string characters out of 5878425
- 887199 words of memory out of 5000000
- 46263 multiletter control sequences out of 15000+600000
+ 29389 strings out of 479418
+ 609173 string characters out of 5878425
+ 887348 words of memory out of 5000000
+ 46280 multiletter control sequences out of 15000+600000
  550034 words of font info for 142 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,22n,68p,586b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on notes.pdf (37 pages).
+Output written on notes.pdf (39 pages).

@@ -1720,8 +1720,53 @@
     但若取很短的时间，方差近似为常数：$\displaystyle \sigma^2(t)=E\{[\zeta(t)-0]^2\}=\overline{\zeta^2(t)}\approx$常数.\\
     对很短时间，海浪随机过程可视为准平稳过程；海浪过程的平稳性保证了记录时间的起点不影响计算结果.\\
     \paragraph{各态历经性}~{}\\
-    定义：
-
+    定义：\\
+    设$X(t)$为一平稳随机过程.\\
+    若其沿整个时间轴的时间平均值$\left\langle X(t) \right\rangle =E{X(t)}=a$对$X(t)$所有样本函数成立，则该平稳随机过程的均值具有各态历经性；\\
+    若其时间平均相关函数$\left\langle X(t)X(t+\tau)\right\rangle=E[X(t)X(t+\tau)]=R(\tau)$对$X(t)$所有样本函数成立，则该平稳随机过程的自相关函数具有各态历经性；\\
+    若$X(t)$的均值和自相关函数都具有各态历经性，则该平稳随机过程具有(宽)各态历经性.\\
+    \paragraph{证明随机海浪过程具有各态历经性}~{}\\
+    根据定义，可以证明：若$X(t)$为各态历经平稳过程，当$|\tau|\rightarrow \infty$时，有$c(\tau)\rightarrow 0$;\\
+    自协方差函数$c(\tau)$反映了随机过程中相隔$\tau$的两个随机变量之间的相关程度;\\
+    时间间隔较大时，$\zeta(t+\tau)$和$\zeta(t)$的自协方差值很小,可粗略认为：当$\tau\rightarrow\infty$时，$c(\tau)\rightarrow 0$\\
+    \begin{framed}
+        时间间隔较大时,可认为海浪随机过程满足各态历经性;\\
+        各态历经性保证了一次现实可以代替总体;\\
+        在实际观测中，一次现实的时间长度T，一般取10～30分钟.
+    \end{framed}
+    \paragraph{随机海浪过程的正态性}~{}\\
+    如果实际海浪可以用许多随机的正弦波动叠加来表示，当$n\rightarrow\infty$时，根据李亚普诺夫定理，波面高度的分布服从正态分布.
+    \subsubsection{波面、波高、周期和波长的分布}
+    \paragraph{波面的分布}~{}\\
+    总的来说，可认为波面高度服从正态分布：
+    \[
+        f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-a)^2}{2\sigma^2}}
+    \]
+    \begin{figure}[H]
+        \centering\includegraphics[width=10cm]{28.eps}
+        \caption*{}
+    \end{figure}
+    \paragraph{波高的分布}~{}\\
+    随机海浪过程的波高分布为瑞利分布：
+    \[
+        f(H)=\frac{\pi H}{2\bar{H}^2}e^{-\frac{\pi H^2}{4\bar{H}^2}}
+    \]
+    在波面高度分布是正态分布的前提下；对窄谱海浪，包络线振幅变化缓慢，可用包络线的纵坐标代表波面的振幅，继而得到波高的分布.
+    \begin{figure}[H]
+        \centering\includegraphics[width=10cm]{29.eps}
+        \caption*{}
+    \end{figure}
+    \paragraph{周期和波长的分布}~{}\\
+    随机海浪过程半经验半理论的波长概率密度(瑞利分布)：
+    \[
+        f(\lambda)=\frac{\pi}{2} \frac{\lambda}{\lambda^{2}} \exp \left(-\frac{\pi}{4} \frac{\lambda^{2}}{\bar{\lambda}^{2}}\right)
+    \]
+    对于深水波：$\displaystyle \lambda=c T=\frac{g}{k c} T=\frac{\lambda g T}{2 \pi \lambda} T=\frac{g T^{2}}{2 \pi}$\\
+    周期分布：
+    \[
+        f(T)=\frac{\pi T^{3}}{T_{0}^{4}} \exp \left(-\frac{\pi}{4} \frac{T^{4}}{T_{0}^{4}}\right),T_{0}=\sqrt{2 \pi \bar{\lambda} / g}
+    \]
+    观测表明：波浪由深水进入浅水，周期几乎不变，其分布与水深无关，其但波长随水深改变，分布也随水深而变.
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}

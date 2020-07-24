@@ -139,4 +139,10 @@
 \contentsline {subsubsection}{\numberline {3.5.1}随机海浪过程的基本统计特性}{37}{subsubsection.3.5.1}%
 \contentsline {paragraph}{平稳性}{37}{subsubsection.3.5.1}%
 \contentsline {paragraph}{各态历经性}{37}{subsubsection.3.5.1}%
+\contentsline {paragraph}{证明随机海浪过程具有各态历经性}{38}{subsubsection.3.5.1}%
+\contentsline {paragraph}{随机海浪过程的正态性}{38}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}波面、波高、周期和波长的分布}{38}{subsubsection.3.5.2}%
+\contentsline {paragraph}{波面的分布}{38}{subsubsection.3.5.2}%
+\contentsline {paragraph}{波高的分布}{38}{figure.caption.27}%
+\contentsline {paragraph}{周期和波长的分布}{39}{figure.caption.28}%
 \contentsfinish 
