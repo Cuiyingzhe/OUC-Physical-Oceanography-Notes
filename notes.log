@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  1 AUG 2020 20:01
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  1 AUG 2020 20:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1309,7 +1309,17 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/28.eps Graph
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/28.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/29.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/29.eps>
-[38] (./notes.bbl)
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1770--1775
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1788--1790
+
+ []
+
+(./notes.bbl [39])
 
 Package caption Warning: Unused \captionsetup[table] on input line 45.
 See the caption package documentation for explanation.
@@ -1318,14 +1328,14 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[subfigure] on input line 47.
 See the caption package documentation for explanation.
 
-[39]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1772.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1772.
+[40]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1794.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1794.
  (./notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1772.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1772.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1794.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1794.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: C484343ADADC53A3EC3819ACA9D90E12;5941.
+(rerunfilecheck)             Checksum: E02FF11042E3F6B8A0AB258F2C0893FF;6033.
 
 
 LaTeX Warning: There were undefined references.
@@ -1333,15 +1343,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1772.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1794.
  ) 
 Here is how much of TeX's memory you used:
- 29389 strings out of 479418
- 609173 string characters out of 5878425
- 887385 words of memory out of 5000000
- 46280 multiletter control sequences out of 15000+600000
+ 29390 strings out of 479418
+ 609181 string characters out of 5878425
+ 887528 words of memory out of 5000000
+ 46281 multiletter control sequences out of 15000+600000
  550034 words of font info for 142 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,22n,68p,586b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on notes.pdf (39 pages).
+Output written on notes.pdf (40 pages).

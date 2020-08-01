@@ -1398,7 +1398,7 @@
         }
         \caption*{}
     \end{figure}
-    \subsubsection{线性波动的能量}
+    \subsubsection{线性波动的能量}\label{energy}
     以下都是讨论一个波长范围内的线性波动能量，示意图如下：
 	\begin{figure}[H]
 		\centering\includegraphics[width=9cm]{22.eps}
@@ -1767,6 +1767,28 @@
         f(T)=\frac{\pi T^{3}}{T_{0}^{4}} \exp \left(-\frac{\pi}{4} \frac{T^{4}}{T_{0}^{4}}\right),T_{0}=\sqrt{2 \pi \bar{\lambda} / g}
     \]
     观测表明：波浪由深水进入浅水，周期几乎不变，其分布与水深无关，其但波长随水深改变，分布也随水深而变.
+    \paragraph{各种波高之间的关系}~{}\\
+    1. 均方根波高与平均波高：$\displaystyle H_{rms}=\frac{2}{\sqrt{\pi}}\bar{H}=1.129\bar{H}$\\
+    2. 累积率波高与平均波高：$\displaystyle \frac{H_{F}}{\bar{H}}=\left(\frac{4}{\pi} \ln \frac{1}{F}\right)^{1 / 2}$\\
+    3. 大波平均波高与平均波高：$\displaystyle \frac{H_{p}}{\bar{H}}=\frac{\sqrt{\pi}}{2}\left(\ln \frac{1}{p}\right)^{1 / 2}+\frac{1}{p}\left\{1-\operatorname{erf}\left[\left(\ln \frac{1}{p}\right)^{1 / 2}\right]\right\},\frac{H_{1 / 3}}{\bar{H}}=1.596$\\
+    4. 最大可能波高与平均波高：$\displaystyle H_{\mathrm{m}}=\sqrt{\frac{2}{\pi}} \bar{H} \approx 0.8 \bar{H}$\\
+    \subsubsection{海浪谱}
+    \paragraph{能谱}~{}\\
+    观测到的波面可写为：
+    \[
+        \zeta(t)=\sum_{i=1}^{n} a_{i} \cos \left(\omega_{i} t+\varepsilon_{i}\right)
+    \]
+    方差之和为：
+    \[
+        \sigma^{2}=\sum_{i=1}^{n} \sigma^{2}(i)=\frac{1}{2} \sum_{i=1}^{n} a_{i}^{2}
+    \]
+    回顾$\ref{energy}$，波动平均总能量为：
+    \[
+        \bar E = {1 \over 2}\rho g{a^2}
+    \]
+    总方差正比于组成波的总能量，不同频率$\displaystyle \omega_i$对应着不同的$\displaystyle \sigma^2(i)$，即对应着不同组成波的能量.\\
+
+
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}

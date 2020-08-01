@@ -145,4 +145,7 @@
 \contentsline {paragraph}{波面的分布}{38}{subsubsection.3.5.2}%
 \contentsline {paragraph}{波高的分布}{38}{figure.caption.27}%
 \contentsline {paragraph}{周期和波长的分布}{39}{figure.caption.28}%
+\contentsline {paragraph}{各种波高之间的关系}{39}{figure.caption.28}%
+\contentsline {subsubsection}{\numberline {3.5.3}海浪谱}{39}{subsubsection.3.5.3}%
+\contentsline {paragraph}{能谱}{39}{subsubsection.3.5.3}%
 \contentsfinish 
