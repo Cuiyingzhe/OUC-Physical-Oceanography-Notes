@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  24 JUL 2020 16:26
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  1 AUG 2020 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,11 +1115,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 407--411
 
  []
 
-[9]
-
-LaTeX Warning: Citation `Ekman' on page 10 undefined on input line 444.
-
-[10]
+[9] [10]
 Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
@@ -1128,9 +1124,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--493
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 507.
-
-
-LaTeX Warning: Citation `Ekman' on page 11 undefined on input line 532.
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps>
@@ -1188,9 +1181,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 691--697
  []
 
 [15]
-
-LaTeX Warning: Citation `Ekman' on page 16 undefined on input line 725.
-
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps>
 
@@ -1348,7 +1338,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1772.
 Here is how much of TeX's memory you used:
  29389 strings out of 479418
  609173 string characters out of 5878425
- 887348 words of memory out of 5000000
+ 887385 words of memory out of 5000000
  46280 multiletter control sequences out of 15000+600000
  550034 words of font info for 142 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
