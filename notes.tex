@@ -35,6 +35,7 @@
 \usepackage{subfigure}
 \newcommand*{\circled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)%
     circle (.5em) node {\makebox[1em][c]{\small #1}};}}
+\newcommand\prt[2]{$\frac{\partial #1}{\partial #2}$}
 %\usepackage[T1]{fontenc}
 %\usepackage{mathptmx}
 \hypersetup{
@@ -95,7 +96,7 @@
     \]
     重力(地球引力与地球自转产生的惯性离心力的合力)：$\displaystyle\vec{g}=-G\frac{M_g}{r^2}\cdot\left(\frac{\vec{r}}{r}\right)$\\
     科氏力：$\displaystyle -2\vec{\Omega}\times\vec{V}$\\
-    天体引潮力(受其他天体万有引力与惯性力离心力的合力)：$\displaystyle\vec{F_M}=-G\frac{M_M}{L^2}+G\frac{M_M}{D^2}\cdot\left(\frac{\vec{D}}{D}\right)$\\
+    天体引潮力(受其他天体万有引力与惯性力离心力的合力)：$\displaystyle\vec{F_M}=-G\frac{M}{L^2}+G\frac{M}{D^2}\cdot\left(\frac{\vec{D}}{D}\right)$\\
     由牛顿第二定律和坐标系转换关系：
     \[
         \left\{
@@ -1772,8 +1773,8 @@
     2. 累积率波高与平均波高：$\displaystyle \frac{H_{F}}{\bar{H}}=\left(\frac{4}{\pi} \ln \frac{1}{F}\right)^{1 / 2}$\\
     3. 大波平均波高与平均波高：$\displaystyle \frac{H_{p}}{\bar{H}}=\frac{\sqrt{\pi}}{2}\left(\ln \frac{1}{p}\right)^{1 / 2}+\frac{1}{p}\left\{1-\operatorname{erf}\left[\left(\ln \frac{1}{p}\right)^{1 / 2}\right]\right\},\frac{H_{1 / 3}}{\bar{H}}=1.596$\\
     4. 最大可能波高与平均波高：$\displaystyle H_{\mathrm{m}}=\sqrt{\frac{2}{\pi}} \bar{H} \approx 0.8 \bar{H}$\\
-    \subsubsection{海浪谱}
-    \paragraph{能谱}~{}\\
+    \subsection{海浪谱}
+    \subsubsection{能谱}~{}\\
     观测到的波面可写为：
     \[
         \zeta(t)=\sum_{i=1}^{n} a_{i} \cos \left(\omega_{i} t+\varepsilon_{i}\right)
@@ -1787,7 +1788,202 @@
         \bar E = {1 \over 2}\rho g{a^2}
     \]
     总方差正比于组成波的总能量，不同频率$\displaystyle \omega_i$对应着不同的$\displaystyle \sigma^2(i)$，即对应着不同组成波的能量.\\
-
+    如果$\omega$近似连续分布，对任意小的频率区间，总对应着一个组成方差的部分和：
+    \[
+        \Delta \sigma^{2}=\sum_{\omega_{k}-\Delta \omega / 2}^{\omega_{k}+\Delta \omega / 2} \sigma^{2}\left(\omega_{k}\right)
+    \]
+    能谱定义为：
+    \[
+        S(\omega_k)=\frac{\Delta \sigma^{2}=\sum_{\omega_{k}-\Delta \omega / 2}^{\omega_{k}+\Delta \omega / 2} \sigma^{2}\left(\omega_{k}\right)}{\Delta \omega}
+    \]
+    它比例于一段频率范围内组成波能量之和的平均.\\
+    当$n$很大时：
+    \[
+        \sigma^{2}=\sum_{i=1}^{n} \sigma^{2}(i) \Rightarrow \sigma^{2}=\sum_{k=1}^{\infty} S\left(\omega_{k}\right) \Delta \omega \Rightarrow \sigma^{2}=\int_{0}^{\infty} S(\omega) d \omega
+    \]
+    即能谱的积分等于总方差.\\
+    由协方差确定能谱：
+    \[
+        \begin{aligned}
+            R(\tau)&=E\{\zeta(t)\zeta(t+\tau)\}\\
+            &=\sum_{i=1}^{\infty}\frac{1}{2}a_i^2\cos (\omega_i \tau)\\
+            &=\sum_{i=1}^{\infty} \sigma^{2}(i) \cos \left(\omega_{i} \tau\right)\\
+            &=\sum_{i=1}^{\infty} S\left(\omega_{i}\right) \delta \omega \cos \left(\omega_{i} \tau\right)\\
+            (\mbox{取极限})&=\int_{0}^{\infty} S(\omega) \cos (\omega \tau) d \omega\\
+            (\mbox{傅里叶变换})&\Rightarrow \underbrace{S(\omega)=\frac{2}{\pi} \int_{0}^{\infty} R(\tau) \cos \omega \tau d \tau}_{\mbox{能谱的基本表达式}}
+        \end{aligned}
+    \]
+    \subsubsection{方向谱}~{}\\
+    海浪能量相对于频率和方向的分布.
+    \[
+        \zeta(x, y, t)=\sum^{\infty}_{n=0} a_{n} \cos \left(l_{n} x+m_{n} y-\omega_{n} t+\varepsilon_{n}\right)
+    \]
+    \[
+        \begin{aligned}
+            &S(l,m) = {{\sum\limits_{l - \Delta l/2}^{l +\Delta l/2} {\sum\limits_{m - \Delta m/2}^{m +\Delta m/2} {{1 \over 2}a_n^2} } } \over {\Delta l \Delta m}}\\
+            &S(\omega ,\theta ) = {{\sum\limits_{\omega  -\Delta \omega /2}^{\omega  +\Delta \omega /2} {\sum\limits_{\theta  -\Delta \theta /2}^{\theta  +\Delta \theta /2} {{1 \over 2}a_n^2} } } \over {\Delta \omega \Delta \theta }}
+        \end{aligned}
+    \]
+    方向谱不仅能反映海浪内部的频率结构，还能够反映海浪内部的方向结构.\\
+    能谱和方向谱的关系：
+    \[
+        S(\omega ) = \int_0^{2\pi } {S(\omega ,\theta )d\theta } 
+    \]
+    \section{潮波}
+    \subsection{平衡潮理论}
+    \subsubsection{基本假设}
+    \begin{figure}[H]
+        \centering\includegraphics[width=10cm]{30.eps}
+        \caption*{}
+    \end{figure}
+    地球为一圆球，被等深海水覆盖;
+    不考虑海水运动，只考虑受力平衡;
+    不受地转偏向力和摩擦力作用;\\
+    海水无粘性，无惯性;\\
+    海面能随时与等势面重叠.\\
+    每一瞬间海面都与水平引潮力和重力的合力方向垂直，
+    随着天体位置的变化，新的平衡不断取代旧的平衡，达到一种$\color{red}\mbox{动态的静力平衡}$。
+    \subsubsection{天体引潮力的主要部分}
+    \paragraph{月球引潮力}~{}
+    \begin{figure}[H]
+        \centering\includegraphics[width=10cm]{31.eps}
+        \caption*{}
+    \end{figure}
+    其中，$\theta$为天顶距.\\
+    \begin{table}[htbp]
+        \centering 
+        \caption*{}
+        \begin{tabular}{lll}
+            \toprule
+            & 对于任意一点$X$ & 对地球质心$E$ \\
+            \midrule
+        月球引力      &     $\displaystyle \vec{K}(X)=-\mu_0 \frac{M}{L^{2}}\left(\frac{\vec{L}}{L}\right)$     &  $\displaystyle\vec{K}(E)=-\frac{\mu_0 M}{D^{2}}\left(\frac{\vec{D}}{D}\right)$        \\
+        公转惯性离心力 &    $\displaystyle\vec{N}=\frac{\mu_0 M}{D^{2}}\left(\frac{\vec{D}}{D}\right)$       &      $\displaystyle\vec{N}=\frac{\mu_0 M}{D^{2}}\left(\frac{\vec{D}}{D}\right)$    \\
+        引潮力        &    $\displaystyle\vec{F}_{M}=\vec{N}+\vec{K}(X)$       &    $\displaystyle\vec{F}_{M}=\vec{N}+\vec{K}(E)=0$ \\
+        \bottomrule
+        \end{tabular}
+    \end{table}
+    \paragraph{引潮势}~{}\\
+    从地心移动单位质量物体到地表某一点，克服引潮力所作的功。引潮力和引潮势的关系：$\vec{F}=-\nabla \varphi$\\
+    对$P$点，单位质量所受的月球引力的势：
+    \[
+        \varphi_{1}=-\int \vec{K}(p) \cdot d \vec{L}=\int K \frac{M}{L^{2}}\left(\frac{\vec{L}}{L}\right) \cdot d \vec{L}=-K \frac{M}{L}+c_{1}
+    \]
+    设地心处的势为0，则：$\displaystyle \varphi_{1}=-K M\left(\frac{1}{L}-\frac{1}{D}\right)$\\
+    对$P$点，单位质量所受的惯性离心力的势：
+    \[
+        \varphi_{2}=-\int \vec{N} \cdot d \vec{r}=-\int K \frac{M}{D^{2}}\left(\frac{\vec{D}}{D}\right) \cdot d \vec{r}=K \frac{M}{D^{2}} r \cos \theta+c_{2}
+    \]
+    设地心处的势为0，则：$\displaystyle \varphi_{2}=K \frac{M}{D^{2}} r \cos \theta$
+    对$P$点，单位质量所受的月球引潮势：
+    \[
+        {\varphi _M} = {\varphi _1} + {\varphi _2} =  - K{M}({1 \over L} - {1 \over D}) + K{{{M}} \over {{D^2}}}r\cos \theta  =  - K{M}({1 \over L} - {1 \over D} - {r \over {{D^2}}}\cos \theta )
+    \]
+    对$P$点，单位质量所受的太阳引潮势：
+    \[
+        \varphi_{S}=-K M_{S}\left(\frac{1}{L_{S}}-\frac{1}{D_{S}}-\frac{r}{D_{S}^{2}} \cos \theta_{S}\right)
+    \]
+    天体引潮势：$\displaystyle \varphi_T=\varphi_M+\varphi_S$\\
+    天体引潮力：$\displaystyle \vec{F}_T=-\nabla\varphi_T$\\
+    根据余弦定理：
+    \[
+        \begin{aligned}
+           {L^2} &= {D^2} + {r^2} - 2Dr\cos \theta  \\
+           &=  {D^2}[1 - 2({r \over D})\cos \theta  + {({r \over D})^2}]\\
+            \Rightarrow {1 \over L} &= {1 \over D}{[1 - 2({r \over D})\cos \theta  + {({r \over D})^2}]^{ - 1/2}}
+        \end{aligned}
+    \]
+    根据泰勒展开：$\displaystyle {(1 + x)^\mu } = 1 + \mu x + {1 \over {2!}}\mu (\mu  - 1){x^2} + ... + {1 \over {n!}}\mu (\mu  - 1)\cdots (\mu  - n + 1){x^n} + ...$\\
+    由于$r\ll D$，把$\displaystyle \frac{r}{D}$看作无穷小量：
+    \[
+        \begin{aligned}
+            \Rightarrow {1 \over L} &= {1 \over D}{[1 - 2({r \over D})\cos \theta  + {({r \over D})^2}]^{ - 1/2}}\\
+            &= \frac{1}{D}\left\{1-\frac{1}{2}\left[\left(\frac{r}{D}\right)^2-2\left(\frac{r}{D}\right)\cos\theta\right]+\frac{1}{2}\cdot\left(-\frac{1}{2}\right)\cdot\left(-\frac{3}{2}\right)\left[\left(\frac{r}{D}\right)^2-2\left(\frac{r}{D}\right)\cos\theta\right]^2+o\left[\left(\frac{r}{D}\right)^3\right] \right\}\\
+            &= \frac{1}{D}\left\{1-\frac{1}{2}\left(\frac{r}{D}\right)^2+\left(\frac{r}{D}\right)\cos\theta+\frac{3}{8}\cdot 4\left(\frac{r}{D}\right)^2\cos^2\theta +o\left[\left(\frac{r}{D}\right)^3\right]\right\}\\
+            &=\frac{1}{D}-\frac{r^2}{2D^3}+\frac{r}{D^2}\cos\theta+\frac{3r^2}{2D^3}\cos^2\theta+o\left(\frac{r^3}{D^4}\right)
+        \end{aligned}
+    \]
+    代入月球引潮势：
+    \[
+        \begin{aligned}
+            {\varphi _M} &=  - {\mu _0}M\left({1 \over L} - {1 \over D} - {r \over {{D^2}}}\cos \theta \right)\\
+            &= - {\mu _0}M\left[\frac{1}{D}-\frac{r^2}{2D^3}+\frac{r}{D^2}\cos\theta+\frac{3r^2}{2D^3}\cos^2\theta+o\left(\frac{r^3}{D^4}\right) - {1 \over D} - {r \over {{D^2}}}\cos \theta \right]\\
+            &= - {\mu _0}M\left[-\frac{r^2}{2D^3}+\frac{3r^2}{2D^3}\cos^2\theta \right]+o\left(\frac{r^3}{D^4}\right)\\
+            &= - {\mu _0}M{{{r^2}} \over {2{D^3}}}(3{\cos ^2}\theta  - 1)+o\left(\frac{r^3}{D^4}\right)\\
+            &= V_M+o\left(\frac{r^3}{D^4}\right)
+        \end{aligned}
+    \]
+    $\displaystyle V_M$即月球引潮势的主要部分.
+    \paragraph{月球引潮力的铅直和水平分量}~{}
+    \[
+        \left\{
+            \begin{aligned}
+               {F_{MV}} &=  - {{\partial {V_M}} \over {\partial r}} = {\mu _0}M{r \over {{D^3}}}(3{\cos ^2}\theta  - 1)\\
+               {F_{MH}} &=  - {1 \over r}{{\partial {V_M}} \over {\partial \theta }} =  - {3 \over 2}{\mu _0}M{r \over {{D^3}}}\sin 2\theta
+            \end{aligned}
+        \right.
+    \]
+    地球表面单位质量物体受地心引力为：$\displaystyle g=\frac{\mu_0 E}{a^2},r\rightarrow a$\\
+    \[
+        \left\{
+            \begin{aligned}
+              {F_{MV}} &= g{{{a^3}} \over {{D^3}}}{M \over E}(3{\cos ^2}\theta  - 1) \to {10^{ - 7}}g\\
+              {F_{MH}} &=  - {3 \over 2}g{{{a^3}} \over {{D^3}}}{M \over E}\sin 2\theta  \to {10^{ - 7}}g
+            \end{aligned}
+        \right.
+    \]
+    形成海洋潮汐潮流运动的真正原动力是引潮力水平分量.
+    \paragraph{潮汐椭球}~{}\\
+    在近月点，引潮力方向指向月球；\\
+    在远月点，引潮力方向背向月球；\\
+    地球表面的海水发生辐聚和辐散，海面变成椭球形（潮汐椭球），长轴指向月球中心.
+    \begin{figure}[H]
+        \centering \includegraphics[width=16cm]{33.eps}
+        \caption*{\url{https://oceanservice.noaa.gov/facts/tidefrequency.html}}
+    \end{figure}
+    \paragraph{平衡潮潮高}~{}\\
+    根据平衡潮的概念，某一瞬间海水状态为静力平衡.
+    \begin{figure}[H]
+        \centering \includegraphics[width=14cm]{34.eps}
+        \caption*{}
+    \end{figure}
+    \[
+        \left\{
+            \begin{aligned}
+                \tan \alpha&={F_{MH} \over g} =\frac{\delta\bar{\zeta}_M}{\delta s}\\
+                F_{MH}&=-\frac{\partial V_M}{\partial s}
+            \end{aligned}
+        \right.
+        \Rightarrow \bar{\zeta}_M=-\frac{V_M}{g}+C={{{\mu _0}M} \over g}{{{a^2}} \over {2{D^3}}}(3{\cos ^2}\theta  - 1) + C
+    \]
+    全球海面升高和降低的水体体积之和为0：
+    \begin{figure}[H]
+        \centering \includegraphics[width=8cm]{35.eps}
+        \caption*{积分示意图}
+    \end{figure}
+    \[
+        \int_0^\pi  {{{\bar \zeta }_M} \cdot } 2\pi  \cdot {a^2}\sin \theta d\theta  = 0\Rightarrow C=0
+    \]
+    代入$\displaystyle g=\frac{\mu_0 E}{a^2}$：
+    \[
+        {\bar \zeta _M} =  - {{{V_M}} \over g} = {1 \over 2}{M \over E}{({a \over D})^3}a(3{\cos ^2}\theta  - 1)
+    \]
+    \paragraph{平衡潮最大潮差的估算}~{}\\
+    高潮：$\displaystyle {\bar \zeta _{M\max }} = {M \over E}{({a \over D})^3}a,\theta  = 0^\circ/180^\circ$\\
+    低潮：$\displaystyle{\bar \zeta _{M\min }} =  - {1 \over 2}{M \over E}{({a \over D})^3}a,\theta  = 90^\circ/270^\circ$\\
+    月球平衡潮最大潮差：$\displaystyle {\bar \zeta _{M\max }} - {\bar \zeta _{M\min }} = {3 \over 2}{M \over E}{({a \over D})^3}a = 0.535m$\\
+    太阳平衡潮最大潮差：$\displaystyle {\bar \zeta _{S\max }} - {\bar \zeta _{S\min }} = {3 \over 2}{S \over E}{({a \over {{D_s}}})^3}a = 0.246m$\\
+    平衡潮最大潮差为78cm.
+    \paragraph{平衡潮潮高展开和平衡潮周期}~{}
+    \[
+        \cos \theta  = \sin \varphi \sin \delta  + \cos \varphi \cos \delta \cos {T_1}
+    \]
+    \[
+        \begin{aligned}
+            {{\bar \zeta }_M} &= {{\bar \zeta }_0} + {{\bar \zeta }_1} + {{\bar \zeta }_2}\\
+            &= 2G{\left( {{{\bar D} \over D}} \right)^3}\{[ \underbrace{{3 \over 2}({{\sin }^2}\varphi  - {1 \over 3})({{\sin }^2}\delta  - {1 \over 3})}_{\mbox{半回归月周期}} ]  +\underbrace{ {1 \over 2}\sin 2\varphi \sin 2\delta \cos {T_1}}_{\mbox{全太阴日周期}} + \underbrace{{1 \over 2}{\cos ^2}\varphi {\cos ^2}\delta \cos 2T}_{\mbox{半太阴日周期}}\}
+        \end{aligned}
+    \]
 
     \bibliographystyle{apalike}
 	\bibliography{ref}
