@@ -1387,7 +1387,7 @@
     水质点速度：$\displaystyle u=\frac{a \omega}{k d} \sin (k x-\omega t) ,   w=-a \omega\left(1+\frac{z}{d}\right) \cos (k x-\omega t)$\\
     质点水平速度显著大于铅直速度.\\
     水质点轨迹：$\displaystyle \frac{\left(x-x_{0}\right)^{2}}{\left(\frac{a}{k d}\right)^{2}}+\frac{\left(z-z_{0}\right)^{2}}{\left[a\left(1+\frac{z_{0}}{d}\right)\right]^{2}}=1$\\
-    浅水波水质点运动轨迹为椭圆，水平轴（长轴）不随深度改变，短轴随深度增加逐渐减小.
+    浅水波水质点运动轨迹为椭圆，水平轴(长轴)不随深度改变，短轴随深度增加逐渐减小.
     \end{spacing}
     \begin{figure}[H]
         \centering 
@@ -1612,7 +1612,7 @@
         \frac{\partial \vec{k}}{\partial t}+\nabla \omega=0\label{keq}
     \end{equation}
     波数向量的时间变化与圆频率空间变化平衡.
-    \paragraph{波动要素的变化和分布}
+    \paragraph{波动要素的变化和分布}~{}\\
     1. 频率和周期
     \[
         (\ref{keq})\mathop{\Rightarrow}\limits^{\mbox{定常}} \nabla \omega=0\Rightarrow\omega(x,y)=const,T(x,y)=const
@@ -1936,12 +1936,12 @@
     \paragraph{潮汐椭球}~{}\\
     在近月点，引潮力方向指向月球；\\
     在远月点，引潮力方向背向月球；\\
-    地球表面的海水发生辐聚和辐散，海面变成椭球形（潮汐椭球），长轴指向月球中心.
+    地球表面的海水发生辐聚和辐散，海面变成椭球形(潮汐椭球)，长轴指向月球中心.
     \begin{figure}[H]
         \centering \includegraphics[width=16cm]{33.eps}
         \caption*{\url{https://oceanservice.noaa.gov/facts/tidefrequency.html}}
     \end{figure}
-    \paragraph{平衡潮潮高}~{}\\
+    \subsubsection{平衡潮潮高}~{}\\
     根据平衡潮的概念，某一瞬间海水状态为静力平衡.
     \begin{figure}[H]
         \centering \includegraphics[width=14cm]{34.eps}
@@ -1984,7 +1984,104 @@
             &= 2G{\left( {{{\bar D} \over D}} \right)^3}\{[ \underbrace{{3 \over 2}({{\sin }^2}\varphi  - {1 \over 3})({{\sin }^2}\delta  - {1 \over 3})}_{\mbox{半回归月周期}} ]  +\underbrace{ {1 \over 2}\sin 2\varphi \sin 2\delta \cos {T_1}}_{\mbox{全太阴日周期}} + \underbrace{{1 \over 2}{\cos ^2}\varphi {\cos ^2}\delta \cos 2T}_{\mbox{半太阴日周期}}\}
         \end{aligned}
     \]
-
+    \paragraph{潮汐日不等}~{}\\
+    赤纬为0：正规半日潮\\
+    赤纬不为0：\\
+    赤道：正规半日潮；\\
+    极区：正规日潮(极点无潮)；\\
+    其他区域：日不等现象.\\
+    \begin{figure}[H]
+        \centering\includegraphics[width=8cm]{36.eps}
+        \caption*{}
+    \end{figure}
+    \[
+        {\bar \zeta _M} = {\bar \zeta _0} + {\bar \zeta _1} + {\bar \zeta _2} = 2G{({{\bar D} \over D})^3}\left\{ {\left[ {{3 \over 2}({{\sin }^2}\varphi  - {1 \over 3})({{\sin }^2}\delta  - {1 \over 3})} \right]} \right. + {1 \over 2}\sin 2\varphi \sin 2\delta \cos {T_1} + {1 \over 2}{\cos ^2}\varphi {\cos ^2}\delta \cos 2{T_1}\left. {} \right\}
+    \]
+    \paragraph{潮汐月不等}~{}\\
+    由月球(太阳)引潮力引起的海水静力平衡下的海面为潮汐椭球，长轴指向月球(太阳)中心；\\
+    当太阳和月球的潮汐椭球长轴重叠时，形成(朔望)大潮；长轴垂直时，形成(两弦)小潮；\\
+    同时考虑月球和太阳平衡潮高可解释潮汐月不等现象.
+    \begin{figure}[H]
+        \centering\includegraphics[width=10cm]{37.eps}
+        \caption*{}
+    \end{figure}
+    \[
+       {\bar \zeta _T} = {\bar \zeta _M}{\rm{ + }}{\bar \zeta _{\rm{S}}}
+    \]
+    太阴、太阳时角相差0°或180°时， 潮差最大；\\
+    而当太阴、太阳时角相差90°或270°，则潮差最小
+    \subsubsection{平衡潮的分潮}
+    假想天体：实际海洋潮汐具有由地、月、日相对运动所产生的复杂周期。可将表示海水涨落的潮位变化曲线分解为许多不同周期的简单波动，每个单一波动对应着一个天体，即“假想天体” 。许多假想天体共同作用、将所对应的潮汐叠加，逼近实际潮潮汐。\\
+    分潮：每个假想天体对海水作用引起的潮汐称为分潮。例如，$M_2$为理想的月球产生的半太阴日分潮。它的周期和月球的周期相同，位于赤道平面上，绕地球匀速公转的轨道是一个圆周，地球就在这圆的圆心。 $S_2，K_1，O_1$……\\
+    \subsubsection{平衡潮理论的主要结论}
+    1. 地球自转，地球表面相对椭球形海面运动，使固定点海面发生周期性的涨落；\\
+    2. 月赤纬为0时，出现正规半日潮；\\
+    3. 月赤纬不为0时：\\
+    赤道出现正规半日潮；
+    高纬地区出现正规日潮；
+    其他纬度出现潮汐日不等现象；\\
+    4. 每天的高潮出现在月中天；\\
+    5. 同时考虑月球和太阳对潮汐的效应，形成朔望大潮；两弦小潮.
+    \subsubsection{平衡潮理论的贡献}
+    1. 建立在客观存在的引潮力之上，能够描述潮汐的发生；\\
+    2. 计算出的最大可能潮差为78cm， 与实际大洋的潮差相近；\\
+    3. 揭示的潮汐变化周期与实际基本相符；\\
+    4. 能够解释潮汐日不等现象和月不等现象；\\
+    5.能够解释分潮叠加，利用建立在“假想天体”和“分潮”概念上的调和分析可进行较准确的潮汐预报.
+    \subsubsection{平衡潮理论的缺陷}
+    1. 假定整个地球完全被等深海水包围，无法体现水深和地形对潮高的影响；\\
+    2. 完全不考虑海水的运动，假设海水没有惯性和摩擦，无法体现高潮间隙和潮龄；\\
+    3. 没涉及海水的水平运动，无法解释潮流这一重要现象；\\
+    4. 无法解释旋转潮波系统；\\
+    5. 最大潮差与浅海、近岸地区的实际况相差较大；\\
+    6. 潮高振幅随纬度变化与实际不符；\\
+    7. 赤道上永远不会出现日潮，低纬度地区以半日潮占优势的结论与实际不符.
+    \subsection{考虑地球形状的潮波}
+    \subsubsection{全球水域中的潮波(Laplace理论)}
+    全球为海水覆盖，水深随纬度变化的大洋在天体引潮力的作用下产生的强迫波动.
+    \paragraph{假定和方程简化}~{}\\
+    对大尺度强迫潮波运动： \\
+    1. 忽略惯性项中的平流项\\
+    2. 忽略摩擦项\\
+    3. 满足准静力近似：$\displaystyle {1 \over \rho }{{\partial p} \over {\partial \lambda }} \to g{{\partial \zeta } \over {\partial \lambda }}$\\
+    4. $\rho$为常数.\\
+    求坐标系下原始方程：
+    \[
+        {{du} \over {dt}} = 2\omega \sin \varphi v \cancel{- 2\omega \cos \varphi w }- {1 \over {\rho r\cos \varphi }}{{\partial p} \over {\partial \lambda }} - {1 \over {r\cos \varphi }}{{\partial \phi } \over {\partial \lambda }} + \cancel{{\mu  \over \rho }{(\Delta \mathord{\buildrel{\lower3pt\hbox{$\scriptscriptstyle\rightharpoonup$}}\over 
+V} )_\lambda }} + \cancel{Turbulence\ Item}
+    \]
+    \paragraph{均质海洋垂直平均的基本方程}~{}\\
+    简化运动方程：
+    \[
+        {{\partial u} \over {\partial t}} - 2\omega \sin \varphi v =  - {g \over {r\cos \varphi }}{{\partial \zeta } \over {\partial \lambda }} - {1 \over {r\cos \varphi }}{{\partial \phi } \over {\partial \lambda }}
+    \]
+    余纬度：$\theta=90^\circ-\varphi,a=r,h+\zeta\approx h$\\
+    垂向平均运动方程：
+    \[
+        \left\{
+        \begin{aligned}
+            &{{\partial \left\langle u \right\rangle } \over {\partial t}} - 2\omega \cos \theta \left\langle v \right\rangle  =  - {g \over {a\sin \theta }}{{\partial \zeta } \over {\partial \lambda }} - {1 \over {a\sin \theta }}{{\partial \phi } \over {\partial \lambda }}\\
+            &{{\partial \left\langle v \right\rangle } \over {\partial t}} + 2\omega \cos \theta \left\langle u \right\rangle  = {g \over a}{{\partial \zeta } \over {\partial \theta }} + {1 \over a}{{\partial \phi } \over {\partial \theta }}
+        \end{aligned}
+        \right.
+    \]
+    垂向平均连续方程：
+    \[
+        {{\partial \zeta } \over {\partial t}} + {{\partial \left[ {(h + \zeta )\left\langle u \right\rangle } \right]} \over {\partial x}} + {{\partial \left[ {(h + \zeta )\left\langle v \right\rangle } \right]} \over {\partial y}} = 0,{\partial  \over {\partial x}} = {1 \over {r\cos \varphi }}{\partial  \over {\partial \lambda }},{\partial  \over {\partial y}} = {1 \over r}{\partial  \over {\partial \varphi }}
+    \]
+    \[
+        \Rightarrow {{\partial \zeta } \over {\partial t}} + {1 \over {a\sin \theta }}\left[ {{\partial  \over {\partial \theta }}( - h\left\langle v \right\rangle \sin \theta ) + {{\partial h\left\langle u \right\rangle } \over {\partial \lambda }}} \right] = 0
+    \]
+    球坐标潮波运动方程组：
+    \[
+        \left\{
+            \begin{aligned}
+                &{{\partial \left\langle u \right\rangle } \over {\partial t}} - 2\omega \cos \theta \left\langle v \right\rangle  =  - {g \over {a\sin \theta }}{{\partial \zeta } \over {\partial \lambda }} - {1 \over {a\sin \theta }}{{\partial \phi } \over {\partial \lambda }}\\
+                &{{\partial \left\langle v \right\rangle } \over {\partial t}} + 2\omega \cos \theta \left\langle u \right\rangle  = {g \over a}{{\partial \zeta } \over {\partial \theta }} + {1 \over a}{{\partial \phi } \over {\partial \theta }}\\
+                &{{\partial \zeta } \over {\partial t}} + {1 \over {a\sin \theta }}\left[ {{\partial  \over {\partial \theta }}( - h\left\langle v \right\rangle \sin \theta ) + {{\partial h\left\langle u \right\rangle } \over {\partial \lambda }}} \right] = 0
+            \end{aligned}
+        \right.
+    \]
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}
