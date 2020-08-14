@@ -170,4 +170,5 @@
 \contentsline {subsubsection}{\numberline {4.2.1}全球水域中的潮波(Laplace理论)}{46}{subsubsection.4.2.1}%
 \contentsline {paragraph}{假定和方程简化}{46}{subsubsection.4.2.1}%
 \contentsline {paragraph}{均质海洋垂直平均的基本方程}{46}{subsubsection.4.2.1}%
+\contentsline {paragraph}{讨论}{48}{figure.caption.37}%
 \contentsfinish 

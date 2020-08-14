@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  14 AUG 2020 08:06
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  14 AUG 2020 23:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,7 +1115,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--412
 
  []
 
-[9] [10]
+[9]
+
+LaTeX Warning: Citation `Ekman' on page 10 undefined on input line 445.
+
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
@@ -1124,6 +1128,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--494
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 508.
+
+
+LaTeX Warning: Citation `Ekman' on page 11 undefined on input line 533.
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps>
@@ -1181,6 +1188,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 692--698
  []
 
 [15]
+
+LaTeX Warning: Citation `Ekman' on page 16 undefined on input line 726.
+
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps>
 
@@ -1354,17 +1364,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 2084--2086
 
  []
 
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/38.eps Graphic file (type eps)
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/38.eps>
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 2139--2145
+
+ []
+
 (./notes.bbl)
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 48.
 See the caption package documentation for explanation.
 
-[47]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2107.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2107.
+[48]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2148.
  (./notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2107.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2148.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2148.
 Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: 2BB119CC249EDB30D2EAAA264FB5E635;7570.
 
@@ -1374,15 +1391,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2107.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2148.
  ) 
 Here is how much of TeX's memory you used:
- 29432 strings out of 479418
- 610891 string characters out of 5878425
- 889198 words of memory out of 5000000
- 46315 multiletter control sequences out of 15000+600000
+ 29436 strings out of 479418
+ 611052 string characters out of 5878425
+ 889162 words of memory out of 5000000
+ 46318 multiletter control sequences out of 15000+600000
  550042 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,22n,68p,586b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on notes.pdf (47 pages).
+Output written on notes.pdf (48 pages).

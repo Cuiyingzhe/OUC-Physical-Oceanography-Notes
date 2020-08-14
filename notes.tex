@@ -2102,6 +2102,47 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
     \[
         \bar \zeta  = {H_0}({1 \over 3} - {\cos ^2}\theta ) + {H_1}\sin \theta \cos \theta \cos {T_1} + {H_2}{\sin ^2}\theta \cos 2{T_1}
     \]
+    \begin{figure}[H]
+        \centering \includegraphics[width=10cm]{38.eps}
+        \caption*{}
+    \end{figure}
+    \[
+        T_1=T_G+\lambda=\omega_1 t+180^\circ +\lambda
+    \]
+    $T_1$为观测点的月球时角，$T_G$为格林威治的月球时角，$\lambda$为经度(东经取正号)，$t$为格林威治平太阴时，${\omega _1} = {360^ \circ }/24 = {15^ \circ }/$平太阴时.\\
+    月球平衡潮的三类潮高：
+    \[
+        \begin{aligned}
+            &{\bar \zeta _0} = {H_0}({1 \over 3} - {\cos ^2}\theta )\\
+            &{\bar \zeta _1} = {H_1}\sin \theta \cos \theta \cos ({\omega _1}t{\rm{ + }}\lambda  + {180^ \circ })\\
+            &{\bar \zeta _2} = {H_2}{\sin ^2}\theta \cos ({\omega _2}t{\rm{ + }}2\lambda  + 2 \times {180^ \circ })
+        \end{aligned}
+    \]
+    其中，${\omega _2} = 2{\omega _1}$.
+    各类潮波：
+    \[
+        {\zeta _n},{\bar \zeta _n},{u_n},{v_n} \to {e^{i({\omega _n}t + n\lambda  + {\alpha _n})}}{\rm{  }}(n = 0,1,2)
+    \]
+    带入运动方程和连续方程：
+    \[
+        {\zeta '_n} = {\zeta _n} - {\bar \zeta _n};  {\bar \omega _n} = {\omega _n}/(2\omega );  {m_n} = 4\omega _n^2a/g  (n = 0,1,2)
+    \]
+    Laplace潮汐方程：
+    \[
+        {1 \over {\sin \theta }}{d \over {d\theta }}[{{h\sin \theta } \over {{{\bar \omega }_n} - {{\cos }^2}\theta }}({{d{{\zeta '}_n}} \over {d\theta }} + {n \over {{{\bar \omega }_n}}}{\zeta '_n}\cot \theta )] - {h \over {{{\bar \omega }_n} - {{\cos }^2}\theta }} \times ({n \over {{{\bar \omega }_n}}}\cot \theta {{d{{\zeta '}_n}} \over {d\theta }} + {n^2}{\zeta '_n}\cos ec\theta ) + {m_n}a{\zeta '_n} =  - {m_n}a{\bar \zeta _n}
+    \]
+    \paragraph{讨论}~{}\\
+    1. 长周期潮($n$=0)\\
+    令$\mu=\cos\theta,\theta=90^\circ-\varphi,h=2210m$：
+    \[
+        {\zeta _0} = {\zeta '_0} + {\bar \zeta _0} = {H_0}(0.1515 - 1.0{\mu ^2} + 1.5153{\mu ^4} - .... + ...
+    \]
+    比较动力潮和平衡潮在赤道和极低的潮高：\\
+    两极：$\displaystyle {\zeta _0}\mu  =  \pm 1 =  - {2 \over 3}{H_0} \cdot 0.154,\bar{\zeta}_0=-{2 \over 3}H_0$\\
+    赤道：$\displaystyle {\zeta _0}\mu  = 0 = {1 \over 3}{H_0} \cdot 0.455,\bar{\zeta}_0={1 \over 3}H_0$\\
+    长周期的动力潮高小于长周期的平衡潮高.\\
+    2. 全日潮($n=1$)\\
+
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}
