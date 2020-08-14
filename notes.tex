@@ -1981,7 +1981,7 @@
     \[
         \begin{aligned}
             {{\bar \zeta }_M} &= {{\bar \zeta }_0} + {{\bar \zeta }_1} + {{\bar \zeta }_2}\\
-            &= 2G{\left( {{{\bar D} \over D}} \right)^3}\{[ \underbrace{{3 \over 2}({{\sin }^2}\varphi  - {1 \over 3})({{\sin }^2}\delta  - {1 \over 3})}_{\mbox{半回归月周期}} ]  +\underbrace{ {1 \over 2}\sin 2\varphi \sin 2\delta \cos {T_1}}_{\mbox{全太阴日周期}} + \underbrace{{1 \over 2}{\cos ^2}\varphi {\cos ^2}\delta \cos 2T}_{\mbox{半太阴日周期}}\}
+            &= 2G{\left( {{{\bar D} \over D}} \right)^3}\{[ \underbrace{{3 \over 2}({{\sin }^2}\varphi  - {1 \over 3})({{\sin }^2}\delta  - {1 \over 3})}_{\mbox{半回归月周期}} ]  +\underbrace{ {1 \over 2}\sin 2\varphi \sin 2\delta \cos {T_1}}_{\mbox{全太阴日周期}} + \underbrace{{1 \over 2}{\cos ^2}\varphi {\cos ^2}\delta \cos 2T_1}_{\mbox{半太阴日周期}}\}
         \end{aligned}
     \]
     \paragraph{潮汐日不等}~{}\\
@@ -2081,6 +2081,26 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
                 &{{\partial \zeta } \over {\partial t}} + {1 \over {a\sin \theta }}\left[ {{\partial  \over {\partial \theta }}( - h\left\langle v \right\rangle \sin \theta ) + {{\partial h\left\langle u \right\rangle } \over {\partial \lambda }}} \right] = 0
             \end{aligned}
         \right.
+    \]
+    根据平衡潮理论：\\
+    $$displaystyle \bar{\zeta_M}=-{V_M \over g}\Rightarrow \bar{\zeta}=-{\phi \over g}$$
+    \[
+        {{\partial u} \over {\partial t}} - 2\omega \cos \theta v =  - {g \over {a\sin \theta }}{{\partial \zeta } \over {\partial \lambda }} - {1 \over {a\sin \theta }}{{\partial \phi } \over {\partial \lambda }}\Rightarrow {{\partial u} \over {\partial t}} - 2\omega \cos \theta v =  - {g \over {a\sin \theta }}{\partial  \over {\partial \lambda }}(\zeta  - \bar \zeta )
+    \]
+    \[
+        {{\partial v} \over {\partial t}} + 2\omega \cos \theta u = {g \over a}{{\partial \zeta } \over {\partial \theta }} + {1 \over a}{{\partial \phi } \over {\partial \theta }}\Rightarrow {{\partial v} \over {\partial t}} + 2\omega \cos \theta u = {g \over a}{\partial  \over {\partial \theta }}(\zeta  - \bar \zeta )
+    \]
+    平衡潮潮高公式：
+    \[
+        \begin{aligned}
+            {{\bar \zeta }_M} &= {{\bar \zeta }_0} + {{\bar \zeta }_1} + {{\bar \zeta }_2}\\
+            &= 2G{\left( {{{\bar D} \over D}} \right)^3}\left\{\left[ {3 \over 2}({{\sin }^2}\varphi  - {1 \over 3})({{\sin }^2}\delta  - {1 \over 3}) \right]  +{1 \over 2}\sin 2\varphi \sin 2\delta \cos {T_1} + {1 \over 2}{\cos ^2}\varphi {\cos ^2}\delta \cos 2T_1\right\}
+        \end{aligned}
+    \]
+    令：$\displaystyle {H_0} = 3G{({{\bar D} \over D})^3}({1 \over 3} - {\sin ^2}\delta ),{H_1} = 2G{({{\bar D} \over D})^3}\sin 2\delta ,{H_2} = G{({{\bar D} \over D})^3}{\cos ^2}\delta $
+    将纬度以余纬度替换：
+    \[
+        \bar \zeta  = {H_0}({1 \over 3} - {\cos ^2}\theta ) + {H_1}\sin \theta \cos \theta \cos {T_1} + {H_2}{\sin ^2}\theta \cos 2{T_1}
     \]
     \bibliographystyle{apalike}
 	\bibliography{ref}
