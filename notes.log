@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  14 AUG 2020 23:17
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  15 AUG 2020 12:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,11 +1115,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--412
 
  []
 
-[9]
-
-LaTeX Warning: Citation `Ekman' on page 10 undefined on input line 445.
-
-[10]
+[9] [10]
 Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
@@ -1128,9 +1124,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--494
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 508.
-
-
-LaTeX Warning: Citation `Ekman' on page 11 undefined on input line 533.
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps>
@@ -1188,9 +1181,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 692--698
  []
 
 [15]
-
-LaTeX Warning: Citation `Ekman' on page 16 undefined on input line 726.
-
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps>
 
@@ -1366,24 +1356,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 2084--2086
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/38.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/38.eps>
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 2139--2145
+[47] [48]
+Underfull \hbox (badness 10000) in paragraph at lines 2233--2235
 
  []
 
-(./notes.bbl)
+
+Underfull \hbox (badness 10000) in paragraph at lines 2238--2240
+
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 2249--2250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2265--2268
+
+ []
+
+[50] [51]
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/39.eps Graphic file (type eps)
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/39.eps>
+ [52]
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/40.eps Graphic file (type eps)
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/40.eps>
+ [53]
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/41.eps Graphic file (type eps)
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/41.eps>
+ [54]
+Underfull \hbox (badness 10000) in paragraph at lines 2529--2531
+
+ []
+
+Missing character: There is no ： in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 湾 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 口 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 方 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 向 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 传 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 播 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 的 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 波 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 叠 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 加 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 波 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 之 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 和 in font [lmroman12-regular]:mapping=tex-text;!
+File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/42.eps Graphic file (type eps)
+<C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/42.eps>
+(./notes.bbl [55])
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 48.
 See the caption package documentation for explanation.
 
-[48]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2148.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2148.
+[56]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2584.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2584.
  (./notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2148.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2584.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2584.
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 2BB119CC249EDB30D2EAAA264FB5E635;7570.
+(rerunfilecheck)             Checksum: 15610AB63D634C40123B5F1C1D5FDB6C;8924.
 
 
 LaTeX Warning: There were undefined references.
@@ -1391,15 +1426,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2584.
  ) 
 Here is how much of TeX's memory you used:
- 29436 strings out of 479418
- 611052 string characters out of 5878425
- 889162 words of memory out of 5000000
- 46318 multiletter control sequences out of 15000+600000
+ 29472 strings out of 479418
+ 612340 string characters out of 5878425
+ 890934 words of memory out of 5000000
+ 46350 multiletter control sequences out of 15000+600000
  550042 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,22n,68p,586b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on notes.pdf (48 pages).
+Output written on notes.pdf (56 pages).

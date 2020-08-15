@@ -2142,7 +2142,443 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
     赤道：$\displaystyle {\zeta _0}\mu  = 0 = {1 \over 3}{H_0} \cdot 0.455,\bar{\zeta}_0={1 \over 3}H_0$\\
     长周期的动力潮高小于长周期的平衡潮高.\\
     2. 全日潮($n=1$)\\
-
+    3. 半日潮($n=2$)
+    \subsubsection{有界水域中的潮波(Airy沟渠理论)}~{}
+    \subsection{等深广阔水域中的潮波}
+    \[
+        \boxed{\mbox{相同的动力学方程}}+\boxed{\mbox{不同的边界条件}}\Rightarrow \boxed{\mbox{不同的频散关系}}\Rightarrow \boxed{\mbox{不同性质的波动}}
+    \]
+    \paragraph{假定和方程}~{}\\
+    1. 宽广平缓的陆家海：(1) 等深 (2) 大尺度(忽略非线性平流项；忽略摩擦)\\
+    2. 自由波动\\
+    3. 均质，密度为常数\\
+    4. 静力近似\\
+    5. $f$平面近似\\
+    垂向平均方程组：
+    \begin{numcases}{}
+        \frac{\partial u}{\partial t}-f v=-g \frac{\partial \zeta}{\partial x} \label{tide1}\\
+        \frac{\partial v}{\partial t}+f u=-g \frac{\partial \zeta}{\partial y}\label{tide2}\\
+        \frac{\partial \zeta}{\partial t}+h\left(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}\right)=0\label{tide3}
+    \end{numcases}
+    其中假设$h+\zeta\approx h$.\\
+    设波动解：
+    \[
+        \left\{
+            \begin{aligned}
+                &\zeta=Z(x,y)e^{-i\omega t}\\
+                &u=U(x,y)e^{-i\omega t}\\
+                &v=V(x,y)e^{-i\omega t}
+            \end{aligned}
+        \right.
+    \]
+    带入(\ref{tide1}),(\ref{tide2}，得极化方程：
+    \[
+        \left\{\begin{aligned}
+            &-i \omega U-f V=-g \frac{\partial Z}{\partial x} \\
+            &-i \omega V+f U=-g \frac{\partial Z}{\partial y}
+            \end{aligned} \Rightarrow\left\{\begin{aligned}
+            &U=\frac{g}{\omega^{2}-f^{2}}\left(-i \omega \frac{\partial Z}{\partial x}+f \frac{\partial Z}{\partial y}\right) \\
+            &V=\frac{g}{\omega^{2}-f^{2}}\left(-i \omega \frac{\partial Z}{\partial y}-f \frac{\partial Z}{\partial x}\right)
+            \end{aligned}\right.\right.
+    \]
+    带入(\ref{tide3})，$f$为常数，得Helmholtz方程：
+    \[
+        \frac{\partial^{2} Z}{\partial x^{2}}+\frac{\partial^{2} Z}{\partial y^{2}}+\frac{\omega^{2}-f^{2}}{g h} Z=0
+    \]
+    用分离变量法令$Z(x,y)=X(x)Y(y)$：
+    \[
+        \frac{X^{\prime \prime}}{X}+\frac{Y^{\prime \prime}}{Y}+\frac{\omega^{2}-f^{2}}{g h}=0 \Rightarrow \frac{X^{\prime \prime}}{X}+\frac{\omega^{2}-f^{2}}{g h}=-\frac{Y^{\prime \prime}}{Y}=c o n s t
+    \]
+    其中，$\displaystyle const=\left\{\begin{aligned}  &l^{2} (\mbox{平面Sverdrup波})\\  &0 \\ &-l^{2}\mbox{Kelvin波}\end{aligned}\right.$
+    \subsubsection{平面Sverdrup波}
+    \[
+        \omega^2=f^2+(k^2+l^2)gh
+    \]
+    \[
+        \left\{
+            \begin{aligned}
+                &X^{\prime \prime}+k^{2} X=0\\
+                &Y^{\prime \prime}+l^{2} Y=0
+            \end{aligned}
+        \right.
+        \Rightarrow\left\{\begin{aligned}
+            &X=A_{1} e^{-i k x}+B_{1} e^{i k x} \\
+            &Y=A_{2} e^{-i l y}+B_{2} e^{i l y}
+            \end{aligned}\right.
+    \]
+    带入$Z(x,y)=X(x)Y(y)$：
+    \[
+        \begin{array}{l}
+            Z=c_{1} e^{i(k x+l y)}+c_{2} e^{i(k x-l y)}+c_{3} e^{-i(k x+l y)}+c_{4} e^{-i(k x-l y)} \\
+            c_{1}=B_{1} B_{2} ; \quad c_{2}=B_{1} A_{2} ; \quad c_{3}=A_{1} A_{2} ; \quad c_{4}=A_{1} B_{2}
+            \end{array}
+    \]
+    四个沿不同方向传播的同一性质的波动的叠加.
+    取其中的$Z=Ae^{i(kx+ly)}$带入极化方程：
+    \[
+        \left\{\begin{aligned}            U=\frac{g}{\omega^{2}-f^{2}}\left(-i \omega \frac{\partial Z}{\partial x}+f \frac{\partial Z}{\partial y}\right) \\
+            V=\frac{g}{\omega^{2}-f^{2}}\left(-i \omega \frac{\partial Z}{\partial y}-f \frac{\partial Z}{\partial x}\right)
+            \end{aligned} \quad \Rightarrow \left\{\begin{aligned}
+            U=\frac{A g}{\omega^{2}-f^{2}}(\omega k+i f l) e^{i(k x+l y)} \\
+            V=\frac{A g}{\omega^{2}-f^{2}}(\omega l-i f k) e^{i(k x+l y)}
+            \end{aligned}\right.\right.
+    \]
+    结合频散关系：
+    \[
+        \left\{\begin{aligned}
+            \zeta=A e^{i(k x+l y-\omega t)} \\
+            u=A_{u} e^{i(k x+l y-\omega t)} \\
+            v=A_{v} e^{i(k x+l y-\omega t)}
+            \end{aligned}\right.
+    \]
+    其中，$\displaystyle  A_{u}=\frac{A}{h} \frac{\omega k+i f l}{k^{2}+l^{2}},  A_{v}=\frac{A}{h} \frac{\omega l-i f k}{k^{2}+l^{2}}$\\
+    \paragraph{Sverdrup波存在条件}~{}
+    \[
+        k^{2}=\frac{\omega^{2}-f^{2}}{g h}-l^{2} \Rightarrow k^{2}+l^{2}=\frac{\omega^{2}-f^{2}}{g h}
+    \]
+    因此Sverdrup波存在的条件为$\omega^2>f^2$.\\
+    \paragraph{频散关系}~{}\\
+    将$x$轴取在波动传播方向：$\omega^2=f^2+ghm^2,m^2=k^2+l^2$\\
+    浅水重力波：$\omega^2=gdk^2$\\
+    Sverdrup波的频率的平方为科氏参数和浅水波频率的平方和.
+    \paragraph{波速和群速}~{}\\
+    波速：$\displaystyle c=\frac{\lambda}{T}=\frac{\omega}{m}=\sqrt{\frac{\omega^{2}}{m^{2}}}=\sqrt{g h} \sqrt{\frac{1}{1-\left(\frac{f}{\omega}\right)^{2}}}>\sqrt{g h}$\\
+    Sverdrup波的波速大于浅水波波速.
+    群速：$\displaystyle c_{g}=\frac{d \omega}{d m}=\frac{1}{2}\left(\omega^{2}\right)^{-\frac{1}{2}} \cdot(2 m g h)=\sqrt{g h} \sqrt{1-\left(\frac{f}{\omega}\right)^{2}}<\sqrt{g h}$\\
+    Sverdrup波的群速小于浅水波波速.
+    \paragraph{流速和流向}~{}\\
+    \[
+        \left\{\begin{aligned}
+            \zeta=A e^{i(k x+l y-\omega t)} \\
+            u=A_{u} e^{i(k x+l y-\omega t)} \\
+            v=A_{v} e^{i(k x+l y-\omega t)}
+            \end{aligned} \right. \Rightarrow
+    \]
+    \begin{numcases}{}
+        \zeta=A \cos (k x-\omega t) \nonumber \\
+        u=\frac{\omega}{k h} A \cos (k x-\omega t) \label{x1}\\
+        v=\frac{f}{k h} A \sin (k x-\omega t) \label{x2}
+    \end{numcases}
+    由(\ref{x1}),(\ref{x2})得：
+    \[
+        \frac{u^{2}}{\left(\frac{\omega A}{k h}\right)^{2}}+\frac{v^{2}}{\left(\frac{f A}{k h}\right)^{2}}=1
+    \]
+    流速矢端的轨迹为一椭圆 ,长轴沿波动传播方向.\\
+    流失量与$x$轴的夹角：$\displaystyle \theta=\arctan {v\over u}$\\
+    \[
+        \frac{d \theta}{d t}=\frac{1}{1+\left(\frac{v}{u}\right)^{2}} \cdot \frac{d}{d t}\left(\frac{v}{u}\right)=\frac{-\omega^{2} A^{2} f}{k^{2} h^{2}\left(u^{2}+v^{2}\right)}
+    \]
+    前进潮波中的旋转潮流是由于地转偏向力作用的结果，在北半球，流矢量随时间作顺时针旋转.\\
+    Sverdrup波的平均动能大于平均势能，平均能量只沿波动传播方向转移.
+    \[
+        \bar{p}=\frac{1}{2} \rho g a^{2} \cdot c
+    \]
+    \paragraph{地转效应引起的变化(与浅水重力波相比)}~{}\\
+    1. Sverdrup波的频率比浅水波的频率大。其平方等于浅水波频率与科氏参数的平方和；\\
+    2. Sverdrup波的波速大于浅水波波速，群速小于浅水波波速；\\
+    3. Sverdrup波的垂直波动传播方向的速度(横向速度)$v$不再等于0，产生旋转潮流；\\
+    4. Sverdrup波的平均动能大于平均势能.
+    \subsubsection{Poincare波}
+    Sverdrup波遇到直线海岸将发生反射，入射波和反射波叠加形成Poincare波.\\
+    1. 沿x正方向传播的前进波，岸界在传播方向的右方，称右界Poincare波；\\
+    2. 沿x负方向传播的前进波，岸界在传播方向的左方，称左界Poincare波；\\
+    3. 等振幅线平行岸线，振幅沿y方向呈余弦变化；\\
+    4. 入射波与岸界垂直时，产生驻立Sverdrup波.
+    \subsubsection{Kelvin波}
+	\paragraph{频散关系和波动解}~{}
+	频散关系：
+	$$\omega^2=ghk^2$$
+	\indent
+	波动解：
+	\[
+	\left\{
+	\begin{aligned}
+		\zeta & = A{e^{ - {f \over c}y}} \cdot {e^{i(kx - \omega t)}}\\
+		u &= {g \over c}A{e^{ - {f \over c}y}} \cdot {e^{i(kx - \omega t)}}\\
+		v&=0
+	\end{aligned}	
+	\right.
+	\]
+	\indent
+	上面的解未考虑底摩擦，若考虑，则波动解为：
+	\[
+	\left\{
+	\begin{aligned}
+		&\zeta=A e^{-\left(\alpha_{1} y+\beta_{1} x\right)} \cos \left(\alpha_{2} y+\beta_{2} x-\omega t\right)\\
+		&u=\frac{g}{\sqrt{g h}} \frac{1}{\sqrt[4]{1+\mu^{2}}} A e^{-\left(\alpha_{1} y+\beta_{1} x\right)} \cos \left(\alpha_{2} y+\beta_{2} x-\omega t-r\right)\\
+		&v=0
+	\end{aligned}
+	\right.
+	\]
+	其中，
+	\[
+	\left\{
+	\begin{aligned}
+	&\alpha_{1}=\frac{f}{\sqrt{g h}} \sqrt{\frac{\sqrt{1+\mu^{2}}+1}{2\left(1+\mu^{2}\right)}}\\
+	&\beta_{1}=\frac{\omega}{\sqrt{g h}} \sqrt{\frac{\sqrt{1+\mu^{2}}-1}{2}}\\
+	&\alpha_{2}=\frac{f}{\sqrt{g h}} \sqrt{\frac{\sqrt{1+\mu^{2}}-1}{2\left(1+\mu^{2}\right)}}\\
+	&\beta_{2}=\frac{\omega}{\sqrt{g h}} \sqrt{\frac{\sqrt{1+\mu^{2}}+1}{2}}\\
+	&\mu=k/\omega\\
+	&r=\arctan \sqrt{\frac{\sqrt{1+\mu^{2}}-1}{\sqrt{1+\mu^{2}}+1}}
+	\end{aligned}
+	\right.
+	\]
+	\newpage
+	\paragraph{两列传播方向相反的Kelvin波叠加}
+	\begin{figure}[H]
+		\centering\includegraphics[width=10cm]{39.eps}
+		\caption*{}
+	\end{figure}
+	在波向平行海峡，海峡无限长、深且等深、较宽的条件下，两列性质相同但传播方向相反的Kelvin波叠加后的水位可以表示为：
+	\[
+	\zeta=Ae^{-\frac{f}{c}y}e^{i(kx-\omega t)}+Ae^{\frac{f}{c}y}e^{i(-kx-\omega t)}
+	\]
+	\indent
+	取实部：
+	\[
+	\zeta=2 A {\rm ch}\left(\frac{f}{c} y\right) \cos \frac{\omega}{c} x\cos\omega t-2 A {\rm sh}\left(\frac{f}{c}y\right) \sin\frac{\omega}{c}x\sin\omega t
+	\]
+	\indent
+	令：
+	\[
+	\zeta_1=2 A {\rm ch}\left(\frac{f}{c} y\right) \cos \frac{\omega}{c} x=R\cos\theta,
+	\zeta_2=-2 A {\rm sh}\left(\frac{f}{c}y\right) \sin\frac{\omega}{c} x=R\sin\theta
+	\]
+	其中，$R=\sqrt{\zeta_1^2+\zeta_2^2},\theta=\arctan\frac{\zeta_1}{\zeta_2}$
+	，因此：
+	\[
+	\zeta=R\cos(\omega t-\theta)
+	\]
+	\indent
+	性质：\\
+	\indent
+	\textbf {1) 无潮点}
+	\[
+	\begin{aligned}
+	R=0&\Rightarrow {\rm ch}^{2} \frac{f}{c} y \cos ^{2} \frac{\omega}{c} x+{\rm sh}^{2} \frac{f}{c} y \sin ^{2} \frac{\omega}{c} x=0\\
+	&\Rightarrow {\rm ch}^{2} \frac{f}{c} y - {\rm ch}^{2} \frac{f}{c} y\sin ^{2} \frac{\omega}{c} x+{\rm sh}^{2} \frac{f}{c} y \sin ^{2} \frac{\omega}{c} x=0\\
+	&\Rightarrow {\rm ch}^{2} \frac{f}{c} y-\sin ^{2} \frac{\omega}{c} x=0\\
+	&\Rightarrow\left\{\begin{array}{l}\frac{f}{c} y_{0}=0 \\ \frac{\omega}{c} x_{0}=\frac{2 n-1}{2} \pi \quad(n=0,\pm 1,\pm 2)\end{array}\right.\\
+	&\Rightarrow\boxed{\left\{\begin{array}{l}y_{0}=0 \\ x_{0}=\frac{2 n-1}{2}  \frac{\lambda}{2}\end{array}\right.}
+	\end{aligned}
+	\]
+	\indent
+	即，无潮点位于海峡中轴线上，相邻两个无潮点之间的距离为半波长。\\
+	\indent
+	\textbf {2) 等振幅线}
+	\[
+	\begin{aligned}
+	    R=const&\Rightarrow {\rm ch}^{2} \frac{f}{c} y \cos ^{2} \frac{\omega}{c} x+{\rm sh}^{2} \frac{f}{c} y \sin ^{2} \frac{\omega}{c} x=c o n s t\\
+	    &\Rightarrow {\rm ch}^{2} \frac{f}{c} y-\sin ^{2} \frac{\omega}{c} x=const
+	\end{aligned}
+	\]
+	\indent
+	特别地，对于无潮点附近的等振幅线，将坐标原点移到无潮点上：
+	\[
+	\left\{
+	\begin{aligned}
+	\frac{f}{c}y&=\frac{f}{c}y^{\prime} \\
+	\frac{\omega}{c}x&=\frac{\omega}{c}x^{\prime}+\frac{\pi}{2}
+	\end{aligned}
+	\right.
+	\]
+	\[
+	\Rightarrow{\rm ch}^{2} \frac{f}{c} y^{\prime}-\cos ^{2} \frac{\omega}{c} x^{\prime}=const
+	\]
+	\[
+	x^{\prime}\rightarrow 0, \cos ^{2} \frac{\omega}{c} x^{\prime}\rightarrow 1-\left( \frac{\omega}{c}x^{\prime}\right)^2;y^{\prime}\rightarrow 0, {\rm ch} ^{2} \frac{f}{c} y^{\prime}\rightarrow 1+\left( \frac{f}{c}y^{\prime}\right)^2
+	\]
+	\[
+	\Rightarrow \boxed{\frac{x^{\prime 2}}{\left(\frac{f}{c}\right)^{2}}+\frac{y^{\prime 2}}{\left(\frac{\omega}{c}\right)^{2}}=\mathrm{const}}
+	\]
+	\indent
+    上式表明，无潮点附近的等振幅线为椭圆族，当$\omega<f$时，长轴位于$x$轴，即平行于海峡；当$\omega>f$时，长轴位于$y$轴，即垂直于海峡。\\
+    \indent
+    \textbf {3) 同潮时线}\\
+    \indent
+    设$t_c$为发生高潮的时刻，则同潮时线由$\omega t_c-\theta=0,t_c=const$确定：
+    \[
+    t_c=\frac{\theta}{\omega}=\frac{1}{\omega} \arctan \frac{\zeta_{2}}{\zeta_{1}}=\frac{1}{\omega} \arctan \frac{-2  \operatorname{Ash} \frac{f}{c} y \sin \frac{\omega}{c} x}{2 \operatorname{Ach} \frac{f}{c} y \cos \frac{\omega}{c} x}=\frac{1}{\omega} \arctan \left(-\operatorname{th} \frac{f}{c} y \cdot \tan \frac{\omega}{c} x\right)=const
+    \]
+    \indent
+    将坐标原点移到无潮点上：
+    \[
+    \left\{
+    \begin{aligned}
+    \frac{f}{c}y&=\frac{f}{c}y^{\prime} \\
+    \frac{\omega}{c}x&=\frac{\omega}{c}x^{\prime}+\frac{\pi}{2}     \end{aligned}
+    \right.
+    \]
+    \[
+    \Rightarrow t_{c}=\frac{1}{\omega} \arctan \left[-t h \frac{f}{c} y^{\prime} \tan \left(\frac{\omega}{c} x^{\prime}+\frac{\pi}{2}\right)\right]=\frac{1}{\omega} \arctan \left[-t h \frac{f}{c} y^{\prime} / \tan \frac{\omega}{c} x^{\prime}\right]=const
+    \]
+    \indent
+    利用级数展开，取第一项近似：
+    \[
+     \tan x=x+\frac{1}{3} x^{3}+\frac{2}{15} x^{5}+\cdots \quad {\rm th} x=x-\frac{1}{3} x^{3}+\frac{2}{15} x^{5}-\cdots
+    \]
+	\[
+	\begin{aligned}
+	&\Rightarrow t_c=\frac{1}{\omega} \arctan \left( \frac{f}{c} y^{\prime} / \frac{\omega}{c} x^{\prime} \right) \\
+	&\Rightarrow \frac{f}{c} y^{\prime} / \frac{\omega}{c} x^{\prime}=\tan (\omega t_c)\\
+	&\Rightarrow \boxed{y^{\prime}=\left[\frac{\omega}{f} \tan \left(\omega t_{c}\right)\right] x^{\prime}}
+	\end{aligned}
+	\]
+	\indent
+	上式表明，无潮点附近的同潮时线是直线，斜率随高潮发生时刻变化。在北半球，同潮时线绕无潮点逆时针旋转。
+	\par
+	综上所述，相反Kelvin波叠加在海峡中的波动特点有以下五点：
+	\par
+	1) 无潮点位于海峡中轴线上；
+	\par
+	2) 相邻两个无潮点之间的距离为半波长；
+	\par
+	3) 无潮点附近的等振幅线为椭圆族；，当$\omega<f$时，长轴位于$x$轴，即平行于海峡，当
+	\par
+	\indent
+	\indent
+	$\omega>f$时，长轴位于$y$轴，即垂直于海峡;
+	\par
+	4) 无潮点附近的同潮时线是直线，在北半球，同潮时线绕无潮点逆时针旋转；
+	\par
+	5) 在离开无潮点较远的地方，等振幅线不再是椭圆，同潮时线也不再是直线。
+	\par
+	若考虑摩擦，
+	\[
+		\begin{aligned} 
+		\zeta=& A e^{-\left(\alpha_{1} y+\beta_{1} x\right)} \cos \left(\alpha_{2} y+\beta_{2} x-\omega t\right)+A e^{\left(\alpha_{1} y+\beta_{1} x\right)} \cos \left(\alpha_{2} y+\beta_{2} x+\omega t\right) \\
+		=& 2 A\left[\operatorname{ch}\left(\alpha_{1} y+\beta_{1} x\right) \cos \left(\alpha_{2} y+\beta_{2} x\right) \cos \omega t\right.\left.-\operatorname{sh}\left(\alpha_{1} y+\beta_{1} x\right) \sin \left(\alpha_{2} y+\beta_{2} x\right) \sin \omega t\right] \\
+		=&\zeta_1\cos\omega t+\zeta_2\sin\omega t 
+		\end{aligned}
+	\]
+	其中，
+	\[
+	\left\{
+	\begin{aligned}
+	\zeta_{1}=2 \operatorname{Ach} \theta_{1} \cos \theta_{2},& \zeta_{2}=-2 \operatorname{Ash} \theta_{1} \sin \theta_{2}\\
+	\theta_{1}=\alpha_{1} y+\beta_{1} x,& \theta_{2}=\alpha_{2} y+\beta_{2} x
+	\end{aligned}
+	\right.	
+	\]
+	\par
+	无潮点的位置满足：
+	\[
+	\left\{\begin{array}{l}\theta_{1}=\alpha_{1} y_{0}+\beta_{1} x_{0}=0 \\ \theta_{2}=\alpha_{2} y_{0}+\beta_{2} x_{0}=\frac{(2 n-1)}{2} \pi, n=0,\pm 1,\pm 2, \ldots\end{array}\right.
+	\]
+	\[
+	\Rightarrow	\left\{\begin{array}{l}x_{0}=\frac{2 n-1}{2} \pi \frac{\sqrt{g h}}{\omega} \sqrt{\frac{\sqrt{1+\mu^{2}}+1}{2}} \\ y_{0}=-\frac{2 n-1}{2} \pi \frac{\sqrt{g h}}{f} \sqrt{\frac{\sqrt{1+\mu^{2}}-1}{2}}\sqrt{1+\mu^2}\end{array}\right.
+	\]
+	\par
+	1) $\mu=0$时，与无摩擦情况相同；
+	\par
+	2) $\mu\neq 0$时，$y_0\neq 0$，说明无潮点不在海峡中线上，而是向强度较强的Kelvin波的传播方向的左方偏移：
+	\[
+	\left\{\begin{aligned}
+		&n>0,x_0>0,y_0<0\\
+		&n<0,x_0<0,y_0>0
+	\end{aligned}\right.
+	\]
+	\par
+	$x$方向无潮点的间距大于半波长：
+	\[
+	\Delta x_{0}=\pi \frac{\sqrt{g h}}{\omega} \sqrt{\frac{\sqrt{1+\mu^{2}}+1}{2}}>\pi \frac{\sqrt{g h}}{\omega}=\frac{c T}{2}=\frac{\lambda}{2}
+    \]
+    \begin{figure}[H]
+        \centering\includegraphics[width=10cm]{40.eps}
+    \end{figure}
+    \subsection{矩形海湾中的潮波}
+    \subsubsection{宽度较窄矩形海湾中的潮波}
+    \paragraph{假定和方程}~{}
+    1. 海湾较窄\\
+    2. 等深，深度为$h$\\
+    3. 不考虑摩擦\\
+    4. 密度为常数.
+    \begin{figure}[H]
+        \centering \includegraphics[width=10cm]{41.eps}
+        \caption*{}
+    \end{figure}
+    \begin{numcases}{}
+        \frac{\partial u}{\partial t}+g \frac{\partial \zeta}{\partial x}=0 \label{511}\\
+            \frac{\partial \zeta}{\partial t}+h \frac{\partial u}{\partial x}=0\label{512}
+    \end{numcases}
+    边界条件：$\displaystyle \left.u\right|_{x=0}=0$
+    \paragraph{求解}~{}
+    研究一个分潮波：
+    \begin{numcases}{}
+        \zeta=Z(x)e^{i\omega t} \label{513}\\
+        u=U(x)e^{i\omega t}\label{514}
+    \end{numcases}
+    \[
+        {\partial \ref{512} \over \partial t}-h{\partial \ref{511}\over\partial x}\Rightarrow {\partial^2\zeta\over\partial t^2}-gh{\partial^2\zeta\over\partial x^2}=0
+    \]
+    带入\ref{513}：
+    \[
+        \frac{\partial^{2} Z}{\partial x^{2}}+\frac{\omega^{2}}{g h} Z=0
+    \]
+    令$\displaystyle k={\omega^2\over gh}$：
+    \[
+        Z=A_{1} e^{i k x}+A_{2} e^{-i k x}
+    \]
+    由\ref{511}：
+    \[
+        U=-{g\over i\omega}{dZ\over dx}
+    \]
+    结合$Z=A_{1} e^{i k x}+A_{2} e^{-i k x}$：
+    \[
+        U=-\frac{g}{i \omega}\left(i k A_{1} e^{i k x}-i k A_{2} e^{-i k x}\right)=-\frac{g k}{\omega}\left(A_{1} e^{i k x}-A_{2} e^{-i k x}\right)
+    \]
+    边界条件$\displaystyle \Rightarrow A_1=A_2={R\over 2}$\\
+    \[
+        \left\{
+            \begin{aligned}
+                &\zeta=R\cos kxe^{i\omega t}\\
+                &u=-i{gk\over \omega}R\sin kxe^{i\omega t}
+            \end{aligned}
+        \right.
+    \]
+    取实部：
+    \[
+        \left\{
+            \begin{aligned}
+                &\zeta=R\cos kx\cos \omega t\\
+                &u={g\over c}R\sin kx\sin \omega t
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{讨论}~{}\\
+    1. 波动具有驻波性质\\
+    2. 共振现象的机制.\\
+    湾口：\[displaystyle \zeta_{B}=R \cos k L \cos \omega t=R_{B} \cos \omega t, \quad R_{B}=R \cos k L\]
+    \[displaystyle \zeta=R_{B} \frac{\cos k x}{\cos k L} \cos \omega t=R_{B}\left(\cos \frac{2 \pi}{\lambda} x / \cos \frac{2 \pi}{\lambda} L\right) \cos \omega t\]
+    \[
+        \cos \frac{2 \pi}{\lambda} L \rightarrow 0 \Rightarrow \frac{2 \pi}{\lambda} L \rightarrow \frac{\pi}{2} \Rightarrow L \rightarrow \frac{\lambda}{4}
+    \]
+    当海湾的长度为潮波波长的1/4 时发生共振.
+    \subsubsection{宽度较大的矩形海湾中的潮波}
+    1. 需要考虑科氏力\\
+    2. 通常为旋转潮波\\
+    3. 潮波不仅仅是入射和反射Kelvin波的叠加，还要满足在湾顶的边界条件.\\
+    Taylor半无限长矩形海湾潮波解由三部分组成：
+    \[
+        \left\{
+            \begin{aligned}
+                &\mbox{沿湾顶}：湾口方向传播的\mathrm{Kelvin}波叠加\\
+                &\mbox{一系列}\mathrm{Poincare}波之和\\
+                &\mbox{自湾顶向湾口以指数形式衰减的波动}
+            \end{aligned}
+        \right.
+    \]
+    \paragraph{矩形海湾中影响无潮点位置的因素}~{}\\
+    1. 地摩擦效应：无潮点不再在海湾的中轴线上，面向湾顶向左偏\\
+    2. 海湾横向水深梯度：无潮点偏向浅水一边.
+    \subsection{变截面海湾中的潮波}
+    \paragraph{结论}~{}\\
+    1. 潮位由湾口向内逐渐变大\\
+    2. 潮位振幅由湾口向湾顶增大，水深变浅比水深不变情况增大快.
+    \subsection{总结}
+    \begin{figure}[H]
+        \centering\includegraphics[width=10cm]{42.eps}
+    \end{figure}
     \bibliographystyle{apalike}
 	\bibliography{ref}
 \end{document}
