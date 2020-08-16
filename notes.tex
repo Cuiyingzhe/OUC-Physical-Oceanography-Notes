@@ -2488,7 +2488,7 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
     \end{figure}
     \subsection{矩形海湾中的潮波}
     \subsubsection{宽度较窄矩形海湾中的潮波}
-    \paragraph{假定和方程}~{}
+    \paragraph{假定和方程}~{}\\
     1. 海湾较窄\\
     2. 等深，深度为$h$\\
     3. 不考虑摩擦\\
@@ -2502,16 +2502,16 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
             \frac{\partial \zeta}{\partial t}+h \frac{\partial u}{\partial x}=0\label{512}
     \end{numcases}
     边界条件：$\displaystyle \left.u\right|_{x=0}=0$
-    \paragraph{求解}~{}
+    \paragraph{求解}~{}\\
     研究一个分潮波：
     \begin{numcases}{}
         \zeta=Z(x)e^{i\omega t} \label{513}\\
         u=U(x)e^{i\omega t}\label{514}
     \end{numcases}
     \[
-        {\partial \ref{512} \over \partial t}-h{\partial \ref{511}\over\partial x}\Rightarrow {\partial^2\zeta\over\partial t^2}-gh{\partial^2\zeta\over\partial x^2}=0
+        {\partial (\ref{512}) \over \partial t}-h{\partial (\ref{511})\over\partial x}\Rightarrow {\partial^2\zeta\over\partial t^2}-gh{\partial^2\zeta\over\partial x^2}=0
     \]
-    带入\ref{513}：
+    带入(\ref{513})：
     \[
         \frac{\partial^{2} Z}{\partial x^{2}}+\frac{\omega^{2}}{g h} Z=0
     \]
@@ -2519,7 +2519,7 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
     \[
         Z=A_{1} e^{i k x}+A_{2} e^{-i k x}
     \]
-    由\ref{511}：
+    由(\ref{511})：
     \[
         U=-{g\over i\omega}{dZ\over dx}
     \]
@@ -2562,8 +2562,8 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
     \[
         \left\{
             \begin{aligned}
-                &\mbox{沿湾顶}：湾口方向传播的\mathrm{Kelvin}波叠加\\
-                &\mbox{一系列}\mathrm{Poincare}波之和\\
+                &\mbox{沿湾顶：湾口方向传播的Kelvin波叠加}\\
+                &\mbox{一系列Poincare波之和}\\
                 &\mbox{自湾顶向湾口以指数形式衰减的波动}
             \end{aligned}
         \right.

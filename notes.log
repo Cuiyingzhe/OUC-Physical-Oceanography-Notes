@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  15 AUG 2020 12:20
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  16 AUG 2020 08:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,7 +1115,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--412
 
  []
 
-[9] [10]
+[9]
+
+LaTeX Warning: Citation `Ekman' on page 10 undefined on input line 445.
+
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
@@ -1124,6 +1128,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--494
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 508.
+
+
+LaTeX Warning: Citation `Ekman' on page 11 undefined on input line 533.
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps>
@@ -1181,6 +1188,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 692--698
  []
 
 [15]
+
+LaTeX Warning: Citation `Ekman' on page 16 undefined on input line 726.
+
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps>
 
@@ -1390,20 +1400,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2529--2531
 
  []
 
-Missing character: There is no ： in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 湾 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 口 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 方 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 向 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 传 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 播 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 的 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 波 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 叠 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 加 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 波 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 之 in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no 和 in font [lmroman12-regular]:mapping=tex-text;!
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/42.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/42.eps>
 (./notes.bbl [55])
@@ -1431,7 +1427,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2584.
 Here is how much of TeX's memory you used:
  29472 strings out of 479418
  612340 string characters out of 5878425
- 890934 words of memory out of 5000000
+ 890897 words of memory out of 5000000
  46350 multiletter control sequences out of 15000+600000
  550042 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
