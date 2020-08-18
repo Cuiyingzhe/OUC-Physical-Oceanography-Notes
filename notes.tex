@@ -300,15 +300,15 @@
     \[
         \left\{
         \begin{aligned}
-            &\frac{\partial \bar{u}}{\partial t}+\bar{u} \frac{\partial \bar{u}}{\partial x}+\bar{v} \frac{\partial \bar{u}}{\partial y}+\bar{w} \frac{\partial \bar{u}}{\partial z}=-\frac{1}{\rho} \frac{\partial \bar{p}}{\partial x}+f \bar{v}-\tilde{f} w+\gamma \Delta \bar{u}-\frac{\partial \bar{\phi}_{T}}{\partial x}+\frac{\partial}{\partial x}\left(A_{x \alpha} \frac{\partial \bar{u}}{\partial x}\right)+\frac{\partial}{\partial y}\left(A_{x y} \frac{\partial \bar{u}}{\partial y}\right)+\frac{\partial}{\partial z}\left(A_{x z} \frac{\partial \bar{u}}{\partial z}\right)\\
+            &\frac{\partial \bar{u}}{\partial t}+\bar{u} \frac{\partial \bar{u}}{\partial x}+\bar{v} \frac{\partial \bar{u}}{\partial y}+\bar{w} \frac{\partial \bar{u}}{\partial z}=-\frac{1}{\rho} \frac{\partial \bar{p}}{\partial x}+f \bar{v}-\tilde{f} w+\gamma \Delta \bar{u}-\frac{\partial \bar{\phi}_{T}}{\partial x}+\frac{\partial}{\partial x}\left(A_{x x} \frac{\partial \bar{u}}{\partial x}\right)+\frac{\partial}{\partial y}\left(A_{x y} \frac{\partial \bar{u}}{\partial y}\right)+\frac{\partial}{\partial z}\left(A_{x z} \frac{\partial \bar{u}}{\partial z}\right)\\
             &\frac{\partial \bar{v}}{\partial t}+\vec{u} \frac{\partial \bar{v}}{\partial x}+\vec{v} \frac{\partial \bar{v}}{\partial y}+\vec{w} \frac{\partial \bar{v}}{\partial z}=-\frac{1}{\rho} \frac{\partial \bar{p}}{\partial y}-f \bar{u}+\gamma \Delta \bar{v}-\frac{\partial \bar{\phi}_{T}}{\partial y}+\frac{\partial}{\partial x}\left(A_{y x} \frac{\partial \bar{v}}{\partial x}\right)+\frac{\partial}{\partial y}\left(A_{y y} \frac{\partial \bar{v}}{\partial y}\right)+\frac{\partial}{\partial z}\left(A_{y z} \frac{\partial \bar{v}}{\partial z}\right)\\
-            &\frac{\partial \bar{w}}{\partial t}+\bar{u} \frac{\partial \bar{w}}{\partial x}+\bar{v} \frac{\partial \bar{w}}{\partial y}+\bar{w} \frac{\partial \bar{w}}{\partial z}=-\frac{1}{\rho} \frac{\partial \bar{p}}{\partial z}+\tilde{f} \bar{u}-g+\gamma \Delta \bar{w}-\frac{\partial \bar{\phi}_{T}}{\partial z}+\frac{\partial}{\partial x}\left(A_{2 x} \frac{\partial \bar{w}}{\partial x}\right)+\frac{\partial}{\partial y}\left(A_{z y} \frac{\partial \bar{w}}{\partial y}\right)+\frac{\partial}{\partial z}\left(A_{z z} \frac{\partial \bar{w}}{\partial z}\right)
+            &\frac{\partial \bar{w}}{\partial t}+\bar{u} \frac{\partial \bar{w}}{\partial x}+\bar{v} \frac{\partial \bar{w}}{\partial y}+\bar{w} \frac{\partial \bar{w}}{\partial z}=-\frac{1}{\rho} \frac{\partial \bar{p}}{\partial z}+\tilde{f} \bar{u}-g+\gamma \Delta \bar{w}-\frac{\partial \bar{\phi}_{T}}{\partial z}+\frac{\partial}{\partial x}\left(A_{z x} \frac{\partial \bar{w}}{\partial x}\right)+\frac{\partial}{\partial y}\left(A_{z y} \frac{\partial \bar{w}}{\partial y}\right)+\frac{\partial}{\partial z}\left(A_{z z} \frac{\partial \bar{w}}{\partial z}\right)
         \end{aligned}
         \right.
     \]
     盐量扩散方程：
     \[
-        \frac{\partial \bar{s}}{\partial t}+\bar{u} \frac{\partial \bar{s}}{\partial x}+\bar{v} \frac{\partial \bar{s}}{\partial y}+\bar{w} \frac{\partial \bar{s}}{\partial z}
+        \frac{\partial \bar{s}}{\partial t}+\bar{u} \frac{\partial \bar{s}}{\partial x}+\bar{v} \frac{\partial \bar{s}}{\partial y}+\bar{w} \frac{\partial \bar{s}}{\partial z}=k_{D} \Delta \bar{s}+\frac{\partial}{\partial x}\left(K_{s x} \frac{\partial \bar{s}}{\partial x}\right)+\frac{\partial}{\partial y}\left(K_{s y} \frac{\partial \bar{s}}{\partial y}\right)+\frac{\partial}{\partial z}\left(K_{s z} \frac{\partial \bar{s}}{\partial z}\right)
     \]
     热传导方程：
     \[
