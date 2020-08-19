@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  18 AUG 2020 18:27
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.5.30)  19 AUG 2020 09:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1095,42 +1095,43 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/2.eps Graphi
  [4]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/3.eps>
- [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+ [5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
 
-[7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 397--399
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--405
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--412
+Underfull \hbox (badness 10000) in paragraph at lines 403--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--413
 
  []
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 508.
+(amsmath)                 on input line 509.
 
+[11]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/Ekman.eps>
-[11]
-Missing character: There is no ≥ in font [lmroman12-regular]:mapping=tex-text;!
  [12]
-Underfull \hbox (badness 10000) in paragraph at lines 605--608
+Missing character: There is no ≥ in font [lmroman12-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--609
 
  []
 
@@ -1138,6 +1139,7 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/4.eps Graphi
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/4.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/5.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/5.eps>
+[13]
 Missing character: There is no 连 in font [lmroman8-regular]:mapping=tex-text;!
 Missing character: There is no 续 in font [lmroman8-regular]:mapping=tex-text;!
 Missing character: There is no 性 in font [lmroman8-regular]:mapping=tex-text;!
@@ -1146,22 +1148,21 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/6.eps Graphi
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/7.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/7.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--634
+Underfull \hbox (badness 10000) in paragraph at lines 631--635
 
  []
 
-[13]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/8.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/8.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 635--639
+Underfull \hbox (badness 10000) in paragraph at lines 636--640
 
  []
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/9.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/9.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--644
+Underfull \hbox (badness 10000) in paragraph at lines 641--645
 
  []
 
@@ -1171,84 +1172,83 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/10.eps Graph
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/11.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/11.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--685
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 692--698
+Underfull \hbox (badness 10000) in paragraph at lines 677--686
 
  []
 
 [15]
+Underfull \hbox (badness 10000) in paragraph at lines 693--699
+
+ []
+
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/12.eps>
-
-Underfull \hbox (badness 10000) in paragraph at lines 733--738
-
- []
-
-[16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 778--784
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 734--739
 
  []
 
-[18] [19]
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 779--785
+
+ []
+
+[19] [20]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/13.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/13.eps>
- [20]
-Underfull \hbox (badness 10000) in paragraph at lines 950--953
+ [21]
+Underfull \hbox (badness 10000) in paragraph at lines 951--954
 
  []
 
-[21] [22]
+[22] [23]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/14.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/14.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1101
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1102
 
  []
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1103--1104
 
  []
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/15.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/15.eps>
-[24]
+[25]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/16.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/16.eps>
- [25]
+ [26]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/17.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/17.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/18.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/18.eps>
- [26]
-Underfull \hbox (badness 10000) in paragraph at lines 1261--1262
+ [27]
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1263
 
  []
 
-[27]
+[28]
 
-LaTeX Warning: Reference `lw3' on page 28 undefined on input line 1279.
+LaTeX Warning: Reference `lw3' on page 29 undefined on input line 1280.
 
 Missing character: There is no ， in font [lmroman12-regular]:mapping=tex-text;!
-[28]
+[29]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/19.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/19.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1356--1357
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1358--1363
+Underfull \hbox (badness 10000) in paragraph at lines 1359--1364
 
  []
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 1375--1380
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1381
 
  []
 
@@ -1258,50 +1258,50 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/21.eps Graph
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/21.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/22.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/22.eps>
-[30] [31] [32] [33]
+[31] [32] [33] [34]
 Missing character: There is no  in font [lmroman12-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1607--1609
+Underfull \hbox (badness 10000) in paragraph at lines 1608--1610
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1626--1632
+Underfull \hbox (badness 10000) in paragraph at lines 1627--1633
 
  []
 
-[34]
+[35]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/23.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/23.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/24.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/24.eps>
- [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1671--1673
+ [36]
+Underfull \hbox (badness 10000) in paragraph at lines 1672--1674
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1675--1677
+Underfull \hbox (badness 10000) in paragraph at lines 1676--1678
 
  []
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/25.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/25.eps>
-[36]
+[37]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/27.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/27.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1712--1723
+Underfull \hbox (badness 10000) in paragraph at lines 1713--1724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1723--1729
+Underfull \hbox (badness 10000) in paragraph at lines 1724--1730
 
  []
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 1729--1733
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1730--1734
 
  []
 
@@ -1309,19 +1309,19 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/28.eps Graph
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/28.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/29.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/29.eps>
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 1771--1776
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 1772--1777
 
  []
 
-[39]
+[40]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/30.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/30.eps>
- [40]
+ [41]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/31.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/31.eps>
- [41] [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1925--1927
+ [42] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 1926--1928
 
  []
 
@@ -1331,78 +1331,78 @@ File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/34.eps Graph
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/34.eps>
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/35.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/35.eps>
-[43]
+[44]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/36.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/36.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1987--1996
+Underfull \hbox (badness 10000) in paragraph at lines 1988--1997
 
  []
 
-[44]
+[45]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/37.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/37.eps>
 Missing character: There is no ， in font [lmroman12-regular]:mapping=tex-text;!
 Missing character: There is no ， in font [lmroman12-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 2014--2016
+Underfull \hbox (badness 10000) in paragraph at lines 2015--2017
 
  []
 
-[45] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 2084--2086
+[46] [47]
+Underfull \hbox (badness 10000) in paragraph at lines 2085--2087
 
  []
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/38.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/38.eps>
-[47] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 2233--2235
+[48] [49]
+Underfull \hbox (badness 10000) in paragraph at lines 2234--2236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2238--2240
+Underfull \hbox (badness 10000) in paragraph at lines 2239--2241
 
  []
 
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 2249--2250
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 2250--2251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2265--2268
+Underfull \hbox (badness 10000) in paragraph at lines 2266--2269
 
  []
 
-[50] [51]
+[51] [52]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/39.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/39.eps>
- [52]
+ [53]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/40.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/40.eps>
- [53]
+ [54]
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/41.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/41.eps>
- [54]
-Underfull \hbox (badness 10000) in paragraph at lines 2529--2531
+ [55]
+Underfull \hbox (badness 10000) in paragraph at lines 2530--2532
 
  []
 
 File: C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/42.eps Graphic file (type eps)
 <C:/Users/Gary/Desktop/OUC-Physical-Oceanography-Notes/figures/42.eps>
-(./notes.bbl [55])
+(./notes.bbl [56])
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 48.
 See the caption package documentation for explanation.
 
-[56]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2584.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2584.
+[57]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2585.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2585.
  (./notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2584.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2584.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2585.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2585.
 Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: 15610AB63D634C40123B5F1C1D5FDB6C;8924.
 
@@ -1412,15 +1412,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2584.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2585.
  ) 
 Here is how much of TeX's memory you used:
  29472 strings out of 479418
  612340 string characters out of 5878425
- 891934 words of memory out of 5000000
+ 892934 words of memory out of 5000000
  46350 multiletter control sequences out of 15000+600000
  550042 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,22n,68p,587b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on notes.pdf (56 pages).
+Output written on notes.pdf (57 pages).

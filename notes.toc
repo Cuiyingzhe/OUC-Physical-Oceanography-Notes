@@ -14,43 +14,43 @@
 \contentsline {subsection}{\numberline {1.7}边界条件}{7}{subsection.1.7}%
 \contentsline {subsection}{\numberline {1.8} \color {red} $\divideontimes $时间平均的基本方程和边界条件(直角坐标系)}{7}{subsection.1.8}%
 \contentsline {subsection}{\numberline {1.9}铅直向平均的基本方程}{7}{subsection.1.9}%
-\contentsline {subsection}{\numberline {1.10}尺度分析}{7}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.10}尺度分析}{8}{subsection.1.10}%
 \contentsline {section}{\numberline {2}海流}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}地转流}{8}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}梯度流}{8}{subsubsection.2.1.1}%
 \contentsline {paragraph}{假定和方程}{8}{subsubsection.2.1.1}%
-\contentsline {paragraph}{特征}{8}{subsubsection.2.1.1}%
+\contentsline {paragraph}{特征}{9}{subsubsection.2.1.1}%
 \contentsline {paragraph}{运动特性}{9}{equation.2.3}%
 \contentsline {paragraph}{密度特性}{9}{equation.2.3}%
-\contentsline {paragraph}{温盐特性}{9}{equation.2.3}%
-\contentsline {subsubsection}{\numberline {2.1.2}倾斜流}{9}{subsubsection.2.1.2}%
-\contentsline {paragraph}{假定和方程}{9}{subsubsection.2.1.2}%
+\contentsline {paragraph}{温盐特性}{10}{equation.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.2}倾斜流}{10}{subsubsection.2.1.2}%
+\contentsline {paragraph}{假定和方程}{10}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Ekman漂流}{10}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}无限深海漂流}{10}{subsubsection.2.2.1}%
 \contentsline {paragraph}{物理背景}{10}{subsubsection.2.2.1}%
 \contentsline {paragraph}{假定}{10}{subsubsection.2.2.1}%
 \contentsline {paragraph}{方程推导}{10}{subsubsection.2.2.1}%
-\contentsline {paragraph}{控制方程和边界条件}{10}{subsubsection.2.2.1}%
+\contentsline {paragraph}{控制方程和边界条件}{11}{subsubsection.2.2.1}%
 \contentsline {paragraph}{方程求解}{11}{equation.2.9a}%
 \contentsline {paragraph}{物理性质}{11}{equation.2.10}%
 \contentsline {paragraph}{运动速度}{11}{equation.2.10}%
-\contentsline {paragraph}{Ekman螺旋和Ekman螺线}{11}{equation.2.10}%
+\contentsline {paragraph}{Ekman螺旋和Ekman螺线}{12}{equation.2.10}%
 \contentsline {paragraph}{水平体积输运}{12}{figure.caption.4}%
 \contentsline {subsubsection}{\numberline {2.2.2}有限深海漂流}{12}{subsubsection.2.2.2}%
 \contentsline {paragraph}{假定}{12}{subsubsection.2.2.2}%
-\contentsline {paragraph}{方程求解}{12}{subsubsection.2.2.2}%
-\contentsline {paragraph}{物理性质}{12}{equation.2.11}%
+\contentsline {paragraph}{方程求解}{13}{subsubsection.2.2.2}%
+\contentsline {paragraph}{物理性质}{13}{equation.2.11}%
 \contentsline {paragraph}{与水深的关系}{13}{equation.2.11}%
 \contentsline {paragraph}{体积输运}{13}{equation.2.11}%
 \contentsline {subsubsection}{\numberline {2.2.3}漂流分离}{13}{subsubsection.2.2.3}%
 \contentsline {paragraph}{利用风速大小相等、方向相反的两次观测余流分离漂流}{13}{subsubsection.2.2.3}%
 \contentsline {paragraph}{利用一组风速大小相等、方向不同的实测余流分离漂流}{13}{figure.caption.5}%
-\contentsline {subsubsection}{\numberline {2.2.4}升降流}{13}{subsubsection.2.2.4}%
-\contentsline {paragraph}{物理背景}{13}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4}升降流}{14}{subsubsection.2.2.4}%
+\contentsline {paragraph}{物理背景}{14}{subsubsection.2.2.4}%
 \contentsline {paragraph}{赤道附近的升降流}{14}{figure.caption.7}%
 \contentsline {paragraph}{顺(沿)岸风产生的升降流}{14}{figure.caption.8}%
-\contentsline {paragraph}{气旋和反气旋产生的海洋升降流}{14}{figure.caption.9}%
-\contentsline {paragraph}{假定}{14}{figure.caption.10}%
+\contentsline {paragraph}{气旋和反气旋产生的海洋升降流}{15}{figure.caption.9}%
+\contentsline {paragraph}{假定}{15}{figure.caption.10}%
 \contentsline {paragraph}{控制方程及边界条件}{15}{figure.caption.10}%
 \contentsline {paragraph}{结果讨论}{15}{figure.caption.10}%
 \contentsline {subsection}{\numberline {2.3}非定常运动}{16}{subsection.2.3}%
@@ -59,139 +59,139 @@
 \contentsline {paragraph}{控制方程}{16}{subsubsection.2.3.1}%
 \contentsline {paragraph}{初边值条件}{16}{subsubsection.2.3.1}%
 \contentsline {paragraph}{解的讨论}{16}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}惯性流}{16}{subsubsection.2.3.2}%
-\contentsline {paragraph}{假定和方程}{16}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2}惯性流}{17}{subsubsection.2.3.2}%
+\contentsline {paragraph}{假定和方程}{17}{subsubsection.2.3.2}%
 \contentsline {paragraph}{求解}{17}{equation.2.13}%
 \contentsline {paragraph}{惯性圆半径}{17}{equation.2.13}%
-\contentsline {paragraph}{周期}{17}{equation.2.13}%
-\contentsline {paragraph}{运动方向}{17}{equation.2.13}%
-\contentsline {paragraph}{背景流}{17}{equation.2.13}%
-\contentsline {subsection}{\numberline {2.4}风生大洋环流}{18}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Sverdrup理论}{18}{subsubsection.2.4.1}%
-\contentsline {paragraph}{假定}{18}{subsubsection.2.4.1}%
-\contentsline {paragraph}{控制方程}{18}{subsubsection.2.4.1}%
-\contentsline {paragraph}{边界条件}{18}{subsubsection.2.4.1}%
-\contentsline {paragraph}{求解}{18}{subsubsection.2.4.1}%
-\contentsline {paragraph}{讨论}{18}{equation.2.15}%
-\contentsline {paragraph}{缺陷}{19}{equation.2.22}%
-\contentsline {subsubsection}{\numberline {2.4.2}Stommel理论}{19}{subsubsection.2.4.2}%
-\contentsline {paragraph}{假定}{19}{subsubsection.2.4.2}%
-\contentsline {paragraph}{控制方程}{19}{subsubsection.2.4.2}%
-\contentsline {paragraph}{边界条件}{20}{subsubsection.2.4.2}%
-\contentsline {paragraph}{求解}{20}{subsubsection.2.4.2}%
-\contentsline {paragraph}{讨论}{20}{equation.2.23}%
-\contentsline {subsubsection}{\numberline {2.4.3}惯性理论}{21}{subsubsection.2.4.3}%
-\contentsline {paragraph}{方程}{21}{subsubsection.2.4.3}%
-\contentsline {paragraph}{求解}{21}{subsubsection.2.4.3}%
-\contentsline {paragraph}{内区(中部区)}{21}{subsubsection.2.4.3}%
-\contentsline {paragraph}{大洋西部海域}{21}{subsubsection.2.4.3}%
-\contentsline {paragraph}{在西边界层的边缘}{22}{equation.2.29}%
-\contentsline {paragraph}{在内区的边缘($L\ll r$)}{22}{equation.2.29}%
-\contentsline {subsubsection}{\numberline {2.4.4}Munk理论}{22}{subsubsection.2.4.4}%
-\contentsline {paragraph}{假定}{22}{subsubsection.2.4.4}%
-\contentsline {paragraph}{控制方程}{23}{subsubsection.2.4.4}%
-\contentsline {paragraph}{边界条件}{23}{subsubsection.2.4.4}%
-\contentsline {paragraph}{求解}{23}{subsubsection.2.4.4}%
-\contentsline {paragraph}{内区(中部区)}{23}{equation.2.30}%
-\contentsline {paragraph}{西边界区}{23}{equation.2.30}%
-\contentsline {paragraph}{东边界区}{24}{figure.caption.15}%
-\contentsline {paragraph}{讨论}{24}{figure.caption.15}%
-\contentsline {paragraph}{环流空间分布特征}{24}{figure.caption.15}%
-\contentsline {paragraph}{大洋西边界区的物质输运特点}{25}{figure.caption.16}%
-\contentsline {paragraph}{缺陷}{26}{figure.caption.17}%
-\contentsline {section}{\numberline {3}海浪}{26}{section.3}%
-\contentsline {subsection}{\numberline {3.1}线性波动理论}{26}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}无旋运动的基本方程}{26}{subsubsection.3.1.1}%
-\contentsline {paragraph}{假定及方程}{26}{subsubsection.3.1.1}%
-\contentsline {paragraph}{环流定理}{26}{subsubsection.3.1.1}%
-\contentsline {paragraph}{无旋运动的基本方程和边界条件}{27}{figure.caption.19}%
-\contentsline {subsubsection}{\numberline {3.1.2}线性波动}{27}{subsubsection.3.1.2}%
-\contentsline {paragraph}{假定}{27}{subsubsection.3.1.2}%
-\contentsline {paragraph}{方程简化}{28}{subsubsection.3.1.2}%
-\contentsline {paragraph}{求解}{28}{equation.3.32}%
-\contentsline {paragraph}{解的讨论}{29}{equation.3.44}%
-\contentsline {subsubsection}{\numberline {3.1.3}水深对线性波动的影响}{29}{subsubsection.3.1.3}%
-\contentsline {paragraph}{深水波($d>\frac {1}{2}\lambda $)}{29}{subsubsection.3.1.3}%
-\contentsline {paragraph}{浅水波($d<\frac {1}{20}\lambda $)}{30}{subsubsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}线性波动的能量}{31}{subsubsection.3.1.4}%
-\contentsline {paragraph}{动能}{31}{figure.caption.22}%
-\contentsline {paragraph}{势能}{32}{figure.caption.22}%
-\contentsline {paragraph}{总能量}{32}{figure.caption.22}%
-\contentsline {paragraph}{平均能量通量及水深影响}{32}{figure.caption.22}%
-\contentsline {subsection}{\numberline {3.2}线性波动的合成}{33}{subsection.3.2}%
-\contentsline {paragraph}{驻波}{33}{subsection.3.2}%
-\contentsline {paragraph}{波面}{33}{subsection.3.2}%
-\contentsline {paragraph}{波群}{33}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}波动的折射和绕射}{34}{subsection.3.3}%
-\contentsline {paragraph}{定义}{34}{subsection.3.3}%
-\contentsline {paragraph}{假定}{34}{subsection.3.3}%
-\contentsline {paragraph}{波数守恒方程}{34}{subsection.3.3}%
-\contentsline {paragraph}{波动要素的变化和分布}{34}{equation.3.45}%
-\contentsline {paragraph}{波向}{35}{figure.caption.23}%
-\contentsline {paragraph}{波高}{36}{equation.3.46}%
-\contentsline {paragraph}{当波浪从深水传入浅水时}{36}{figure.caption.25}%
-\contentsline {paragraph}{总结}{37}{figure.caption.25}%
-\contentsline {subsection}{\numberline {3.4}有限振幅波动(不要求掌握)}{37}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Stokes波}{37}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}波浪破碎}{37}{subsubsection.3.4.2}%
-\contentsline {paragraph}{以深水波为例，分析Stokes波和线性波动的区别和联系}{37}{subsubsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.5}海浪的统计性质}{37}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}随机海浪过程的基本统计特性}{37}{subsubsection.3.5.1}%
-\contentsline {paragraph}{平稳性}{37}{subsubsection.3.5.1}%
-\contentsline {paragraph}{各态历经性}{37}{subsubsection.3.5.1}%
-\contentsline {paragraph}{证明随机海浪过程具有各态历经性}{38}{subsubsection.3.5.1}%
-\contentsline {paragraph}{随机海浪过程的正态性}{38}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}波面、波高、周期和波长的分布}{38}{subsubsection.3.5.2}%
-\contentsline {paragraph}{波面的分布}{38}{subsubsection.3.5.2}%
-\contentsline {paragraph}{波高的分布}{38}{figure.caption.27}%
-\contentsline {paragraph}{周期和波长的分布}{39}{figure.caption.28}%
-\contentsline {paragraph}{各种波高之间的关系}{39}{figure.caption.28}%
-\contentsline {subsection}{\numberline {3.6}海浪谱}{39}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}能谱}{39}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}方向谱}{40}{subsubsection.3.6.2}%
-\contentsline {section}{\numberline {4}潮波}{41}{section.4}%
-\contentsline {subsection}{\numberline {4.1}平衡潮理论}{41}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}基本假设}{41}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}天体引潮力的主要部分}{41}{subsubsection.4.1.2}%
-\contentsline {paragraph}{月球引潮力}{41}{subsubsection.4.1.2}%
-\contentsline {paragraph}{引潮势}{42}{table.caption.31}%
-\contentsline {paragraph}{月球引潮力的铅直和水平分量}{43}{table.caption.31}%
-\contentsline {paragraph}{潮汐椭球}{43}{table.caption.31}%
-\contentsline {subsubsection}{\numberline {4.1.3}平衡潮潮高}{43}{subsubsection.4.1.3}%
-\contentsline {paragraph}{平衡潮最大潮差的估算}{44}{figure.caption.34}%
-\contentsline {paragraph}{平衡潮潮高展开和平衡潮周期}{44}{figure.caption.34}%
-\contentsline {paragraph}{潮汐日不等}{44}{figure.caption.34}%
-\contentsline {paragraph}{潮汐月不等}{45}{figure.caption.35}%
-\contentsline {subsubsection}{\numberline {4.1.4}平衡潮的分潮}{45}{subsubsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.5}平衡潮理论的主要结论}{46}{subsubsection.4.1.5}%
-\contentsline {subsubsection}{\numberline {4.1.6}平衡潮理论的贡献}{46}{subsubsection.4.1.6}%
-\contentsline {subsubsection}{\numberline {4.1.7}平衡潮理论的缺陷}{46}{subsubsection.4.1.7}%
-\contentsline {subsection}{\numberline {4.2}考虑地球形状的潮波}{46}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}全球水域中的潮波(Laplace理论)}{46}{subsubsection.4.2.1}%
-\contentsline {paragraph}{假定和方程简化}{46}{subsubsection.4.2.1}%
-\contentsline {paragraph}{均质海洋垂直平均的基本方程}{46}{subsubsection.4.2.1}%
-\contentsline {paragraph}{讨论}{48}{figure.caption.37}%
-\contentsline {subsubsection}{\numberline {4.2.2}有界水域中的潮波(Airy沟渠理论)}{48}{subsubsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}等深广阔水域中的潮波}{48}{subsection.4.3}%
-\contentsline {paragraph}{假定和方程}{48}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}平面Sverdrup波}{49}{subsubsection.4.3.1}%
-\contentsline {paragraph}{Sverdrup波存在条件}{49}{subsubsection.4.3.1}%
-\contentsline {paragraph}{频散关系}{50}{subsubsection.4.3.1}%
-\contentsline {paragraph}{波速和群速}{50}{subsubsection.4.3.1}%
-\contentsline {paragraph}{流速和流向}{50}{subsubsection.4.3.1}%
-\contentsline {paragraph}{地转效应引起的变化(与浅水重力波相比)}{50}{equation.4.50}%
-\contentsline {subsubsection}{\numberline {4.3.2}Poincare波}{50}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Kelvin波}{50}{subsubsection.4.3.3}%
-\contentsline {paragraph}{频散关系和波动解}{50}{subsubsection.4.3.3}%
-\contentsline {paragraph}{两列传播方向相反的Kelvin波叠加}{52}{subsubsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}矩形海湾中的潮波}{54}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}宽度较窄矩形海湾中的潮波}{54}{subsubsection.4.4.1}%
-\contentsline {paragraph}{假定和方程}{54}{subsubsection.4.4.1}%
-\contentsline {paragraph}{求解}{54}{equation.4.52}%
-\contentsline {paragraph}{讨论}{55}{equation.4.54}%
-\contentsline {subsubsection}{\numberline {4.4.2}宽度较大的矩形海湾中的潮波}{55}{subsubsection.4.4.2}%
-\contentsline {paragraph}{矩形海湾中影响无潮点位置的因素}{55}{subsubsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.5}变截面海湾中的潮波}{55}{subsection.4.5}%
-\contentsline {paragraph}{结论}{55}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}总结}{56}{subsection.4.6}%
+\contentsline {paragraph}{周期}{18}{equation.2.13}%
+\contentsline {paragraph}{运动方向}{18}{equation.2.13}%
+\contentsline {paragraph}{背景流}{18}{equation.2.13}%
+\contentsline {subsection}{\numberline {2.4}风生大洋环流}{19}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Sverdrup理论}{19}{subsubsection.2.4.1}%
+\contentsline {paragraph}{假定}{19}{subsubsection.2.4.1}%
+\contentsline {paragraph}{控制方程}{19}{subsubsection.2.4.1}%
+\contentsline {paragraph}{边界条件}{19}{subsubsection.2.4.1}%
+\contentsline {paragraph}{求解}{19}{subsubsection.2.4.1}%
+\contentsline {paragraph}{讨论}{19}{equation.2.15}%
+\contentsline {paragraph}{缺陷}{20}{equation.2.22}%
+\contentsline {subsubsection}{\numberline {2.4.2}Stommel理论}{20}{subsubsection.2.4.2}%
+\contentsline {paragraph}{假定}{20}{subsubsection.2.4.2}%
+\contentsline {paragraph}{控制方程}{20}{subsubsection.2.4.2}%
+\contentsline {paragraph}{边界条件}{21}{subsubsection.2.4.2}%
+\contentsline {paragraph}{求解}{21}{subsubsection.2.4.2}%
+\contentsline {paragraph}{讨论}{21}{equation.2.23}%
+\contentsline {subsubsection}{\numberline {2.4.3}惯性理论}{22}{subsubsection.2.4.3}%
+\contentsline {paragraph}{方程}{22}{subsubsection.2.4.3}%
+\contentsline {paragraph}{求解}{22}{subsubsection.2.4.3}%
+\contentsline {paragraph}{内区(中部区)}{22}{subsubsection.2.4.3}%
+\contentsline {paragraph}{大洋西部海域}{22}{subsubsection.2.4.3}%
+\contentsline {paragraph}{在西边界层的边缘}{23}{equation.2.29}%
+\contentsline {paragraph}{在内区的边缘($L\ll r$)}{23}{equation.2.29}%
+\contentsline {subsubsection}{\numberline {2.4.4}Munk理论}{23}{subsubsection.2.4.4}%
+\contentsline {paragraph}{假定}{23}{subsubsection.2.4.4}%
+\contentsline {paragraph}{控制方程}{24}{subsubsection.2.4.4}%
+\contentsline {paragraph}{边界条件}{24}{subsubsection.2.4.4}%
+\contentsline {paragraph}{求解}{24}{subsubsection.2.4.4}%
+\contentsline {paragraph}{内区(中部区)}{24}{equation.2.30}%
+\contentsline {paragraph}{西边界区}{24}{equation.2.30}%
+\contentsline {paragraph}{东边界区}{25}{figure.caption.15}%
+\contentsline {paragraph}{讨论}{25}{figure.caption.15}%
+\contentsline {paragraph}{环流空间分布特征}{25}{figure.caption.15}%
+\contentsline {paragraph}{大洋西边界区的物质输运特点}{26}{figure.caption.16}%
+\contentsline {paragraph}{缺陷}{27}{figure.caption.17}%
+\contentsline {section}{\numberline {3}海浪}{27}{section.3}%
+\contentsline {subsection}{\numberline {3.1}线性波动理论}{27}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}无旋运动的基本方程}{27}{subsubsection.3.1.1}%
+\contentsline {paragraph}{假定及方程}{27}{subsubsection.3.1.1}%
+\contentsline {paragraph}{环流定理}{27}{subsubsection.3.1.1}%
+\contentsline {paragraph}{无旋运动的基本方程和边界条件}{28}{figure.caption.19}%
+\contentsline {subsubsection}{\numberline {3.1.2}线性波动}{28}{subsubsection.3.1.2}%
+\contentsline {paragraph}{假定}{28}{subsubsection.3.1.2}%
+\contentsline {paragraph}{方程简化}{29}{subsubsection.3.1.2}%
+\contentsline {paragraph}{求解}{29}{equation.3.32}%
+\contentsline {paragraph}{解的讨论}{30}{equation.3.44}%
+\contentsline {subsubsection}{\numberline {3.1.3}水深对线性波动的影响}{30}{subsubsection.3.1.3}%
+\contentsline {paragraph}{深水波($d>\frac {1}{2}\lambda $)}{30}{subsubsection.3.1.3}%
+\contentsline {paragraph}{浅水波($d<\frac {1}{20}\lambda $)}{31}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}线性波动的能量}{32}{subsubsection.3.1.4}%
+\contentsline {paragraph}{动能}{32}{figure.caption.22}%
+\contentsline {paragraph}{势能}{33}{figure.caption.22}%
+\contentsline {paragraph}{总能量}{33}{figure.caption.22}%
+\contentsline {paragraph}{平均能量通量及水深影响}{33}{figure.caption.22}%
+\contentsline {subsection}{\numberline {3.2}线性波动的合成}{34}{subsection.3.2}%
+\contentsline {paragraph}{驻波}{34}{subsection.3.2}%
+\contentsline {paragraph}{波面}{34}{subsection.3.2}%
+\contentsline {paragraph}{波群}{34}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}波动的折射和绕射}{35}{subsection.3.3}%
+\contentsline {paragraph}{定义}{35}{subsection.3.3}%
+\contentsline {paragraph}{假定}{35}{subsection.3.3}%
+\contentsline {paragraph}{波数守恒方程}{35}{subsection.3.3}%
+\contentsline {paragraph}{波动要素的变化和分布}{35}{equation.3.45}%
+\contentsline {paragraph}{波向}{36}{figure.caption.23}%
+\contentsline {paragraph}{波高}{37}{equation.3.46}%
+\contentsline {paragraph}{当波浪从深水传入浅水时}{37}{figure.caption.25}%
+\contentsline {paragraph}{总结}{38}{figure.caption.25}%
+\contentsline {subsection}{\numberline {3.4}有限振幅波动(不要求掌握)}{38}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Stokes波}{38}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}波浪破碎}{38}{subsubsection.3.4.2}%
+\contentsline {paragraph}{以深水波为例，分析Stokes波和线性波动的区别和联系}{38}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}海浪的统计性质}{38}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}随机海浪过程的基本统计特性}{38}{subsubsection.3.5.1}%
+\contentsline {paragraph}{平稳性}{38}{subsubsection.3.5.1}%
+\contentsline {paragraph}{各态历经性}{38}{subsubsection.3.5.1}%
+\contentsline {paragraph}{证明随机海浪过程具有各态历经性}{39}{subsubsection.3.5.1}%
+\contentsline {paragraph}{随机海浪过程的正态性}{39}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}波面、波高、周期和波长的分布}{39}{subsubsection.3.5.2}%
+\contentsline {paragraph}{波面的分布}{39}{subsubsection.3.5.2}%
+\contentsline {paragraph}{波高的分布}{39}{figure.caption.27}%
+\contentsline {paragraph}{周期和波长的分布}{40}{figure.caption.28}%
+\contentsline {paragraph}{各种波高之间的关系}{40}{figure.caption.28}%
+\contentsline {subsection}{\numberline {3.6}海浪谱}{40}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}能谱}{40}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}方向谱}{41}{subsubsection.3.6.2}%
+\contentsline {section}{\numberline {4}潮波}{42}{section.4}%
+\contentsline {subsection}{\numberline {4.1}平衡潮理论}{42}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}基本假设}{42}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}天体引潮力的主要部分}{42}{subsubsection.4.1.2}%
+\contentsline {paragraph}{月球引潮力}{42}{subsubsection.4.1.2}%
+\contentsline {paragraph}{引潮势}{43}{table.caption.31}%
+\contentsline {paragraph}{月球引潮力的铅直和水平分量}{44}{table.caption.31}%
+\contentsline {paragraph}{潮汐椭球}{44}{table.caption.31}%
+\contentsline {subsubsection}{\numberline {4.1.3}平衡潮潮高}{44}{subsubsection.4.1.3}%
+\contentsline {paragraph}{平衡潮最大潮差的估算}{45}{figure.caption.34}%
+\contentsline {paragraph}{平衡潮潮高展开和平衡潮周期}{45}{figure.caption.34}%
+\contentsline {paragraph}{潮汐日不等}{45}{figure.caption.34}%
+\contentsline {paragraph}{潮汐月不等}{46}{figure.caption.35}%
+\contentsline {subsubsection}{\numberline {4.1.4}平衡潮的分潮}{46}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}平衡潮理论的主要结论}{47}{subsubsection.4.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.6}平衡潮理论的贡献}{47}{subsubsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.7}平衡潮理论的缺陷}{47}{subsubsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.2}考虑地球形状的潮波}{47}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}全球水域中的潮波(Laplace理论)}{47}{subsubsection.4.2.1}%
+\contentsline {paragraph}{假定和方程简化}{47}{subsubsection.4.2.1}%
+\contentsline {paragraph}{均质海洋垂直平均的基本方程}{47}{subsubsection.4.2.1}%
+\contentsline {paragraph}{讨论}{49}{figure.caption.37}%
+\contentsline {subsubsection}{\numberline {4.2.2}有界水域中的潮波(Airy沟渠理论)}{49}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}等深广阔水域中的潮波}{49}{subsection.4.3}%
+\contentsline {paragraph}{假定和方程}{49}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}平面Sverdrup波}{50}{subsubsection.4.3.1}%
+\contentsline {paragraph}{Sverdrup波存在条件}{50}{subsubsection.4.3.1}%
+\contentsline {paragraph}{频散关系}{51}{subsubsection.4.3.1}%
+\contentsline {paragraph}{波速和群速}{51}{subsubsection.4.3.1}%
+\contentsline {paragraph}{流速和流向}{51}{subsubsection.4.3.1}%
+\contentsline {paragraph}{地转效应引起的变化(与浅水重力波相比)}{51}{equation.4.50}%
+\contentsline {subsubsection}{\numberline {4.3.2}Poincare波}{51}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Kelvin波}{51}{subsubsection.4.3.3}%
+\contentsline {paragraph}{频散关系和波动解}{51}{subsubsection.4.3.3}%
+\contentsline {paragraph}{两列传播方向相反的Kelvin波叠加}{53}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}矩形海湾中的潮波}{55}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}宽度较窄矩形海湾中的潮波}{55}{subsubsection.4.4.1}%
+\contentsline {paragraph}{假定和方程}{55}{subsubsection.4.4.1}%
+\contentsline {paragraph}{求解}{55}{equation.4.52}%
+\contentsline {paragraph}{讨论}{56}{equation.4.54}%
+\contentsline {subsubsection}{\numberline {4.4.2}宽度较大的矩形海湾中的潮波}{56}{subsubsection.4.4.2}%
+\contentsline {paragraph}{矩形海湾中影响无潮点位置的因素}{56}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}变截面海湾中的潮波}{56}{subsection.4.5}%
+\contentsline {paragraph}{结论}{56}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}总结}{57}{subsection.4.6}%
 \contentsfinish 
