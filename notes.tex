@@ -879,7 +879,7 @@
         \left\{
             \begin{aligned}
                 &z=\zeta(\mbox{海面}):\tau_{x , \zeta}=\left.\rho A_{z} \frac{\partial u}{\partial z}\right|_{t=\zeta}=-F \cos (\pi y / b),\tau_{x , \zeta}=0\\
-                &z=-h(\mbox{海底}):\tau_{x,-h}=\rho+\left.\frac{\partial u}{\partial z}\right|_{t=-h}={\color{red}\rho k u},\tau_{y,-h}=\rho+\left.\frac{\partial v}{\partial z}\right|_{t=-h}={\color{red}\rho k v}
+                &z=-h(\mbox{海底}):\tau_{x,-h}=\rho A_z\left.\frac{\partial u}{\partial z}\right|_{t=-h}={\color{red}\rho k u},\tau_{y,-h}=\rho  A_z\left.\frac{\partial v}{\partial z}\right|_{t=-h}={\color{red}\rho k v}
             \end{aligned}
         \right.
     \]
@@ -890,14 +890,14 @@
         \begin{aligned}
             &-f\left\langle v\right\rangle=-g \frac{\partial \zeta}{\partial x}+\left.\frac{A_{z}}{h+\zeta} \frac{\partial u}{\partial z}\right|_{\zeta}-\left.\frac{A_z}{h+\zeta} \frac{\partial u}{\partial z}\right|_{-h}\\
             &f\left\langle u\right\rangle=-g \frac{\partial \zeta}{\partial y}+\left.\frac{A_{z}}{h+\zeta} \frac{\partial v}{\partial z}\right|_{\zeta}-\left.\frac{A_z}{h+\zeta} \frac{\partial v}{\partial z}\right|_{-h}\\
-            &\frac{\partial}{\partial x}\left[\left(n+\zeta\right)\left\langle u\right\rangle\right]+\frac{\partial}{\partial y}[(n+\zeta)\left\langle v\right\rangle]=0
+            &\frac{\partial}{\partial x}\left[\left(h+\zeta\right)\left\langle u\right\rangle\right]+\frac{\partial}{\partial y}[(h+\zeta)\left\langle v\right\rangle]=0
         \end{aligned}
         \right.
     \]
     
     将边界条件代入方程：
     \begin{numcases}{}
-        0=f \rho h v-F \cos \left(\left. \pi y \middle/ b \right.\right)-\rho k u-\rho g h \frac{\partial \zeta}{\partial x} \quad(\zeta \ll k) \label{stm1}\\
+        0=f \rho h v-F \cos \left(\left. \pi y \middle/ b \right.\right)-\rho k u-\rho g h \frac{\partial \zeta}{\partial x} \quad(\zeta \ll h) \label{stm1}\\
         0=-f \rho h u-\rho k v-\rho g h \frac{\partial \zeta}{\partial y}\label{stm2}\\
         \frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}=0 \nonumber
     \end{numcases}
@@ -913,7 +913,7 @@
         \psi(0, y)=\psi(a, y)=\psi(x, 0)=\psi(x, b)=0
     \]
     \[
-        \Rightarrow \psi(x, y)=\frac{F b}{k \pi} \sin \frac{\pi y}{b}\left[\frac{e^{\frac{h \beta}{2 k}(a-x)} \operatorname{sh} \alpha x+e^{\frac{h \beta}{2 k} x} \operatorname{sh} \alpha(a-x)}{\operatorname{sh} \alpha a}-1\right]
+        \Rightarrow \psi(x, y)=\frac{F b}{k \pi} \sin \frac{\pi y}{b}\left[\frac{e^{\frac{h \beta}{2 k}(a-x)} \operatorname{sh} \alpha x+e^{\frac{-h \beta}{2 k} x} \operatorname{sh} \alpha(a-x)}{\operatorname{sh} \alpha a}-1\right]
     \]
     特别地，若$\beta=0$：$\displaystyle\psi(x, y)=\frac{F b}{k \pi} \sin \frac{\pi y}{b}\left[\frac{\operatorname{sh} \frac{\pi}{b} x+\operatorname{sh} \frac{\pi}{b}(a-x)}{\operatorname{sh} \frac{\pi}{b} a}-1\right]$
     \paragraph{讨论}~{图片来自$Introduction \;to \; Physical \;Oceanography$(Robert H. Stewart,2008 pp190)}
