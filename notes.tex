@@ -743,7 +743,7 @@
     \paragraph{求解}~{}
     \[
         \begin{aligned}
-            (\ref{ic1})\times u+(\ref{ic2}\times v)&\Leftrightarrow u \frac{d u}{d t}+v \frac{d v}{d t}=\frac{1}{2} \frac{d u^{2}}{d t}+\frac{1}{2} \frac{d v^{2}}{d t}=0 \\
+            (\ref{ic1})\times u+(\ref{ic2})\times v&\Leftrightarrow u \frac{d u}{d t}+v \frac{d v}{d t}=\frac{1}{2} \frac{d u^{2}}{d t}+\frac{1}{2} \frac{d v^{2}}{d t}=0 \\
             &\Leftrightarrow \frac{d}{d t}\left(u^{2}+v^{2}\right)=0\\
             &\Leftrightarrow u^{2}+v^{2}=c=V_{0}^{2}
         \end{aligned}
@@ -812,7 +812,7 @@
     其中，$\displaystyle M_x=\int_{-h}^0\rho udz,M_y=\int_{-h}^0\rho vdz,P=\int_{-h}^0 pdz,\tau_{x\zeta}=\int_{-h}^0\rho A_z\frac{\partial^2 u}{\partial z^2}=\rho A_{z}\left(\left.\frac{\partial u}{\partial z}\right|_{z=0}-\left.\frac{\partial u}{\partial z}\right|_{z=-h}\right)\quad (\zeta\ll h)$
     \[
         \begin{aligned}
-            \frac{\partial (1)}{\partial y}-\frac{\partial (2)}{\partial x}&\Leftrightarrow -M_y\frac{\partial f}{\partial y}\mathop{\boxed{-f\frac{\partial M_y}{\partial y}-f\frac{\partial M_x}{\partial x}}}\limits^{0}=\frac{\partial \tau_{x\zeta}}{\partial y}-\frac{\partial \tau_{y\zeta}}{\partial x}\\
+            \frac{\partial (15)}{\partial y}-\frac{\partial (16)}{\partial x}&\Leftrightarrow -M_y\frac{\partial f}{\partial y}\mathop{\boxed{-f\frac{\partial M_y}{\partial y}-f\frac{\partial M_x}{\partial x}}}\limits^{0}=\frac{\partial \tau_{x\zeta}}{\partial y}-\frac{\partial \tau_{y\zeta}}{\partial x}\\
             &\Leftrightarrow M_{y} \frac{\partial f}{\partial y}=\frac{\partial \tau_{y \zeta}}{\partial x}-\frac{\partial \tau_{x \zeta}}{\partial y}\\
             &\Leftrightarrow\mathop{\boxed{\color{red}\beta M_y=\operatorname{rot}_z\tau_\zeta}}\limits_{\mbox{Sverdrup方程}}
         \end{aligned}
@@ -839,7 +839,7 @@
     (1) Ekman漂流质量输运的水平散度与$\circled{1}$风应力旋度$\circled{2} f\circled{3} \beta$有关.\\
     (2) 地转流质量输运的水平辐散引起南北向的地转运动.
     \[
-        (21)+(22)\Leftrightarrow \operatorname{rot}_z\vec{tau}_\zeta-\beta M_y=0\Leftrightarrow\boxed{\color{red} \beta M_y=\operatorname{rot}_z\vec{\tau}_\zeta}
+        (21)+(22)\Leftrightarrow \operatorname{rot}_z\vec{\tau}_\zeta-\beta M_y=0\Leftrightarrow\boxed{\color{red} \beta M_y=\operatorname{rot}_z\vec{\tau}_\zeta}
     \]
     $\color{red} \mbox{Sverdrup方程的物理意义2}$:地转流流量的散度和Ekman漂流流量的散度相平衡，所以Sverdrup方程又称Sverdrup平衡.\\
     (1) 所有南北向的地转运动，必须显示水平散度；\\
