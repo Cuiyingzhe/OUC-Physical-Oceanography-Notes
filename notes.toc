@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {1.5.4}热膨胀方程-状态方程}{6}{subsubsection.1.5.4}%
 \contentsline {subsection}{\numberline {1.6}基本方程的矢量形式和标量形式}{6}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}边界条件}{7}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8} \color {red} $\divideontimes $时间平均的基本方程和边界条件(直角坐标系)}{7}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.8} \color {red} $\divideontimes $时间平均的基本方程(直角坐标系)}{7}{subsection.1.8}%
 \contentsline {subsection}{\numberline {1.9}铅直向平均的基本方程}{7}{subsection.1.9}%
 \contentsline {subsection}{\numberline {1.10}尺度分析}{8}{subsection.1.10}%
 \contentsline {section}{\numberline {2}海流}{8}{section.2}%
@@ -108,8 +108,8 @@
 \contentsline {subsubsection}{\numberline {3.1.2}线性波动}{28}{subsubsection.3.1.2}%
 \contentsline {paragraph}{假定}{28}{subsubsection.3.1.2}%
 \contentsline {paragraph}{方程简化}{29}{subsubsection.3.1.2}%
-\contentsline {paragraph}{求解}{29}{equation.3.32}%
-\contentsline {paragraph}{解的讨论}{30}{equation.3.44}%
+\contentsline {paragraph}{求解}{29}{equation.3.37}%
+\contentsline {paragraph}{解的讨论}{30}{equation.3.45}%
 \contentsline {subsubsection}{\numberline {3.1.3}水深对线性波动的影响}{30}{subsubsection.3.1.3}%
 \contentsline {paragraph}{深水波($d>\frac {1}{2}\lambda $)}{30}{subsubsection.3.1.3}%
 \contentsline {paragraph}{浅水波($d<\frac {1}{20}\lambda $)}{31}{subsubsection.3.1.3}%
@@ -126,9 +126,9 @@
 \contentsline {paragraph}{定义}{35}{subsection.3.3}%
 \contentsline {paragraph}{假定}{35}{subsection.3.3}%
 \contentsline {paragraph}{波数守恒方程}{35}{subsection.3.3}%
-\contentsline {paragraph}{波动要素的变化和分布}{35}{equation.3.45}%
+\contentsline {paragraph}{波动要素的变化和分布}{35}{equation.3.46}%
 \contentsline {paragraph}{波向}{36}{figure.caption.23}%
-\contentsline {paragraph}{波高}{37}{equation.3.46}%
+\contentsline {paragraph}{波高}{37}{equation.3.47}%
 \contentsline {paragraph}{当波浪从深水传入浅水时}{37}{figure.caption.25}%
 \contentsline {paragraph}{总结}{38}{figure.caption.25}%
 \contentsline {subsection}{\numberline {3.4}有限振幅波动(不要求掌握)}{38}{subsection.3.4}%
@@ -179,7 +179,7 @@
 \contentsline {paragraph}{频散关系}{51}{subsubsection.4.3.1}%
 \contentsline {paragraph}{波速和群速}{51}{subsubsection.4.3.1}%
 \contentsline {paragraph}{流速和流向}{51}{subsubsection.4.3.1}%
-\contentsline {paragraph}{地转效应引起的变化(与浅水重力波相比)}{51}{equation.4.50}%
+\contentsline {paragraph}{地转效应引起的变化(与浅水重力波相比)}{51}{equation.4.51}%
 \contentsline {subsubsection}{\numberline {4.3.2}Poincare波}{51}{subsubsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3}Kelvin波}{51}{subsubsection.4.3.3}%
 \contentsline {paragraph}{频散关系和波动解}{51}{subsubsection.4.3.3}%
@@ -187,8 +187,8 @@
 \contentsline {subsection}{\numberline {4.4}矩形海湾中的潮波}{55}{subsection.4.4}%
 \contentsline {subsubsection}{\numberline {4.4.1}宽度较窄矩形海湾中的潮波}{55}{subsubsection.4.4.1}%
 \contentsline {paragraph}{假定和方程}{55}{subsubsection.4.4.1}%
-\contentsline {paragraph}{求解}{55}{equation.4.52}%
-\contentsline {paragraph}{讨论}{56}{equation.4.54}%
+\contentsline {paragraph}{求解}{55}{equation.4.53}%
+\contentsline {paragraph}{讨论}{56}{equation.4.55}%
 \contentsline {subsubsection}{\numberline {4.4.2}宽度较大的矩形海湾中的潮波}{56}{subsubsection.4.4.2}%
 \contentsline {paragraph}{矩形海湾中影响无潮点位置的因素}{56}{subsubsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.5}变截面海湾中的潮波}{56}{subsection.4.5}%

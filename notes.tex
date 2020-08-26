@@ -291,7 +291,7 @@
     \[
         \left(\vec{p}_{n}\right)_{1}=\left(\vec{p}_{n}\right)_{2}
     \]
-    \subsection{ \texorpdfstring{\color{red} $\divideontimes$} 时时间平均的基本方程和边界条件(直角坐标系)}
+    \subsection{ \texorpdfstring{\color{red} $\divideontimes$} 时时间平均的基本方程(直角坐标系)}
     \begin{framed}
     连续方程:
     \[
@@ -867,8 +867,8 @@
     \[
         \left\{
             \begin{aligned}
-                &-f v=-g \frac{\partial \zeta}{\partial x}+A_{z} \frac{\partial^{2} u}{\partial^{2} z} \\
-                &fu=-g \frac{\partial \zeta}{\partial y}+A_{z} \frac{\partial^{2} v}{\partial^{2} z} \\
+                &-f v=-g \frac{\partial \zeta}{\partial x}+A_{z} \frac{\partial^{2} u}{\partial z^2} \\
+                &fu=-g \frac{\partial \zeta}{\partial y}+A_{z} \frac{\partial^{2} v}{\partial z^2} \\
                 &0=-\frac{1}{\rho} \frac{\partial p}{\partial z}-g\\
                 &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
             \end{aligned}
@@ -878,7 +878,7 @@
     \[
         \left\{
             \begin{aligned}
-                &z=\zeta(\mbox{海面}):\tau_{x , \zeta}=\left.\rho A_{z} \frac{\partial u}{\partial z}\right|_{t=\zeta}=-F \cos (\pi y / b),\tau_{x , \zeta}=0\\
+                &z=\zeta(\mbox{海面}):\tau_{x , \zeta}=\left.\rho A_{z} \frac{\partial u}{\partial z}\right|_{t=\zeta}=-F \cos (\pi y / b),\tau_{y , \zeta}=0\\
                 &z=-h(\mbox{海底}):\tau_{x,-h}=\rho A_z\left.\frac{\partial u}{\partial z}\right|_{z=-h}={\color{red}\rho k u},\tau_{y,-h}=\rho  A_z\left.\frac{\partial v}{\partial z}\right|_{z=-h}={\color{red}\rho k v}
             \end{aligned}
         \right.
@@ -974,8 +974,8 @@
     $\displaystyle \xi_r=\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}$相对涡度，$f$行星涡度，$\xi_a=\xi_r+f$绝对涡度.\\
     对连续方程进行垂向平均：
     \begin{align}
-        &\frac{\partial \zeta}{\partial t}+\frac{\partial[(h+\zeta)\langle u\rangle]}{\partial x}+\frac{\partial[(h+\zeta)(v)]}{\partial y}=0\nonumber\\
-        \Leftrightarrow & \frac{d(\zeta+h)}{d t}+(\zeta+h)\left(\frac{\partial(u)}{\partial x}+\frac{\partial(v)}{\partial y}\right)=0 \nonumber\\
+        &\frac{\partial \zeta}{\partial t}+\frac{\partial[(h+\zeta)\langle u\rangle]}{\partial x}+\frac{\partial[(h+\zeta)\langle v\rangle]}{\partial y}=0\nonumber\\
+        \Leftrightarrow & \frac{d(\zeta+h)}{d t}+(\zeta+h)\left(\frac{\partial \langle u\rangle}{\partial x}+\frac{\partial\langle v\rangle}{\partial y}\right)=0 \nonumber\\
         (\mbox{令}H=h+\zeta)\Leftrightarrow & \frac{d H}{d t}+H\left(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}\right)=0 \label{int4}
     \end{align}
     将$(\ref{int4})$代入$(\ref{int3})$中：
@@ -1117,7 +1117,7 @@
         \caption*{}
     \end{figure}
     (1) Gyres之间的分界处位于：$\displaystyle M_y=\frac{\partial \psi}{\partial x}=0$，只有东西向的流动：$\displaystyle f^{\prime}(x)=0/\frac{\partial \tau_{x\zeta}}{\partial y}=0$；\\
-    (2) Gyres主轴位于：$\displaystyle M_x=\frac{\partial \psi}{\partial x}=0$只有南北向的流动：$\displaystyle f(x)=0/\frac{\partial^2 \tau_{x\zeta}}{\partial y^2}=0$；\\
+    (2) Gyres主轴位于：$\displaystyle M_x=-\frac{\partial \psi}{\partial y}=0$只有南北向的流动：$\displaystyle f(x)=0/\frac{\partial^2 \tau_{x\zeta}}{\partial y^2}=0$；\\
     (3) 流动西强东弱.
     \paragraph{大洋西边界区的物质输运特点}~{}
     \[
@@ -1188,7 +1188,7 @@
         \left\{
             \begin{aligned}
                 &\frac{d\vec{V}}{dt}=\frac{\partial \vec{V}}{\partial t}+(\vec{V}\cdot\nabla)\vec{V}=-\frac{1}{\rho}\nabla p-\vec{g}\\
-                &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}
+                &\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
             \end{aligned}
         \right.
     \]
@@ -1221,7 +1221,7 @@
     \paragraph{无旋运动的基本方程和边界条件}~{}\\
     若在重力场中，理想流体于起始时刻为静止或匀速运动，则任何时刻，对任何封闭曲线有：$\Gamma(t)=0$，根据Stokes定理：
     \[
-        \Gamma(t)=\oint\limits_{c t} \vec{V} \cdot d \vec{l}=\iint\limits_{s} \nabla \times \vec{V} d \sigma=0\Rightarrow\nabla\times\vec{V}=\Rightarrow\vec{V}=\nabla \varphi
+        \Gamma(t)=\oint\limits_{c t} \vec{V} \cdot d \vec{l}=\iint\limits_{s} \nabla \times \vec{V} d \sigma=0\Rightarrow\nabla\times\vec{V}\Rightarrow\vec{V}=\nabla \varphi
     \]
     运动方程：
     \[
@@ -1273,14 +1273,14 @@
     \begin{numcases}{}
         \frac{\partial \varphi}{\partial t}+\frac{p-p_{0}}{\rho}+g z=0 \label{lw1}\\
         \frac{\partial^{2} \varphi}{\partial x^{2}}+\frac{\partial^{2} \varphi}{\partial z^{2}}=0 \label{lw2}\\
-        \left.\frac{\partial \varphi}{\partial z}\right|_{==0}=\frac{\partial \zeta}{\partial t}\label{lw4} \\
+        \left.\frac{\partial \varphi}{\partial z}\right|_{==0}=\frac{\partial \zeta}{\partial t}\label{lw3} \\
         \left.\frac{\partial \varphi}{\partial z}\right|_{z=-d}=0 \label{lw4}\\
         \left.\frac{\partial \varphi}{\partial t}\right|_{z=0}+g \zeta=0\label{lw5}
     \end{numcases}
     $(\ref{lw5})$代入$(\ref{lw3})$中：
-    \[
+    \begin{equation}
         \left.\left(\frac{\partial \varphi}{\partial z}+\frac{1}{g} \frac{\partial^{2} \varphi}{\partial t^{2}}\right)\right|_{z=0}=0\label{lw6}
-    \]
+    \end{equation}
     \paragraph{求解}~{}\\
     对前进波：
     \begin{equation}
@@ -1357,7 +1357,7 @@
     \paragraph{深水波($d>\frac{1}{2}\lambda$)}~{}\\
     \begin{spacing}{2}
         $\displaystyle kd=\frac{2\pi}{\lambda}d\rightarrow \infty$
-    $\displaystyle \operatorname{sh}kd=\operatorname{ch}\approx \frac{1}{2} e^{kd},\operatorname{th}kd\approx 1$\\
+    $\displaystyle \operatorname{sh}kd=\operatorname{ch}kd\approx \frac{1}{2} e^{kd},\operatorname{th}kd\approx 1$\\
     频散关系：$\displaystyle \omega^{2}=g k \text { th } k d \Rightarrow \omega^{2}=g k$\\
     波速：$\displaystyle c^{2}=\frac{g}{k} \operatorname{th} k d \Rightarrow c^{2}=\frac{g}{k}$\\
     深水波的角频率和波速与水深无关，只与波动性质(波数或波长)有关.\\
@@ -1651,9 +1651,9 @@
     \[
         \Rightarrow t=\int_A^B\frac{\sqrt{1+(y')^2}}{c(x,y)}dx=\int_A^B F(x,y,y')dx
     \]
-    使泛函t取极小值的F满足：
+    使泛函$t$取极小值的$F$满足：
     \[
-        F_y-\frac{d}{dx}F_{y'}
+        F_y-\frac{d}{dx}F_{y'}=0
     \]
     \begin{equation}
         \Rightarrow \frac{y^{\prime \prime}}{1+y^{\prime 2}}=-\frac{1}{c}\left(\frac{\partial c}{\partial y}-y^{\prime} \frac{\partial c}{\partial x}\right)\label{eleq}
@@ -1689,7 +1689,7 @@
     \]
     波向线散开因子：$\displaystyle \beta=\frac{l}{l_0}$
     \paragraph{当波浪从深水传入浅水时}~{}\\
-    平直海岸，且波向线垂直于岸线，不发生折射，即l=l0，变浅因子起决定作用，波高先略有降低，之后随相对深度的变浅而迅速增大;\\
+    平直海岸，且波向线垂直于岸线，不发生折射，即$l=l_0$，变浅因子起决定作用，波高先略有降低，之后随相对深度的变浅而迅速增大;\\
     海岬处：波向线辐聚$l<l_0$，折射因子大于1，能量集中，波高增大，出现大浪；\\
     海湾处：波向线辐散$l>l_0$，折射因子小于1，能量分散，波高减小，海面较平静.
     \newpage
@@ -2147,7 +2147,7 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
     \subsubsection{有界水域中的潮波(Airy沟渠理论)}~{}
     \subsection{等深广阔水域中的潮波}
     \[
-        \boxed{\mbox{相同的动力学方程}}+\boxed{\mbox{不同的边界条件}}\Rightarrow \boxed{\mbox{不同的频散关系}}\Rightarrow \boxed{\mbox{不同性质的波动}}
+        \boxed{\mbox{���同的动力学方程}}+\boxed{\mbox{不同的边界条件}}\Rightarrow \boxed{\mbox{不同的频散关系}}\Rightarrow \boxed{\mbox{不同性质的波动}}
     \]
     \paragraph{假定和方程}~{}\\
     1. 宽广平缓的陆家海：(1) 等深 (2) 大尺度(忽略非线性平流项；忽略摩擦)\\
@@ -2411,7 +2411,7 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
     \right.
     \]
     \[
-    \Rightarrow t_{c}=\frac{1}{\omega} \arctan \left[-t h \frac{f}{c} y^{\prime} \tan \left(\frac{\omega}{c} x^{\prime}+\frac{\pi}{2}\right)\right]=\frac{1}{\omega} \arctan \left[-t h \frac{f}{c} y^{\prime} / \tan \frac{\omega}{c} x^{\prime}\right]=const
+    \Rightarrow t_{c}=\frac{1}{\omega} \arctan \left[-t h \frac{f}{c} y^{\prime} \tan \left(\frac{\omega}{c} x^{\prime}+\frac{\pi}{2}\right)\right]=\frac{1}{\omega} \arctan \left[t h \frac{f}{c} y^{\prime} / \tan \frac{\omega}{c} x^{\prime}\right]=const
     \]
     \indent
     利用级数展开，取第一项近似：
@@ -2516,7 +2516,7 @@ V} )_\lambda }} + \cancel{Turbulence\ Item}
     \[
         \frac{\partial^{2} Z}{\partial x^{2}}+\frac{\omega^{2}}{g h} Z=0
     \]
-    令$\displaystyle k={\omega^2\over gh}$：
+    令$\displaystyle k^2={\omega^2\over gh}$：
     \[
         Z=A_{1} e^{i k x}+A_{2} e^{-i k x}
     \]
